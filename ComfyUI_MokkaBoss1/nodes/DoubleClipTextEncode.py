@@ -1,0 +1,51 @@
+# Node to combine cliptextencode for positive and negative and allow the positive text and negative text to be output
+# Written by MokkaBoss1 9th March 2024
+
+class DoubleClipTextEncode:
+
+#    def __init__(self):
+#        pass
+    
+    @classmethod
+    def INPUT_TYPES(s):
+
+        return {
+            "required": {
+                "clip": ("CLIP",),
+                "positive_prompt": ("STRING", {
+                     "multiline": True, #True if you want the field to look like the one on the ClipTextEncode node
+                     "default": "Pretty 21 year old European Woman,"
+                }),
+                "negative_prompt": ("STRING", {
+                     "multiline": True, #True if you want the field to look like the one on the ClipTextEncode node
+                     "default": "nsfw, nude, naked, nipples,"
+                }),
+            }
+        }
+
+    RETURN_TYPES = ("CONDITIONING","CONDITIONING","STRING","STRING")
+    RETURN_NAMES = ("Positive Conditioning","Negative Conditioning","Positive Prompt","Negative Prompt",)
+    
+
+    FUNCTION = "double_encode"
+    
+    CATEGORY = "👑 MokkaBoss1"
+
+    def double_encode(self, clip, positive_prompt, negative_prompt):
+
+        tokens_pos = clip.tokenize(positive_prompt)
+        cond_pos, pooled = clip.encode_from_tokens(tokens_pos, return_pooled=True)
+        
+        tokens_neg = clip.tokenize(negative_prompt)
+        cond_neg, pooled = clip.encode_from_tokens(tokens_neg, return_pooled=True)
+
+
+        return (
+            [[cond_pos, {"pooled_output": pooled}]],
+            [[cond_neg, {"pooled_output": pooled}]],
+            [positive_prompt],
+            [negative_prompt],
+            )
+
+NODE_CLASS_MAPPINGS = {"DoubleClipTextEncode": DoubleClipTextEncode}
+NODE_DISPLAY_NAME_MAPPINGS = {"DoubleClipTextEncode": "👑 DoubleClipTextEncode"}
