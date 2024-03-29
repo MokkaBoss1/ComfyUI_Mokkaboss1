@@ -1,0 +1,932 @@
+{
+  "last_node_id": 399,
+  "last_link_id": 790,
+  "nodes": [
+    {
+      "id": 361,
+      "type": "OptimalCrop",
+      "pos": [
+        -478,
+        -1216
+      ],
+      "size": {
+        "0": 307.22283935546875,
+        "1": 117.36207580566406
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_width",
+          "type": "INT",
+          "link": 698,
+          "widget": {
+            "name": "input_width"
+          }
+        },
+        {
+          "name": "input_height",
+          "type": "INT",
+          "link": 699,
+          "widget": {
+            "name": "input_height"
+          }
+        },
+        {
+          "name": "aspect_ratio",
+          "type": "FLOAT",
+          "link": 700,
+          "widget": {
+            "name": "aspect_ratio"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_width",
+          "type": "INT",
+          "links": [
+            701
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "output_height",
+          "type": "INT",
+          "links": [
+            702
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OptimalCrop"
+      },
+      "widgets_values": [
+        64,
+        64,
+        1,
+        1
+      ],
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": 1
+    },
+    {
+      "id": 336,
+      "type": "Evaluate Integers",
+      "pos": [
+        -887,
+        -1037
+      ],
+      "size": {
+        "0": 315,
+        "1": 194
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "INT",
+          "link": 649,
+          "widget": {
+            "name": "a"
+          }
+        },
+        {
+          "name": "b",
+          "type": "INT",
+          "link": 650,
+          "widget": {
+            "name": "b"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": [
+            700
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Evaluate Integers"
+      },
+      "widgets_values": [
+        "a/b",
+        "False",
+        0,
+        0,
+        0
+      ],
+      "color": "#223",
+      "bgcolor": "#335",
+      "shape": 1
+    },
+    {
+      "id": 394,
+      "type": "SaveImage",
+      "pos": [
+        274,
+        -1227
+      ],
+      "size": [
+        363.790092316493,
+        486.42056099749175
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 778
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 301,
+      "type": "ImageCrop",
+      "pos": [
+        -93,
+        -1135
+      ],
+      "size": {
+        "0": 315,
+        "1": 130
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 779
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 701,
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 702,
+          "widget": {
+            "name": "height"
+          }
+        },
+        {
+          "name": "x",
+          "type": "INT",
+          "link": 653,
+          "widget": {
+            "name": "x"
+          },
+          "slot_index": 3
+        },
+        {
+          "name": "y",
+          "type": "INT",
+          "link": 654,
+          "widget": {
+            "name": "y"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            778,
+            781
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageCrop"
+      },
+      "widgets_values": [
+        250,
+        200,
+        0,
+        200
+      ],
+      "color": "#223",
+      "bgcolor": "#335",
+      "shape": 1
+    },
+    {
+      "id": 395,
+      "type": "Get image size",
+      "pos": [
+        -56,
+        -940
+      ],
+      "size": {
+        "0": 210,
+        "1": 66
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 781,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            782
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            783
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "TUPLE",
+          "type": "TUPLE",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Get image size"
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 396,
+      "type": "Display Any (rgthree)",
+      "pos": [
+        -56,
+        -841
+      ],
+      "size": {
+        "0": 210,
+        "1": 75.9999771118164
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 782,
+          "dir": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Display Any (rgthree)Width",
+      "properties": {
+        "Node name for S&R": "Display Any (rgthree)",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 397,
+      "type": "Display Any (rgthree)",
+      "pos": [
+        -54,
+        -734
+      ],
+      "size": {
+        "0": 210,
+        "1": 75.9999771118164
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 783,
+          "dir": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Display Any (rgthree)",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 347,
+      "type": "LoadImage",
+      "pos": [
+        -1723,
+        -1130
+      ],
+      "size": {
+        "0": 385.22900390625,
+        "1": 472.1358642578125
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            779,
+            788
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "2024-01-10_21-07-18_6127-gigapixel-art-width-3840px.png",
+        "image"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 399,
+      "type": "Display Any (rgthree)",
+      "pos": [
+        -780,
+        -705
+      ],
+      "size": {
+        "0": 210,
+        "1": 76
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 790,
+          "dir": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Display Any (rgthree)",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 338,
+      "type": "JWInteger",
+      "pos": [
+        -467,
+        -982
+      ],
+      "size": {
+        "0": 269.3807678222656,
+        "1": 60.5003547668457
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            653
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Integer x-offset",
+      "properties": {
+        "Node name for S&R": "JWInteger"
+      },
+      "widgets_values": [
+        0
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
+      "id": 339,
+      "type": "JWInteger",
+      "pos": [
+        -464,
+        -866
+      ],
+      "size": {
+        "0": 264.7465515136719,
+        "1": 64.92144775390625
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            654
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Integer y-offset",
+      "properties": {
+        "Node name for S&R": "JWInteger"
+      },
+      "widgets_values": [
+        0
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
+      "id": 330,
+      "type": "AspectRatioSelector",
+      "pos": [
+        -1224,
+        -1028
+      ],
+      "size": {
+        "0": 262.2412109375,
+        "1": 137.5741729736328
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "ratio",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            649
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            650
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AspectRatioSelector"
+      },
+      "widgets_values": [
+        "3:4"
+      ],
+      "color": "#322",
+      "bgcolor": "#533",
+      "shape": 1
+    },
+    {
+      "id": 309,
+      "type": "GetImageSize+",
+      "pos": [
+        -1036,
+        -1242
+      ],
+      "size": {
+        "0": 319.35186767578125,
+        "1": 47.141441345214844
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 788
+        }
+      ],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            698,
+            789
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            699,
+            790
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "GetImageSize+"
+      },
+      "color": "#223",
+      "bgcolor": "#335",
+      "shape": 1
+    },
+    {
+      "id": 398,
+      "type": "Display Any (rgthree)",
+      "pos": [
+        -782,
+        -800
+      ],
+      "size": {
+        "0": 210,
+        "1": 76
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 789,
+          "dir": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Display Any (rgthree)Width",
+      "properties": {
+        "Node name for S&R": "Display Any (rgthree)",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    }
+  ],
+  "links": [
+    [
+      649,
+      330,
+      1,
+      336,
+      0,
+      "INT"
+    ],
+    [
+      650,
+      330,
+      2,
+      336,
+      1,
+      "INT"
+    ],
+    [
+      653,
+      338,
+      0,
+      301,
+      3,
+      "INT"
+    ],
+    [
+      654,
+      339,
+      0,
+      301,
+      4,
+      "INT"
+    ],
+    [
+      698,
+      309,
+      0,
+      361,
+      0,
+      "INT"
+    ],
+    [
+      699,
+      309,
+      1,
+      361,
+      1,
+      "INT"
+    ],
+    [
+      700,
+      336,
+      1,
+      361,
+      2,
+      "FLOAT"
+    ],
+    [
+      701,
+      361,
+      0,
+      301,
+      1,
+      "INT"
+    ],
+    [
+      702,
+      361,
+      1,
+      301,
+      2,
+      "INT"
+    ],
+    [
+      756,
+      25,
+      0,
+      186,
+      10,
+      "INT"
+    ],
+    [
+      757,
+      25,
+      0,
+      206,
+      3,
+      "INT"
+    ],
+    [
+      758,
+      25,
+      0,
+      16,
+      10,
+      "INT"
+    ],
+    [
+      765,
+      25,
+      0,
+      186,
+      10,
+      "INT"
+    ],
+    [
+      766,
+      25,
+      0,
+      206,
+      3,
+      "INT"
+    ],
+    [
+      767,
+      25,
+      0,
+      16,
+      10,
+      "INT"
+    ],
+    [
+      778,
+      301,
+      0,
+      394,
+      0,
+      "IMAGE"
+    ],
+    [
+      779,
+      347,
+      0,
+      301,
+      0,
+      "IMAGE"
+    ],
+    [
+      781,
+      301,
+      0,
+      395,
+      0,
+      "IMAGE"
+    ],
+    [
+      782,
+      395,
+      0,
+      396,
+      0,
+      "*"
+    ],
+    [
+      783,
+      395,
+      1,
+      397,
+      0,
+      "*"
+    ],
+    [
+      788,
+      347,
+      0,
+      309,
+      0,
+      "IMAGE"
+    ],
+    [
+      789,
+      309,
+      0,
+      398,
+      0,
+      "*"
+    ],
+    [
+      790,
+      309,
+      1,
+      399,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Group",
+      "bounding": [
+        -401,
+        3263,
+        1829,
+        919
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Settings",
+      "bounding": [
+        -1590,
+        3291,
+        1132,
+        1174
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Positioning Graphical Elements  (only for 9:16 images)",
+      "bounding": [
+        1141,
+        3029,
+        1932,
+        1134
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Optimal Aspect Ratio",
+      "bounding": [
+        -1775,
+        2086,
+        1533,
+        1286
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "groupNodes": {}
+  },
+  "version": 0.4
+}
