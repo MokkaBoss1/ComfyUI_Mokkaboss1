@@ -1,5 +1,6 @@
 # Node to combine cliptextencode for positive and negative and allow the positive text and negative text to be output
 # Written by MokkaBoss1 9th March 2024
+# https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
 
 class DoubleClipTextEncode:
 
