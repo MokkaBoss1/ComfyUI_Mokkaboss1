@@ -36,7 +36,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "UrbanColours": "👑 UrbanColours",
     "X_In_a_Dress": "👑 X_In_a_Dress",
     "X_In_a_Suit": "👑 X_In_a_Suit",
-    "WrapText": "👑 WrapText"
-    "AspectRatioCondition": "👑 AspectRatioCondition"
+    "WrapText": "👑 WrapText",
+    "AspectRatioCondition": "👑 AspectRatioCondition",
 }
-print ("Mokkaboss1 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 Custom Nodes: Loaded")
