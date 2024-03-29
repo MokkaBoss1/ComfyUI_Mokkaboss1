@@ -1,3 +1,5 @@
+# https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
+
 import random
 import re
 

@@ -1,3 +1,4 @@
+# https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
 # Node to calculate the optimal output width and height based on an input width and height AND aspect ratio
 class OptimalCrop:
 
