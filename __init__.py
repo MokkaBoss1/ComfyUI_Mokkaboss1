@@ -1,15 +1,15 @@
-from ComfyUI-MokkaBoss1.nodes.DoubleClipTextEncode import DoubleClipTextEncode
-from ComfyUI-MokkaBoss1.nodes.HashText import HashText
-from ComfyUI-MokkaBoss1.nodes.IndoorBackgrounds import IndoorBackgrounds
-from ComfyUI-MokkaBoss1.nodes.LandscapeBackgrounds import LandscapeBackgrounds
-from ComfyUI-MokkaBoss1.nodes.NatureColours import NatureColours
-from ComfyUI-MokkaBoss1.nodes.OptimalCrop import OptimalCrop
-from ComfyUI-MokkaBoss1.nodes.seveninabox import seveninabox
-from ComfyUI-MokkaBoss1.nodes.UrbanColours import UrbanColours
-from ComfyUI-MokkaBoss1.nodes.X_In_a_Dress import X_In_a_Dress
-from ComfyUI-MokkaBoss1.nodes.X_In_a_Suit import X_In_a_Suit
-from ComfyUI-MokkaBoss1.nodes.WrapText import WrapText
-from ComfyUI-MokkaBoss1.nodes.AspectRatioCondition import AspectRatioCondition
+from ComfyUI_Mokkaboss1.nodes.DoubleClipTextEncode import DoubleClipTextEncode
+from ComfyUI_Mokkaboss1.nodes.HashText import HashText
+from ComfyUI_Mokkaboss1.nodes.IndoorBackgrounds import IndoorBackgrounds
+from ComfyUI_Mokkaboss1.nodes.LandscapeBackgrounds import LandscapeBackgrounds
+from ComfyUI_Mokkaboss1.nodes.NatureColours import NatureColours
+from ComfyUI_Mokkaboss1.nodes.OptimalCrop import OptimalCrop
+from ComfyUI_Mokkaboss1.nodes.seveninabox import seveninabox
+from ComfyUI_Mokkaboss1.nodes.UrbanColours import UrbanColours
+from ComfyUI_Mokkaboss1.nodes.X_In_a_Dress import X_In_a_Dress
+from ComfyUI_Mokkaboss1.nodes.X_In_a_Suit import X_In_a_Suit
+from ComfyUI_Mokkaboss1.nodes.WrapText import WrapText
+from ComfyUI_Mokkaboss1.nodes.AspectRatioCondition import AspectRatioCondition
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
