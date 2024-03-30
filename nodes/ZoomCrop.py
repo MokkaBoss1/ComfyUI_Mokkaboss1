@@ -36,7 +36,7 @@ class ZoomCrop:
         x = int((input_width - output_width) / 2)
         y = int((input_height - output_height) / 2)
         
-        x_new = x + x_offset
+        x_new = x - x_offset
         y_new = y + y_offset
         
         # now we have all the inputs for the crop: x_new, y_new, output_width & output_height
