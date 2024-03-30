@@ -117,7 +117,7 @@ class UrbanColours:
     RETURN_TYPES = ("STRING", )
     RETURN_NAMES = ("hex_colour", )
     FUNCTION = "UrbanColours"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Image"
 
     def UrbanColours(self, colour):
 

@@ -82,7 +82,7 @@ class NatureColours:
     RETURN_TYPES = ("STRING", )
     RETURN_NAMES = ("hex_colour", )
     FUNCTION = "NatureColours"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Image"
 
     def NatureColours(self, colour):
 

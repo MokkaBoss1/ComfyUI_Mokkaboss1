@@ -13,7 +13,7 @@ class seveninabox:
     RETURN_NAMES = ("Steps", "cfg", "sampler", "scheduler", "MODEL", "CLIP", "VAE", "settings")
     FUNCTION = "load_checkpoint"
 
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Other"
 
     @classmethod
     def INPUT_TYPES(cls):

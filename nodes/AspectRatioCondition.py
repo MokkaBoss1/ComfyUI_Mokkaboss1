@@ -17,7 +17,7 @@ class AspectRatioCondition:
     RETURN_TYPES = ("IMAGE",)
     RETURN_NAMES = ("Image",)
     FUNCTION = "test4"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Image"
 
     def test4(self, image, min, max): 
         _, height, width, _ = image.shape

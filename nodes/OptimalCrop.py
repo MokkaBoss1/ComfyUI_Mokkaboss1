@@ -19,7 +19,7 @@ class OptimalCrop:
     RETURN_TYPES = ("IMAGE", )
     RETURN_NAMES = ("crop_image", )
     FUNCTION = "Optimal_Crop"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Image"
 
     def Optimal_Crop(self, input_image, rounding, aspect_ratio, x_offset, y_offset):
 

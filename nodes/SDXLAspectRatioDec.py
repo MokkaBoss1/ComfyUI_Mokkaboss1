@@ -31,7 +31,7 @@ class SDXLAspectRatioDec:
     RETURN_TYPES = ("INT", "INT", "FLOAT")
     RETURN_NAMES = ("Width", "Height", "Ratio")
     FUNCTION = "SDXL_AspectRatio"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Image"
 
     def SDXL_AspectRatio(self, width, height, aspectRatio):
         if aspectRatio == "1:1  1024x1024 (1.00)":

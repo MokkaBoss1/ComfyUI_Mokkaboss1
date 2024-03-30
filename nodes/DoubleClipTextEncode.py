@@ -30,7 +30,7 @@ class DoubleClipTextEncode:
 
     FUNCTION = "double_encode"
     
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Text"
 
     def double_encode(self, clip, positive_prompt, negative_prompt):
 

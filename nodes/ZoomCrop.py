@@ -19,7 +19,7 @@ class ZoomCrop:
     RETURN_TYPES = ("IMAGE", )
     RETURN_NAMES = ("crop_image", )
     FUNCTION = "Zoom_Crop"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Image"
 
     def Zoom_Crop(self, input_image, rounding, zoom, x_offset, y_offset):
 
