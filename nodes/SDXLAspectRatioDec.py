@@ -28,8 +28,8 @@ class SDXLAspectRatioDec:
                     "21:9 1536x640  (2.40)"],)
             }
         }
-    RETURN_TYPES = ("INT", "INT")
-    RETURN_NAMES = ("Width", "Height")
+    RETURN_TYPES = ("INT", "INT", "FLOAT")
+    RETURN_NAMES = ("Width", "Height", "Ratio")
     FUNCTION = "SDXL_AspectRatio"
     CATEGORY = "👑 MokkaBoss1"
 
@@ -60,7 +60,10 @@ class SDXLAspectRatioDec:
             width, height = 1472, 704
         elif aspectRatio == "21:9 1536x640  (2.40)":
             width, height = 1536, 640
-        return(width, height)
+        
+        ratio = float(width/height)
+        
+        return(width, height, ratio)
 
             
 NODE_CLASS_MAPPINGS = {

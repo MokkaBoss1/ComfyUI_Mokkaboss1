@@ -8,8 +8,7 @@ class OptimalCrop:
     @classmethod
     def INPUT_TYPES(cls):        
         return {"required": {
-            "input_width": ("INT", {"default": 64, "min": 64, "max": 16000, "step": 1}),
-            "input_height": ("INT", {"default": 64, "min": 64, "max": 16000, "step": 1}),
+            "image": ("IMAGE", ),
             "rounding": ("INT", {"default": 1, "min": 1, "max": 64, "step": 1}),
             "aspect_ratio": ("FLOAT", {"default": 1.0, "min": 0, "max": 3.0, "step": 0.01}),
         }}
@@ -19,7 +18,9 @@ class OptimalCrop:
     FUNCTION = "Optimal_Crop"
     CATEGORY = "👑 MokkaBoss1"
 
-    def Optimal_Crop(self, input_width, input_height, rounding, aspect_ratio):
+    def Optimal_Crop(self, image, rounding, aspect_ratio):
+
+        _, input_height, input_width, _ = image.shape
     
         # Calculate output width based on input width and aspect ratio
         output_width = int(min(input_width, input_height * aspect_ratio))
