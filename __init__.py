@@ -27,7 +27,7 @@ NODE_CLASS_MAPPINGS = {
     "WrapText": WrapText,
     "AspectRatioCondition": AspectRatioCondition,
     "SDXLAspectRatioDec": SDXLAspectRatioDec,
-    "ZoomCrop" ZoomCrop,
+    "ZoomCrop": ZoomCrop,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
