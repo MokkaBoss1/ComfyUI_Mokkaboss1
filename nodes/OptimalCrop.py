@@ -47,7 +47,7 @@ class OptimalCrop:
 #        print(f"output height: {output_height}")
 
         # calculate delta to x_offset and y_offset
-        x_offset = x_offset + int((input_width-output_width)*0.5)
+        x_offset = int((input_width-output_width)*0.5) - x_offset
         y_offset = y_offset + int((input_height - output_height)*0.5)
  
 #        print(f"new x_offset: {x_offset}, new y_offset: {y_offset}")
