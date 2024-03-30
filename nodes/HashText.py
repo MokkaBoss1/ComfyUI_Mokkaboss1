@@ -17,7 +17,7 @@ class HashText:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("Text",)
     FUNCTION = "test"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Text"
 
     def test(self, prompt): 
         pattern = r"#(.*?)#"

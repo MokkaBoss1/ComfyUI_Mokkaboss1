@@ -17,7 +17,7 @@ class WrapText:
     RETURN_TYPES = ("STRING","STRING","STRING","STRING","STRING","STRING","STRING",)
     RETURN_NAMES = ("Line1","Line2","Line3","Line4","Line5","Line6","Line7",)
     FUNCTION = "test"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Text"
 
     def test(self, text, width): 
 

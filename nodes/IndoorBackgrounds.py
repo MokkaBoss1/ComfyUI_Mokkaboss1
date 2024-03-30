@@ -154,7 +154,7 @@ class IndoorBackgrounds:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("Positive Prompt",)
     FUNCTION = "test3"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Text"
     
     def test3(self, seed, pre_text, post_text, indoor_scene, indoor_mood, depth_focus, color_texture):
 

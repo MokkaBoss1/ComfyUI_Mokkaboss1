@@ -375,7 +375,7 @@ class X_In_a_Dress:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("Positive Prompt",)
     FUNCTION = "test3"
-    CATEGORY = "👑 MokkaBoss1"
+    CATEGORY = "👑 MokkaBoss1/Text"
 
     def test3(self, seed, pre_text, post_text, gender, ethnicity, hair_colour, hair_style, dress_style, dress_colour, pattern_or_texture):
 
