@@ -104,9 +104,7 @@
         }
       },
       "widgets_values": [
-        [
-          "linen ribbed off-shoulder midi dress, medium breasts,"
-        ],
+        "",
         "Mermaid dress, Dim and intimate Attic with vintage furniture"
       ],
       "color": "#223",
@@ -346,7 +344,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -417,7 +415,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 14,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -488,7 +486,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -561,7 +559,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -634,7 +632,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -707,7 +705,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -1356,51 +1354,16 @@
       "bgcolor": "#335"
     },
     {
-      "id": 386,
-      "type": "Bookmark (rgthree)",
-      "pos": {
-        "0": 4662,
-        "1": 12,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 210,
-        "1": 62
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {},
-      "widgets_values": [
-        "3",
-        0.6
-      ],
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": 1
-    },
-    {
       "id": 238,
       "type": "ShowText|pysssss",
       "pos": [
         5414.356360678502,
         293.9081098948869
       ],
-      "size": [
-        255.32001445509377,
-        200.17177795519672
-      ],
+      "size": {
+        "0": 255.32000732421875,
+        "1": 200.17178344726562
+      },
       "flags": {
         "collapsed": false
       },
@@ -1459,7 +1422,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 12,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -1523,10 +1486,10 @@
         6034.356360678502,
         295.9081098948869
       ],
-      "size": [
-        388.1355372410944,
-        330
-      ],
+      "size": {
+        "0": 388.1355285644531,
+        "1": 330
+      },
       "flags": {
         "collapsed": false
       },
@@ -1616,72 +1579,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 274,
-      "type": "Save Images Mikey",
-      "pos": [
-        6393.356360678502,
-        800.9081098948867
-      ],
-      "size": [
-        322.3395759837331,
-        574
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 35,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 560
-        },
-        {
-          "name": "filename_text_2",
-          "type": "STRING",
-          "link": 562,
-          "widget": {
-            "name": "filename_text_2"
-          }
-        },
-        {
-          "name": "sub_directory",
-          "type": "STRING",
-          "link": 575,
-          "widget": {
-            "name": "sub_directory"
-          }
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Save Images Mikey",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
-      "widgets_values": [
-        "",
-        "Final_",
-        "",
-        "",
-        "_",
-        "false",
-        "none",
-        0,
-        2,
-        4,
-        1,
-        "save_time",
-        3,
-        "Extra Metadata"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 275,
       "type": "JWDatetimeString",
       "pos": [
@@ -1695,7 +1592,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 1,
+      "order": 0,
       "mode": 0,
       "outputs": [
         {
@@ -1729,10 +1626,10 @@
         5901.356360678502,
         1091.908109894887
       ],
-      "size": [
-        353.72775862364506,
-        79.50162425081407
-      ],
+      "size": {
+        "0": 353.7277526855469,
+        "1": 79.50162506103516
+      },
       "flags": {
         "collapsed": false
       },
@@ -1797,7 +1694,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
@@ -1837,7 +1734,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "outputs": [
         {
@@ -1870,10 +1767,10 @@
         6723,
         22
       ],
-      "size": [
-        937.6521107297058,
-        1377.4699428479069
-      ],
+      "size": {
+        "0": 937.652099609375,
+        "1": 1377.469970703125
+      },
       "flags": {
         "collapsed": false
       },
@@ -1894,68 +1791,225 @@
       "shape": 1
     },
     {
-      "id": 272,
-      "type": "LoadImage",
+      "id": 273,
+      "type": "Reroute",
       "pos": [
-        4894,
-        66
+        5259,
+        550
+      ],
+      "size": [
+        90.4,
+        26
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 768,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            558
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": true,
+        "horizontal": false
+      },
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 271,
+      "type": "JWInteger",
+      "pos": [
+        6300,
+        19
       ],
       "size": {
         "0": 315,
-        "1": 313.99993896484375
+        "1": 58
       },
-      "flags": {
-        "collapsed": false
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            550,
+            551,
+            552,
+            553,
+            554,
+            555,
+            556
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Integer LINE OFFSET",
+      "properties": {
+        "Node name for S&R": "JWInteger"
       },
+      "widgets_values": [
+        38
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 261,
+      "type": "JWInteger",
+      "pos": [
+        5933,
+        18
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
       "order": 4,
       "mode": 0,
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "INT",
+          "type": "INT",
           "links": [
-            773
+            509,
+            544,
+            545,
+            546,
+            547,
+            548,
+            549
           ],
           "shape": 3,
           "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
         }
       ],
+      "title": "Integer FONT SIZE",
       "properties": {
-        "Node name for S&R": "LoadImage",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
+        "Node name for S&R": "JWInteger"
       },
       "widgets_values": [
-        "ComfyUI_temp_sqcnl_00011_ (2).png",
-        "image"
+        26
       ],
-      "color": "#223",
-      "bgcolor": "#335"
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 262,
+      "type": "JWInteger",
+      "pos": [
+        5577,
+        17
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            512,
+            515,
+            518,
+            521,
+            529,
+            534,
+            538
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Integer (POSITION Y)",
+      "properties": {
+        "Node name for S&R": "JWInteger"
+      },
+      "widgets_values": [
+        1824
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 267,
+      "type": "JWInteger",
+      "pos": [
+        5232,
+        18
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            523,
+            524,
+            525,
+            526,
+            527,
+            531,
+            535
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Integer (POSITION X)",
+      "properties": {
+        "Node name for S&R": "JWInteger"
+      },
+      "widgets_values": [
+        246
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
     },
     {
       "id": 241,
       "type": "HashText",
       "pos": [
-        4897,
-        421
+        4853,
+        479
       ],
-      "size": [
-        316.79255178224867,
-        193.8549408456421
-      ],
+      "size": {
+        "0": 316.79254150390625,
+        "1": 193.8549346923828
+      },
       "flags": {
         "collapsed": false
       },
-      "order": 5,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -1986,8 +2040,8 @@
       "id": 244,
       "type": "WrapText",
       "pos": [
-        5159,
-        738
+        5141,
+        741
       ],
       "size": {
         "0": 210,
@@ -2074,12 +2128,7 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "WrapText",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
+        "Node name for S&R": "WrapText"
       },
       "widgets_values": [
         "prompt",
@@ -2089,172 +2138,106 @@
       "bgcolor": "#653"
     },
     {
-      "id": 273,
-      "type": "Reroute",
+      "id": 274,
+      "type": "Save Images Mikey",
       "pos": [
-        5259,
-        550
+        6354,
+        804
       ],
-      "size": [
-        90.4,
-        26
-      ],
-      "flags": {},
-      "order": 11,
+      "size": {
+        "0": 322.3395690917969,
+        "1": 574
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
-          "name": "",
-          "type": "*",
-          "link": 768,
+          "name": "images",
+          "type": "IMAGE",
+          "link": 560
+        },
+        {
+          "name": "filename_text_2",
+          "type": "STRING",
+          "link": 562,
           "widget": {
-            "name": "value"
+            "name": "filename_text_2"
+          }
+        },
+        {
+          "name": "sub_directory",
+          "type": "STRING",
+          "link": 575,
+          "widget": {
+            "name": "sub_directory"
           }
         }
       ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            558
-          ],
-          "slot_index": 0
-        }
-      ],
       "properties": {
-        "showOutputText": true,
-        "horizontal": false
+        "Node name for S&R": "Save Images Mikey",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
       },
+      "widgets_values": [
+        "",
+        "Final_",
+        "",
+        "",
+        "_",
+        "false",
+        "none",
+        0,
+        2,
+        4,
+        1,
+        "save_time",
+        3,
+        "Extra Metadata"
+      ],
       "color": "#223",
       "bgcolor": "#335"
     },
     {
-      "id": 271,
-      "type": "JWInteger",
+      "id": 272,
+      "type": "LoadImage",
       "pos": [
-        6300,
-        19
+        4847,
+        106
       ],
-      "size": {
-        "0": 315,
-        "1": 58
+      "size": [
+        315,
+        314
+      ],
+      "flags": {
+        "collapsed": false
       },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            550,
-            551,
-            552,
-            553,
-            554,
-            555,
-            556
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Integer LINE OFFSET",
-      "properties": {
-        "Node name for S&R": "JWInteger",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
-      "widgets_values": [
-        38
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 261,
-      "type": "JWInteger",
-      "pos": [
-        5933,
-        18
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            509,
-            544,
-            545,
-            546,
-            547,
-            548,
-            549
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Integer FONT SIZE",
-      "properties": {
-        "Node name for S&R": "JWInteger",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
-      "widgets_values": [
-        26
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
-      "id": 262,
-      "type": "JWInteger",
-      "pos": [
-        5577,
-        17
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
       "order": 8,
       "mode": 0,
       "outputs": [
         {
-          "name": "INT",
-          "type": "INT",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            512,
-            515,
-            518,
-            521,
-            529,
-            534,
-            538
+            773
           ],
           "shape": 3,
           "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
         }
       ],
-      "title": "Integer (POSITION Y)",
       "properties": {
-        "Node name for S&R": "JWInteger",
+        "Node name for S&R": "LoadImage",
         "ttNbgOverride": {
           "color": "#223",
           "bgcolor": "#335",
@@ -2262,56 +2245,46 @@
         }
       },
       "widgets_values": [
-        1824
+        "ComfyUI_temp_sqcnl_00011_ (2).png",
+        "image"
       ],
-      "color": "#322",
-      "bgcolor": "#533"
+      "color": "#223",
+      "bgcolor": "#335"
     },
     {
-      "id": 267,
-      "type": "JWInteger",
-      "pos": [
-        5232,
-        18
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
+      "id": 386,
+      "type": "Bookmark (rgthree)",
+      "pos": {
+        "0": 4778,
+        "1": -95,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
       },
-      "flags": {},
+      "size": {
+        "0": 210,
+        "1": 62
+      },
+      "flags": {
+        "collapsed": true
+      },
       "order": 9,
       "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            523,
-            524,
-            525,
-            526,
-            527,
-            531,
-            535
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Integer (POSITION X)",
-      "properties": {
-        "Node name for S&R": "JWInteger",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
       "widgets_values": [
-        246
+        "3",
+        0.6
       ],
-      "color": "#322",
-      "bgcolor": "#533"
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": 1
     }
   ],
   "links": [
@@ -2878,48 +2851,12 @@
   ],
   "groups": [
     {
-      "title": "Group",
-      "bounding": [
-        1314,
-        9,
-        1829,
-        919
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "locked": false
-    },
-    {
-      "title": "Settings",
-      "bounding": [
-        -1590,
-        3291,
-        1132,
-        1174
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "locked": false
-    },
-    {
       "title": "Positioning Graphical Elements  (only for 9:16 images)",
       "bounding": [
         4772,
         -80,
         3122,
         1499
-      ],
-      "color": "#3f789e",
-      "font_size": 24,
-      "locked": false
-    },
-    {
-      "title": "Optimal Aspect Ratio",
-      "bounding": [
-        -1495,
-        -29,
-        1533,
-        1286
       ],
       "color": "#3f789e",
       "font_size": 24,
