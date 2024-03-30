@@ -15,11 +15,11 @@ class DoubleClipTextEncode:
                 "clip": ("CLIP",),
                 "positive_prompt": ("STRING", {
                      "multiline": True, #True if you want the field to look like the one on the ClipTextEncode node
-                     "default": "Pretty 21 year old European Woman,"
+                     "default": ""
                 }),
                 "negative_prompt": ("STRING", {
                      "multiline": True, #True if you want the field to look like the one on the ClipTextEncode node
-                     "default": "nsfw, nude, naked, nipples,"
+                     "default": "nsfw, watermark, text,"
                 }),
             }
         }
