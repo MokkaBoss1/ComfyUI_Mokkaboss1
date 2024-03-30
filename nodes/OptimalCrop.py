@@ -28,29 +28,29 @@ class OptimalCrop:
         # Calculate output width based on input width and aspect ratio
         output_width = int(min(input_width, input_height * aspect_ratio))
         
-        print(f"input_width: {input_width}")
-        print(f"input_height: {input_height}")
+#        print(f"input_width: {input_width}")
+#        print(f"input_height: {input_height}")
         
-        print(f"output width: {output_width}")        
+#        print(f"output width: {output_width}")        
         
         # Calculate output height based on output width and aspect ratio
         output_height = int(output_width / aspect_ratio)
         
-        print(f"output height: {output_height}")
+#        print(f"output height: {output_height}")
         
         # Ensure both width and height are divisible by 16
         output_width = output_width - (output_width % rounding)
         output_height = output_height - (output_height % rounding)
         
-        print("After Rounding")
-        print(f"output width: {output_width}") 
-        print(f"output height: {output_height}")
+#        print("After Rounding")
+#        print(f"output width: {output_width}") 
+#        print(f"output height: {output_height}")
 
         # calculate delta to x_offset and y_offset
         x_offset = x_offset + int((input_width-output_width)*0.5)
         y_offset = y_offset + int((input_height - output_height)*0.5)
  
-        print(f"new x_offset: {x_offset}, new y_offset: {y_offset}")
+#        print(f"new x_offset: {x_offset}, new y_offset: {y_offset}")
  
         # Calculate the actual cropping area based on the aspect ratio and offsets
         crop_x1 = max(0, min(input_width - output_width, x_offset))
