@@ -96,7 +96,6 @@
         [
           "light brown egyptian bob hairstyle, wearing a lemon coloured"
         ],
-        "light brown egyptian bob hairstyle, wearing a lemon coloured",
         "hairstyle, wearing a crimson coloured tartan belted shirt"
       ],
       "color": "#2a363b",
@@ -148,7 +147,6 @@
         [
           "linen ribbed off-shoulder midi dress, medium breasts,"
         ],
-        "linen ribbed off-shoulder midi dress, medium breasts,",
         "dress, cinematic still . emotional, harmonious, vignette,"
       ],
       "color": "#2a363b",
@@ -200,7 +198,6 @@
         [
           "cleavage, (plain gradient background:1.5) . high fashion,"
         ],
-        "cleavage, (plain gradient background:1.5) . high fashion,",
         "highly detailed, high budget, bokeh, cinemascope, moody,"
       ],
       "color": "#2a363b",
@@ -252,7 +249,6 @@
         [
           "luxurious, extravagant, stylish, sensual, opulent, elegance,"
         ],
-        "luxurious, extravagant, stylish, sensual, opulent, elegance,",
         "epic, gorgeous, film grain, grainy, glamorous photo . high"
       ],
       "color": "#2a363b",
@@ -304,7 +300,6 @@
         [
           "stunning beauty, professional, high contrast, detailed,"
         ],
-        "stunning beauty, professional, high contrast, detailed,",
         "fashion, luxurious, extravagant, stylish, sensual, opulent,"
       ],
       "color": "#2a363b",
@@ -356,7 +351,6 @@
         [
           ""
         ],
-        "",
         "elegance, stunning beauty, professional, high contrast,"
       ],
       "color": "#2a363b",
@@ -2658,7 +2652,7 @@
         "",
         "",
         "",
-        9367005907628,
+        503548687487011,
         "randomize",
         0,
         "%Y-%m-%d-%H%M%S"
@@ -2899,7 +2893,7 @@
         "Node name for S&R": "Seed Everywhere"
       },
       "widgets_values": [
-        1197,
+        1201,
         "increment"
       ],
       "color": "#2a363b",
@@ -3011,8 +3005,8 @@
       },
       "widgets_values": [
         [
-          "/view?filename=rgthree.compare._temp_kpxku_00011_.png&type=temp&subfolder=&rand=0.476157711633991",
-          "/view?filename=rgthree.compare._temp_kpxku_00012_.png&type=temp&subfolder=&rand=0.7936139476590893"
+          "/view?filename=rgthree.compare._temp_fbrzq_00005_.png&type=temp&subfolder=&rand=0.6505724117914113",
+          "/view?filename=rgthree.compare._temp_fbrzq_00006_.png&type=temp&subfolder=&rand=0.8674315035031082"
         ]
       ],
       "color": "#2a363b",
@@ -3385,7 +3379,7 @@
       "widgets_values": [
         64,
         64,
-        "9:16 768x1344  (0.57)"
+        "2:3  832x1216  (0.68)"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -4258,7 +4252,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        377853002208335,
+        74933485699561,
         "randomize",
         20,
         7,
@@ -4340,7 +4334,7 @@
         "Node name for S&R": "Preview Chooser"
       },
       "widgets_values": [
-        "Always pause",
+        "Pass through",
         1,
         "",
         ""
@@ -4713,7 +4707,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "\n, glitch, sketch, painting, graphic, mutated, deformed, cartoon, ugly, crayon, distorted, grainy, plain, anime, disfigured, noisy, abstract, graphite, blurry, low contrast, dull, modest, text"
+        "\n, painting, low contrast, blurry, grainy, plain, mutated, noisy, distorted, dull, cartoon, ugly, deformed, disfigured, text, graphite, sketch, graphic, modest, anime, glitch, crayon, abstract"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -4958,7 +4952,7 @@
         "Node name for S&R": "X_In_a_Suit"
       },
       "widgets_values": [
-        668575119337098,
+        540572113499314,
         "randomize",
         "21 year old",
         "",
@@ -5005,7 +4999,7 @@
         "Node name for S&R": "IndoorBackgrounds"
       },
       "widgets_values": [
-        1077,
+        1081,
         "increment",
         "",
         "",
@@ -5765,7 +5759,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        222671908005014,
+        114331552378998,
         "randomize",
         20,
         7,
@@ -6002,6 +5996,144 @@
       "shape": 1
     },
     {
+      "id": 217,
+      "type": "LoadImage",
+      "pos": [
+        -610.9680415447729,
+        1245.8884845580399
+      ],
+      "size": {
+        "0": 315,
+        "1": 314.00006103515625
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 29,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            444
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Load Image (Black Background)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "empty frame.png",
+        "image"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 218,
+      "type": "LoadImage",
+      "pos": [
+        -608.9680415447729,
+        1295.8884845580399
+      ],
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 30,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            455
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            456
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "title": "Load Image (Photo Frame)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "picture frame with 5% rounded corner.png",
+        "image"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 219,
+      "type": "LoadImage",
+      "pos": [
+        -605.9680415447729,
+        1347.8884845580399
+      ],
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 31,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            443
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Load Image (Text Frame)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "textwindow.png",
+        "image"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
       "id": 225,
       "type": "Image Overlay",
       "pos": [
@@ -6199,7 +6331,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 29,
+      "order": 32,
       "mode": 0,
       "outputs": [
         {
@@ -6241,7 +6373,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 30,
+      "order": 33,
       "mode": 0,
       "outputs": [
         {
@@ -6283,7 +6415,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 31,
+      "order": 34,
       "mode": 0,
       "outputs": [
         {
@@ -6325,7 +6457,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 32,
+      "order": 35,
       "mode": 0,
       "outputs": [
         {
@@ -6529,7 +6661,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 33,
+      "order": 36,
       "mode": 0,
       "outputs": [
         {
@@ -6793,7 +6925,7 @@
         "1": 443.73388671875
       },
       "flags": {},
-      "order": 34,
+      "order": 37,
       "mode": 0,
       "outputs": [
         {
@@ -7013,7 +7145,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 35,
+      "order": 38,
       "mode": 0,
       "outputs": [
         {
@@ -7049,7 +7181,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 36,
+      "order": 39,
       "mode": 0,
       "outputs": [
         {
@@ -7087,7 +7219,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 37,
+      "order": 40,
       "mode": 0,
       "outputs": [
         {
@@ -7119,7 +7251,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 38,
+      "order": 41,
       "mode": 0,
       "outputs": [
         {
@@ -7165,7 +7297,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 39,
+      "order": 42,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -7340,7 +7472,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 40,
+      "order": 43,
       "mode": 0,
       "outputs": [
         {
@@ -7378,7 +7510,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 41,
+      "order": 44,
       "mode": 0,
       "outputs": [
         {
@@ -7395,7 +7527,7 @@
         "Node name for S&R": "X_In_a_Dress"
       },
       "widgets_values": [
-        189358029952917,
+        189358029952921,
         "increment",
         "21 year old",
         "",
@@ -7498,7 +7630,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 42,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
@@ -7567,7 +7699,7 @@
         "1": 687.1322631835938
       },
       "flags": {},
-      "order": 43,
+      "order": 46,
       "mode": 0,
       "outputs": [
         {
@@ -7598,144 +7730,6 @@
       "shape": 1
     },
     {
-      "id": 217,
-      "type": "LoadImage",
-      "pos": [
-        -611,
-        1246
-      ],
-      "size": {
-        "0": 315,
-        "1": 314.00006103515625
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 44,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            444
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "Load Image (Black Background)",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "empty frame.png",
-        "image"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 218,
-      "type": "LoadImage",
-      "pos": [
-        -609,
-        1296
-      ],
-      "size": {
-        "0": 315,
-        "1": 314
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 45,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            455
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            456
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "title": "Load Image (Photo Frame)",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "picture frame with 5% rounded corner.png",
-        "image"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 219,
-      "type": "LoadImage",
-      "pos": [
-        -606,
-        1348
-      ],
-      "size": {
-        "0": 315,
-        "1": 314
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 46,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            443
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "Load Image (Text Frame)",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "textwindow.png",
-        "image"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
       "id": 420,
       "type": "Note",
       "pos": [
@@ -7753,7 +7747,7 @@
         "text": ""
       },
       "widgets_values": [
-        "Preparation Steps:\n\n1. Install MokkaBoss1 Node Suite and any others missing using the ComfyUI-Manager \"Missing Nodes\" feature\n\n2. The seveninabox node requires personalisation of sampler settings. You need to ammend the \"..ComfyUI_Mokkaboss1\\model_settings\\model_data.py\" to fit with the models you use and ammend the settings you use. Then you will always have these default setting available as soon as you change the model.\n\n3. Switch comfy to \"Link Render Mode\" hidden to hide all the noodles. This can be found under the settings (Gear Icon above Queue Prompt)\n\n4. Include the Images needed to run the flow. I have provide example images\n    A) Example Input for Image to Image (I2I_Input.png) found in the same folder as this workflow.\n    B) Example Input for Background (I2I_Background.png) founf in the same folder as this workflow.\n    C) If you want to use section 6 which generates a slideshow image for 1080p vertical monitors:\n        C1) Black_Background.png\n        C2) White_PhotoFrame.png\n        C3) White_TextFrame.png\n\nRunning the Workflow:\n\nThe nodes are pinned to avoid unwanted moving around and disturbing the karma. The colour scheme is as follows. Nodes that provide a choice for the workflow flow are coloured yellow. Nodes that are meant to be opened and collapsed (revealing other nodes behind) are in purple. The rest of the nodes are in light blue.\n\nThere are some choices along the way\n\n1. Choice 1A - Ability to select between a Image to Image and Text to Image\n2. Choice 1B - (relevant only if Image to Image is selected in 1A) allows you to keep the image background or it replace it and if you want to replace it you have the choice to either replace with a generated gradient colour background or another separate background image.\n3. Choice 2A - This allows you to select the subject in the photo (wearing female clothes or male clothes)\n4. Choice 2B - This allows you to select the custom background (indoor, outdoor or custom)\n\nLast important point there is a node called \"AspectRatioCondition\" that checks if the image is 9:16 required for running section 6 of the workflow. If the image is not 9:16 the workflow will terminate  at this stage. If you don't like this, you can remove or deactivate this node and section 6 along with it. \n\nWhen you run the workflow, it will stop at the step \"Preview Chooser\". You need to highlight the image and press \"Progress selected Image\" or \"Cancel current run\". Alternatively you can of course just set this to \"pass through\" and then it won't stop each time. This is good if you are using the auto-queue feature.\n\nhope you get some use from this workflow\n\nMokkaBoss1"
+        "Preparation Steps:\n\n1. Install MokkaBoss1 Node Suite and any others missing using the ComfyUI-Manager \"Missing Nodes\" feature\n\n2. The seveninabox node requires personalisation of sampler settings. You need to ammend the \"..ComfyUI_Mokkaboss1\\model_settings\\model_data.py\" to fit with the models you use and ammend the settings you use. Then you will always have these default setting available as soon as you change the model.\n\n3. Switch comfy to \"Link Render Mode\" hidden to hide all the noodles. This can be found under the settings (Gear Icon above Queue Prompt)\n\n4. Include the Images needed to run the flow. I have provide example images\n    A) Example Input for Image to Image (I2I_Input.png) found in the same folder as this workflow.\n    B) Example Input for Background (I2I_Background.png) founf in the same folder as this workflow.\n    C) If you want to use section 6 which generates a slideshow image for 1080p vertical monitors:\n        C1) Black_Background.png\n        C2) White_PhotoFrame.png\n        C3) White_TextFrame.png\n\nRunning the Workflow:\n\nThe nodes are pinned to avoid unwanted moving around and disturbing the karma. The colour scheme is as follows. Nodes that provide a choice for the workflow flow are coloured yellow. Nodes that are meant to be opened and collapsed (revealing other nodes behind) are in purple. The rest of the nodes are in light blue.\n\nThere are some choices along the way\n\n1. Choice 1A - Ability to select between a Image to Image and Text to Image\n2. Choice 1B - (relevant only if Image to Image is selected in 1A) allows you to keep the image background or it replace it and if you want to replace it you have the choice to either replace with a generated gradient colour background or another separate background image.\n3. Choice 2A - This allows you to select the subject in the photo (wearing female clothes or male clothes)\n4. Choice 2B - This allows you to select the custom background (indoor, outdoor or custom)\n\nLast important point there is a node called \"AspectRatioCondition\" that checks if the image is 9:16 required for running section 6 of the workflow. If the image is not 9:16 the workflow will terminate  at this stage. This feature still allows auto queue. \n\nWhen you run the workflow, it will stop at the step \"Preview Chooser\". You need to highlight the image and press \"Progress selected Image\" or \"Cancel current run\". Alternatively you can of course just set this to \"pass through\" and then it won't stop each time. This is good if you are using the auto-queue feature.\n\nhope you get some use from this workflow\n\nMokkaBoss1"
       ],
       "color": "#222",
       "bgcolor": "#000"
