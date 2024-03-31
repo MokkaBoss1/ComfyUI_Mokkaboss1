@@ -11,9 +11,9 @@ multi_field_list = [
     [9, 'realvisxlV40_v40Bakedvae.safetensors', 30, 4.0, 'dpmpp_2m', 'karras'],
     [10, 'realvisxlV40_v40LightningBakedvae.safetensors', 5, 1.5, 'dpmpp_sde', 'karras'],
     [11, 'juggernautXL_v8Rundiffusion.safetensors', 30, 4.0, 'dpmpp_2m', 'karras'],
-    [12, 'MOHAWK_v20.safetensors', 30, 3.25, 'dpmpp_3m_sde', 'exponential'],
-    [13, 'BastardV1.safetensors', 30, 3.00, ''dpmpp_3m_sde', 'exponential'],
-    [14, 'sleipnirSDXLTurbo_v125.safetensors', 7, 3.00, 'dpmpp_3m_sde', 'exponential']
+#    [12, 'MOHAWK_v20.safetensors', 30, 3.25, 'dpmpp_3m_sde', 'exponential'],
+#    [13, 'BastardV1.safetensors', 30, 3.00, ''dpmpp_3m_sde', 'exponential'],
+#    [14, 'sleipnirSDXLTurbo_v125.safetensors', 7, 3.00, 'dpmpp_3m_sde', 'exponential']
     
     # Add more rows as needed
 ]
