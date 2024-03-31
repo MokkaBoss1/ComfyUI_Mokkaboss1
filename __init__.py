@@ -12,6 +12,7 @@ from ComfyUI_Mokkaboss1.nodes.WrapText import WrapText
 from ComfyUI_Mokkaboss1.nodes.AspectRatioCondition import AspectRatioCondition
 from ComfyUI_Mokkaboss1.nodes.SDXLAspectRatioDec import SDXLAspectRatioDec
 from ComfyUI_Mokkaboss1.nodes.ZoomCrop import ZoomCrop
+from ComfyUI_Mokkaboss1.nodes.IntFloatDict import IntFloatDict
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -28,6 +29,7 @@ NODE_CLASS_MAPPINGS = {
     "AspectRatioCondition": AspectRatioCondition,
     "SDXLAspectRatioDec": SDXLAspectRatioDec,
     "ZoomCrop": ZoomCrop,
+    "IntFloatDict": IntFloatDict,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -44,5 +46,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "AspectRatioCondition": "👑 AspectRatioCondition",
     "SDXLAspectRatioDec": "👑 SDXLAspectRatioDec",
     "ZoomCrop": "👑 ZoomCrop",
+    "IntFloatDict": "👑 IntFloatDict",
 }
 print ("👑 Mokkaboss1 Custom Nodes: Loaded")
