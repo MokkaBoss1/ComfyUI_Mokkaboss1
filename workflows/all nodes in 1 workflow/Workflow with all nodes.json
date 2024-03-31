@@ -1,6 +1,6 @@
 {
-  "last_node_id": 431,
-  "last_link_id": 838,
+  "last_node_id": 438,
+  "last_link_id": 857,
   "nodes": [
     {
       "id": 238,
@@ -16,7 +16,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 96,
+      "order": 99,
       "mode": 0,
       "inputs": [
         {
@@ -65,7 +65,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 97,
+      "order": 100,
       "mode": 0,
       "inputs": [
         {
@@ -93,9 +93,7 @@
         "Node name for S&R": "ShowText|pysssss"
       },
       "widgets_values": [
-        [
-          "light brown egyptian bob hairstyle, wearing a lemon coloured"
-        ],
+        "",
         "hairstyle, dressed in red belted short dresscinematic still"
       ],
       "color": "#2a363b",
@@ -116,7 +114,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 98,
+      "order": 101,
       "mode": 0,
       "inputs": [
         {
@@ -167,7 +165,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 99,
+      "order": 102,
       "mode": 0,
       "inputs": [
         {
@@ -218,7 +216,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 100,
+      "order": 103,
       "mode": 0,
       "inputs": [
         {
@@ -269,7 +267,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 101,
+      "order": 104,
       "mode": 0,
       "inputs": [
         {
@@ -320,7 +318,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 102,
+      "order": 105,
       "mode": 0,
       "inputs": [
         {
@@ -351,7 +349,7 @@
         [
           ""
         ],
-        "beauty, professional, high contrast, detailed, standing in a"
+        "beauty, professional, high contrast, detailed, Ethereal"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -371,7 +369,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 53,
+      "order": 55,
       "mode": 0,
       "inputs": [
         {
@@ -442,7 +440,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 54,
+      "order": 56,
       "mode": 0,
       "inputs": [
         {
@@ -513,7 +511,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 55,
+      "order": 57,
       "mode": 0,
       "inputs": [
         {
@@ -584,7 +582,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 56,
+      "order": 58,
       "mode": 0,
       "inputs": [
         {
@@ -657,7 +655,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 57,
+      "order": 59,
       "mode": 0,
       "inputs": [
         {
@@ -730,7 +728,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 58,
+      "order": 60,
       "mode": 0,
       "inputs": [
         {
@@ -803,7 +801,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 59,
+      "order": 61,
       "mode": 0,
       "inputs": [
         {
@@ -876,7 +874,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 134,
+      "order": 137,
       "mode": 0,
       "inputs": [
         {
@@ -971,7 +969,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 135,
+      "order": 138,
       "mode": 0,
       "inputs": [
         {
@@ -1065,7 +1063,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 136,
+      "order": 139,
       "mode": 0,
       "inputs": [
         {
@@ -1159,7 +1157,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 137,
+      "order": 140,
       "mode": 0,
       "inputs": [
         {
@@ -1253,7 +1251,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 138,
+      "order": 141,
       "mode": 0,
       "inputs": [
         {
@@ -1347,7 +1345,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 139,
+      "order": 142,
       "mode": 0,
       "inputs": [
         {
@@ -1441,7 +1439,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 140,
+      "order": 143,
       "mode": 0,
       "inputs": [
         {
@@ -1611,7 +1609,7 @@
         26
       ],
       "flags": {},
-      "order": 85,
+      "order": 88,
       "mode": 0,
       "inputs": [
         {
@@ -1655,7 +1653,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 93,
+      "order": 96,
       "mode": 0,
       "inputs": [
         {
@@ -1757,7 +1755,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 141,
+      "order": 144,
       "mode": 0,
       "inputs": [
         {
@@ -1787,7 +1785,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 124,
+      "order": 127,
       "mode": 4,
       "inputs": [
         {
@@ -1932,7 +1930,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 125,
+      "order": 128,
       "mode": 0,
       "inputs": [
         {
@@ -1993,7 +1991,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 142,
+      "order": 145,
       "mode": 0,
       "inputs": [
         {
@@ -2092,7 +2090,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 49,
+      "order": 51,
       "mode": 0,
       "inputs": [
         {
@@ -2227,7 +2225,7 @@
         26
       ],
       "flags": {},
-      "order": 130,
+      "order": 133,
       "mode": 0,
       "inputs": [
         {
@@ -2268,7 +2266,7 @@
       "flags": {
         "pinned": true
       },
-      "order": 129,
+      "order": 132,
       "mode": 0,
       "inputs": [
         {
@@ -2343,7 +2341,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 71,
+      "order": 74,
       "mode": 0,
       "inputs": [
         {
@@ -2412,7 +2410,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 72,
+      "order": 75,
       "mode": 0,
       "inputs": [
         {
@@ -2481,7 +2479,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 73,
+      "order": 76,
       "mode": 0,
       "inputs": [
         {
@@ -2590,7 +2588,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 87,
+      "order": 90,
       "mode": 0,
       "inputs": [
         {
@@ -2652,7 +2650,7 @@
         "",
         "",
         "",
-        832580297624744,
+        24519854545559,
         "randomize",
         0,
         "%Y-%m-%d-%H%M%S"
@@ -2745,7 +2743,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 113,
+      "order": 116,
       "mode": 0,
       "inputs": [
         {
@@ -2888,12 +2886,12 @@
         }
       ],
       "properties": {
+        "Node name for S&R": "Seed Everywhere",
         "group_restricted": false,
-        "color_restricted": false,
-        "Node name for S&R": "Seed Everywhere"
+        "color_restricted": false
       },
       "widgets_values": [
-        1213,
+        1234,
         "increment"
       ],
       "color": "#2a363b",
@@ -2914,7 +2912,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 50,
+      "order": 52,
       "mode": 0,
       "inputs": [
         {
@@ -2979,7 +2977,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 123,
+      "order": 126,
       "mode": 0,
       "inputs": [
         {
@@ -3005,8 +3003,8 @@
       },
       "widgets_values": [
         [
-          "/view?filename=rgthree.compare._temp_fbrzq_00015_.png&type=temp&subfolder=&rand=0.5716808558226367",
-          "/view?filename=rgthree.compare._temp_fbrzq_00016_.png&type=temp&subfolder=&rand=0.6443856585949146"
+          "/view?filename=rgthree.compare._temp_ilhop_00003_.png&type=temp&subfolder=&rand=0.8147424996559751",
+          "/view?filename=rgthree.compare._temp_ilhop_00004_.png&type=temp&subfolder=&rand=0.656470676996112"
         ]
       ],
       "color": "#2a363b",
@@ -3027,7 +3025,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 86,
+      "order": 89,
       "mode": 0,
       "inputs": [
         {
@@ -3041,7 +3039,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        " pretty 21 year old blonde European woman with curtain bangs hairstyle, dressed in red belted short dresscinematic still . emotional, harmonious, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy, glamorous photo . high fashion, luxurious, extravagant, stylish, sensual, opulent, elegance, stunning beauty, professional, high contrast, detailed,  standing in a luxury hotel lobby"
+        " pretty 21 year old blonde European woman with curtain bangs hairstyle, dressed in red belted short dresscinematic still . emotional, harmonious, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy, glamorous photo . high fashion, luxurious, extravagant, stylish, sensual, opulent, elegance, stunning beauty, professional, high contrast, detailed,  Ethereal Caves Misty day with glowing light during sunrise Romantic background slightly blurred Balanced, Orderly, Balanced details, Structured background, "
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -3096,7 +3094,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 128,
+      "order": 131,
       "mode": 4,
       "inputs": [
         {
@@ -3193,7 +3191,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 51,
+      "order": 53,
       "mode": 0,
       "inputs": [
         {
@@ -3249,7 +3247,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 127,
+      "order": 130,
       "mode": 0,
       "inputs": [
         {
@@ -3296,7 +3294,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 77,
+      "order": 80,
       "mode": 0,
       "inputs": [
         {
@@ -3386,106 +3384,6 @@
       "shape": 1
     },
     {
-      "id": 409,
-      "type": "OptimalCrop",
-      "pos": [
-        -2902.28646357442,
-        467.8283281908436
-      ],
-      "size": {
-        "0": 272.6552734375,
-        "1": 126
-      },
-      "flags": {},
-      "order": 66,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "input_image",
-          "type": "IMAGE",
-          "link": 788
-        },
-        {
-          "name": "aspect_ratio",
-          "type": "FLOAT",
-          "link": 787,
-          "widget": {
-            "name": "aspect_ratio"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "crop_image",
-          "type": "IMAGE",
-          "links": [
-            819
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "OptimalCrop"
-      },
-      "widgets_values": [
-        1,
-        1,
-        0,
-        0
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 325,
-      "type": "ImageScaleToTotalPixels",
-      "pos": [
-        -2895.28646357442,
-        814.828328190843
-      ],
-      "size": {
-        "0": 259.8416748046875,
-        "1": 140.7783203125
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 78,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 820
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            807,
-            808,
-            809
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageScaleToTotalPixels"
-      },
-      "widgets_values": [
-        "nearest-exact",
-        1
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
       "id": 30,
       "type": "LoraLoader",
       "pos": [
@@ -3554,7 +3452,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 76,
+      "order": 79,
       "mode": 0,
       "inputs": [
         {
@@ -3617,7 +3515,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 80,
+      "order": 83,
       "mode": 0,
       "inputs": [
         {
@@ -3710,58 +3608,6 @@
       "shape": 1
     },
     {
-      "id": 368,
-      "type": "CR Color Gradient",
-      "pos": [
-        -2453.5240412647045,
-        1532.9458678665585
-      ],
-      "size": {
-        "0": 315,
-        "1": 270
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 15,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            714
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR Color Gradient"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        "white",
-        "black",
-        1,
-        0.5,
-        "vertical",
-        "#000000",
-        "#000000"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
       "id": 367,
       "type": "JoinImages",
       "pos": [
@@ -3775,7 +3621,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 81,
+      "order": 84,
       "mode": 0,
       "inputs": [
         {
@@ -3824,7 +3670,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 91,
+      "order": 94,
       "mode": 0,
       "inputs": [
         {
@@ -3874,7 +3720,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "outputs": [
         {
@@ -3912,7 +3758,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 82,
+      "order": 85,
       "mode": 0,
       "inputs": [
         {
@@ -3970,7 +3816,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 104,
+      "order": 107,
       "mode": 0,
       "inputs": [
         {
@@ -4031,7 +3877,7 @@
         "1": 72.72769165039062
       },
       "flags": {},
-      "order": 94,
+      "order": 97,
       "mode": 0,
       "inputs": [
         {
@@ -4069,15 +3915,15 @@
         -877,
         147
       ],
-      "size": {
-        "0": 472.9056091308594,
-        "1": 803.236572265625
-      },
+      "size": [
+        472.9056091308594,
+        803.236572265625
+      ],
       "flags": {
         "collapsed": false,
         "pinned": true
       },
-      "order": 111,
+      "order": 114,
       "mode": 0,
       "inputs": [
         {
@@ -4098,7 +3944,7 @@
         {
           "name": "latent_image",
           "type": "LATENT",
-          "link": 609
+          "link": 844
         },
         {
           "name": "optional_vae",
@@ -4151,6 +3997,14 @@
           "link": null,
           "widget": {
             "name": "seed"
+          }
+        },
+        {
+          "name": "denoise",
+          "type": "FLOAT",
+          "link": 853,
+          "widget": {
+            "name": "denoise"
           }
         }
       ],
@@ -4207,7 +4061,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        496766151950257,
+        1043528549316321,
         "randomize",
         20,
         7,
@@ -4237,7 +4091,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 108,
+      "order": 111,
       "mode": 0,
       "inputs": [
         {
@@ -4289,7 +4143,7 @@
         "Node name for S&R": "Preview Chooser"
       },
       "widgets_values": [
-        "Always pause",
+        "Pass through",
         1,
         "",
         ""
@@ -4313,7 +4167,7 @@
         "collapsed": true,
         "pinned": true
       },
-      "order": 17,
+      "order": 16,
       "mode": 0,
       "outputs": [
         {
@@ -4356,7 +4210,7 @@
         26
       ],
       "flags": {},
-      "order": 60,
+      "order": 62,
       "mode": 0,
       "inputs": [
         {
@@ -4398,7 +4252,7 @@
         26
       ],
       "flags": {},
-      "order": 61,
+      "order": 63,
       "mode": 0,
       "inputs": [
         {
@@ -4440,7 +4294,7 @@
         26
       ],
       "flags": {},
-      "order": 62,
+      "order": 64,
       "mode": 0,
       "inputs": [
         {
@@ -4482,7 +4336,7 @@
         26
       ],
       "flags": {},
-      "order": 63,
+      "order": 65,
       "mode": 0,
       "inputs": [
         {
@@ -4524,7 +4378,7 @@
         26
       ],
       "flags": {},
-      "order": 64,
+      "order": 66,
       "mode": 0,
       "inputs": [
         {
@@ -4566,7 +4420,7 @@
         26
       ],
       "flags": {},
-      "order": 65,
+      "order": 67,
       "mode": 0,
       "inputs": [
         {
@@ -4610,7 +4464,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "outputs": [
         {
@@ -4648,7 +4502,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 88,
+      "order": 91,
       "mode": 0,
       "inputs": [
         {
@@ -4662,7 +4516,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "\n, painting, low contrast, blurry, grainy, plain, mutated, noisy, distorted, dull, cartoon, ugly, deformed, disfigured, text, graphite, sketch, graphic, modest, anime, glitch, crayon, abstract"
+        "\n, graphite, ugly, low contrast, plain, modest, painting, blurry, sketch, disfigured, glitch, distorted, text, mutated, cartoon, abstract, grainy, noisy, deformed, anime, graphic, dull, crayon"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -4682,7 +4536,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 70,
+      "order": 73,
       "mode": 0,
       "inputs": [
         {
@@ -4716,7 +4570,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 52,
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
@@ -4825,58 +4679,6 @@
       "shape": 1
     },
     {
-      "id": 413,
-      "type": "Blend",
-      "pos": [
-        -2112,
-        283
-      ],
-      "size": {
-        "0": 218.74041748046875,
-        "1": 132.48150634765625
-      },
-      "flags": {
-        "collapsed": false,
-        "pinned": false
-      },
-      "order": 107,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image1",
-          "type": "IMAGE",
-          "link": 814
-        },
-        {
-          "name": "image2",
-          "type": "IMAGE",
-          "link": 815
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            804
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Blend Image 2 Image",
-      "properties": {
-        "Node name for S&R": "Blend"
-      },
-      "widgets_values": [
-        0.3,
-        "normal"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
       "id": 392,
       "type": "X_In_a_Suit",
       "pos": [
@@ -4890,7 +4692,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "outputs": [
         {
@@ -4907,7 +4709,7 @@
         "Node name for S&R": "X_In_a_Suit"
       },
       "widgets_values": [
-        67194597134967,
+        602815085818670,
         "randomize",
         "21 year old",
         "",
@@ -4937,7 +4739,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "outputs": [
         {
@@ -4954,7 +4756,7 @@
         "Node name for S&R": "IndoorBackgrounds"
       },
       "widgets_values": [
-        1093,
+        1114,
         "increment",
         "",
         "",
@@ -4962,52 +4764,6 @@
         "Dim and intimate",
         "Bokeh background",
         "Warm & Tactile: Rich tones, cozy texture"
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
-      "shape": 1
-    },
-    {
-      "id": 147,
-      "type": "LandscapeBackgrounds",
-      "pos": [
-        -1675,
-        272
-      ],
-      "size": {
-        "0": 353.33026123046875,
-        "1": 583.9744873046875
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 21,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "Positive Prompt",
-          "type": "STRING",
-          "links": [
-            289
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LandscapeBackgrounds"
-      },
-      "widgets_values": [
-        1030,
-        "fixed",
-        "",
-        "",
-        "Ethereal",
-        "Historical landmark",
-        "Misty day with glowing light during sunrise",
-        "Romantic",
-        "background slightly blurred",
-        "Balanced, Orderly, Balanced details, Structured background"
       ],
       "color": "#323",
       "bgcolor": "#535",
@@ -5035,7 +4791,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 20,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5071,7 +4827,7 @@
         "collapsed": true,
         "pinned": false
       },
-      "order": 23,
+      "order": 21,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5106,7 +4862,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 24,
+      "order": 22,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5131,7 +4887,7 @@
         26
       ],
       "flags": {},
-      "order": 89,
+      "order": 92,
       "mode": 0,
       "inputs": [
         {
@@ -5170,7 +4926,7 @@
         26
       ],
       "flags": {},
-      "order": 90,
+      "order": 93,
       "mode": 0,
       "inputs": [
         {
@@ -5211,7 +4967,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 23,
       "mode": 0,
       "outputs": [
         {
@@ -5249,7 +5005,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 116,
+      "order": 119,
       "mode": 0,
       "inputs": [
         {
@@ -5296,7 +5052,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 117,
+      "order": 120,
       "mode": 0,
       "inputs": [
         {
@@ -5339,7 +5095,7 @@
         26
       ],
       "flags": {},
-      "order": 114,
+      "order": 117,
       "mode": 0,
       "inputs": [
         {
@@ -5380,7 +5136,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 120,
+      "order": 123,
       "mode": 0,
       "inputs": [
         {
@@ -5424,7 +5180,7 @@
         26
       ],
       "flags": {},
-      "order": 112,
+      "order": 115,
       "mode": 0,
       "inputs": [
         {
@@ -5461,7 +5217,7 @@
         26
       ],
       "flags": {},
-      "order": 115,
+      "order": 118,
       "mode": 0,
       "inputs": [
         {
@@ -5502,7 +5258,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 24,
       "mode": 0,
       "outputs": [
         {
@@ -5539,7 +5295,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 122,
+      "order": 125,
       "mode": 0,
       "inputs": [
         {
@@ -5589,7 +5345,7 @@
         "collapsed": false,
         "pinned": true
       },
-      "order": 121,
+      "order": 124,
       "mode": 0,
       "inputs": [
         {
@@ -5714,7 +5470,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        62654102917953,
+        747970676007954,
         "randomize",
         20,
         7,
@@ -5743,7 +5499,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 126,
+      "order": 129,
       "mode": 0,
       "inputs": [
         {
@@ -5788,7 +5544,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 119,
+      "order": 122,
       "mode": 0,
       "inputs": [
         {
@@ -5818,7 +5574,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 118,
+      "order": 121,
       "mode": 0,
       "inputs": [
         {
@@ -5902,7 +5658,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 27,
+      "order": 25,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5937,7 +5693,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 26,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5964,7 +5720,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 29,
+      "order": 27,
       "mode": 0,
       "outputs": [
         {
@@ -6009,7 +5765,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 28,
       "mode": 0,
       "outputs": [
         {
@@ -6057,7 +5813,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 31,
+      "order": 29,
       "mode": 0,
       "outputs": [
         {
@@ -6102,7 +5858,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 133,
+      "order": 136,
       "mode": 0,
       "inputs": [
         {
@@ -6164,7 +5920,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 132,
+      "order": 135,
       "mode": 0,
       "inputs": [
         {
@@ -6226,7 +5982,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 131,
+      "order": 134,
       "mode": 0,
       "inputs": [
         {
@@ -6286,7 +6042,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 32,
+      "order": 30,
       "mode": 0,
       "outputs": [
         {
@@ -6328,7 +6084,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 33,
+      "order": 31,
       "mode": 0,
       "outputs": [
         {
@@ -6370,7 +6126,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 34,
+      "order": 32,
       "mode": 0,
       "outputs": [
         {
@@ -6412,7 +6168,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 35,
+      "order": 33,
       "mode": 0,
       "outputs": [
         {
@@ -6456,7 +6212,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 83,
+      "order": 86,
       "mode": 0,
       "inputs": [
         {
@@ -6512,7 +6268,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 92,
+      "order": 95,
       "mode": 0,
       "inputs": [
         {
@@ -6541,238 +6297,6 @@
       "shape": 1
     },
     {
-      "id": 348,
-      "type": "Image Overlay",
-      "pos": [
-        -2429.4778352101694,
-        1475.6781200080686
-      ],
-      "size": {
-        "0": 315,
-        "1": 290
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 105,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "base_image",
-          "type": "IMAGE",
-          "link": 810
-        },
-        {
-          "name": "overlay_image",
-          "type": "IMAGE",
-          "link": 812
-        },
-        {
-          "name": "optional_mask",
-          "type": "MASK",
-          "link": 675
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            795
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Image Overlay"
-      },
-      "widgets_values": [
-        "Fit",
-        "nearest-exact",
-        1,
-        512,
-        512,
-        0,
-        0,
-        0,
-        0
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 13,
-      "type": "workflow/sdxl aspect ratio & latent",
-      "pos": [
-        -2110,
-        445
-      ],
-      "size": {
-        "0": 219.43682861328125,
-        "1": 110.98493194580078
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 36,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "ratio",
-          "type": "STRING",
-          "links": null,
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            660
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "title": "Empty Latent",
-      "properties": {
-        "Node name for S&R": "workflow/sdxl aspect ratio & latent"
-      },
-      "widgets_values": [
-        "2:3",
-        1
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 289,
-      "type": "VAEEncode",
-      "pos": [
-        -2109,
-        587
-      ],
-      "size": {
-        "0": 220.00205993652344,
-        "1": 50.145347595214844
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 109,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "pixels",
-          "type": "IMAGE",
-          "link": 672
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 596
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            659
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEEncode"
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 411,
-      "type": "ImpactSwitch",
-      "pos": [
-        -2116,
-        829
-      ],
-      "size": {
-        "0": 329.20001220703125,
-        "1": 142
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 106,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "input1",
-          "type": "IMAGE",
-          "link": 807,
-          "label": "1 without BG removal"
-        },
-        {
-          "name": "input2",
-          "type": "IMAGE",
-          "link": 795,
-          "label": "2 with colour background"
-        },
-        {
-          "name": "input3",
-          "type": "IMAGE",
-          "link": 833,
-          "label": "3 with any background"
-        },
-        {
-          "name": "input4",
-          "type": "IMAGE",
-          "link": null,
-          "label": "not used"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            814
-          ],
-          "shape": 3,
-          "label": "IMAGE",
-          "slot_index": 0
-        },
-        {
-          "name": "selected_label",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "selected_index",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "Switch (Any) Choice 1B",
-      "properties": {
-        "Node name for S&R": "ImpactSwitch"
-      },
-      "widgets_values": [
-        3,
-        true
-      ],
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": 1
-    },
-    {
       "id": 423,
       "type": "PreviewImage",
       "pos": [
@@ -6786,7 +6310,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 84,
+      "order": 87,
       "mode": 0,
       "inputs": [
         {
@@ -6807,68 +6331,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 427,
-      "type": "Image Overlay",
-      "pos": [
-        -3394.1166249821963,
-        1330.8490832231637
-      ],
-      "size": {
-        "0": 315,
-        "1": 290
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 95,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "base_image",
-          "type": "IMAGE",
-          "link": 830
-        },
-        {
-          "name": "overlay_image",
-          "type": "IMAGE",
-          "link": 831
-        },
-        {
-          "name": "optional_mask",
-          "type": "MASK",
-          "link": 832
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            833
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Image Overlay"
-      },
-      "widgets_values": [
-        "Fit",
-        "nearest-exact",
-        1,
-        512,
-        512,
-        0,
-        0,
-        0,
-        0
-      ],
-      "color": "#223",
-      "bgcolor": "#335",
-      "shape": 1
-    },
-    {
       "id": 425,
       "type": "ImageScaleToTotalPixels",
       "pos": [
@@ -6882,7 +6344,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 79,
+      "order": 82,
       "mode": 0,
       "inputs": [
         {
@@ -6919,51 +6381,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 428,
-      "type": "ZoomCrop",
-      "pos": [
-        -3439.1166249821963,
-        1284.8490832231637
-      ],
-      "size": {
-        "0": 336.8979187011719,
-        "1": 135.1294403076172
-      },
-      "flags": {},
-      "order": 75,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "input_image",
-          "type": "IMAGE",
-          "link": 835
-        }
-      ],
-      "outputs": [
-        {
-          "name": "crop_image",
-          "type": "IMAGE",
-          "links": [
-            834
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ZoomCrop"
-      },
-      "widgets_values": [
-        1,
-        1,
-        0,
-        0
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
       "id": 422,
       "type": "OptimalCrop",
       "pos": [
@@ -6975,7 +6392,7 @@
         "1": 126
       },
       "flags": {},
-      "order": 67,
+      "order": 69,
       "mode": 0,
       "inputs": [
         {
@@ -7017,36 +6434,6 @@
       "shape": 1
     },
     {
-      "id": 370,
-      "type": "PreviewImage",
-      "pos": [
-        -2475.4778352101694,
-        1138.6781200080686
-      ],
-      "size": {
-        "0": 436.1698303222656,
-        "1": 513.7900390625
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 103,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 738
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
       "id": 373,
       "type": "NatureColours",
       "pos": [
@@ -7058,7 +6445,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 37,
+      "order": 34,
       "mode": 0,
       "outputs": [
         {
@@ -7094,7 +6481,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 38,
+      "order": 35,
       "mode": 0,
       "outputs": [
         {
@@ -7132,7 +6519,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 39,
+      "order": 36,
       "mode": 0,
       "outputs": [
         {
@@ -7164,7 +6551,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 40,
+      "order": 37,
       "mode": 0,
       "outputs": [
         {
@@ -7210,7 +6597,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 41,
+      "order": 38,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -7224,102 +6611,6 @@
       "shape": 1
     },
     {
-      "id": 291,
-      "type": "ImpactSwitch",
-      "pos": [
-        -2115,
-        673
-      ],
-      "size": {
-        "0": 324.6024169921875,
-        "1": 122
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 110,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "input1",
-          "type": "LATENT",
-          "link": 659,
-          "label": "1 image2image"
-        },
-        {
-          "name": "input2",
-          "type": "LATENT",
-          "link": 660,
-          "slot_index": 1,
-          "label": "2 empty latent"
-        },
-        {
-          "name": "input3",
-          "type": "LATENT",
-          "link": null,
-          "label": "not used"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            609
-          ],
-          "shape": 3,
-          "label": "LATENT",
-          "slot_index": 0
-        },
-        {
-          "name": "selected_label",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "selected_index",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "Switch (Any) Choice 1A",
-      "properties": {
-        "Node name for S&R": "ImpactSwitch"
-      },
-      "widgets_values": [
-        1,
-        true
-      ],
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": 1
-    },
-    {
-      "id": 420,
-      "type": "Note",
-      "pos": [
-        -3995,
-        367
-      ],
-      "size": {
-        "0": 615.8101196289062,
-        "1": 640.8585205078125
-      },
-      "flags": {},
-      "order": 42,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Preparation Steps:\n\n1. Install MokkaBoss1 Node Suite and any others missing using the ComfyUI-Manager \"Missing Nodes\" feature\n\n2. The seveninabox node requires personalisation of sampler settings. You need to ammend the \"..ComfyUI_Mokkaboss1\\model_settings\\model_data.py\" to fit with the models you use and ammend the settings you use. Then you will always have these default setting available as soon as you change the model.\n\n3. Switch comfy to \"Link Render Mode\" hidden to hide all the noodles. This can be found under the settings (Gear Icon above Queue Prompt)\n\n4. Include the Images needed to run the flow. I have provide example images\n    A) Example Input for Image to Image (I2I_Input.png) found in the same folder as this workflow.\n    B) Example Input for Background (I2I_Background.png) founf in the same folder as this workflow.\n    C) If you want to use section 6 which generates a slideshow image for 1080p vertical monitors:\n        C1) Black_Background.png\n        C2) White_PhotoFrame.png\n        C3) White_TextFrame.png\n\nRunning the Workflow:\n\nThe nodes are pinned to avoid unwanted moving around and disturbing the karma. The colour scheme is as follows. Nodes that provide a choice for the workflow flow are coloured yellow. Nodes that are meant to be opened and collapsed (revealing other nodes behind) are in purple. The rest of the nodes are in light blue.\n\nThere are some choices along the way\n\n1. Choice 1A - Ability to select between a Image to Image and Text to Image\n2. Choice 1B - (relevant only if Image to Image is selected in 1A) allows you to keep the image background or it replace it and if you want to replace it you have the choice to either replace with a generated gradient colour background or another separate background image.\n3. Choice 2A - This allows you to select the subject in the photo (wearing female clothes or male clothes)\n4. Choice 2B - This allows you to select the custom background (indoor, outdoor or custom)\n\nLast important point there is a node called \"AspectRatioCondition\" that checks if the image is 9:16 required for running section 6 of the workflow. If the image is not 9:16 the workflow will terminate  at this stage. This feature still allows auto queue. \n\nWhen you run the workflow, it will stop at the step \"Preview Chooser\". You need to highlight the image and press \"Progress selected Image\" or \"Cancel current run\". Alternatively you can of course just set this to \"pass through\" and then it won't stop each time. This is good if you are using the auto-queue feature.\n\nhope you get some use from this workflow\n\nMokkaBoss1"
-      ],
-      "color": "#222",
-      "bgcolor": "#000"
-    },
-    {
       "id": 347,
       "type": "LoadImage",
       "pos": [
@@ -7331,7 +6622,7 @@
         "1": 687.1322631835938
       },
       "flags": {},
-      "order": 43,
+      "order": 39,
       "mode": 0,
       "outputs": [
         {
@@ -7350,6 +6641,7 @@
           "shape": 3
         }
       ],
+      "title": "Load Image (Input Image)",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
@@ -7373,7 +6665,7 @@
         "1": 443.73388671875
       },
       "flags": {},
-      "order": 44,
+      "order": 40,
       "mode": 0,
       "outputs": [
         {
@@ -7392,6 +6684,7 @@
           "shape": 3
         }
       ],
+      "title": "Load Image (Background Image)",
       "properties": {
         "Node name for S&R": "LoadImage"
       },
@@ -7404,146 +6697,20 @@
       "shape": 1
     },
     {
-      "id": 391,
-      "type": "X_In_a_Dress",
-      "pos": [
-        -1675,
-        146
-      ],
-      "size": {
-        "0": 346.0890197753906,
-        "1": 659.8716430664062
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 45,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "Positive Prompt",
-          "type": "STRING",
-          "links": [
-            763
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "X_In_a_Dress"
-      },
-      "widgets_values": [
-        189358029952933,
-        "increment",
-        "21 year old",
-        "",
-        "woman",
-        "German",
-        "blonde",
-        "curtain bangs hairstyle",
-        "belted shirt dress",
-        "crimson coloured",
-        "tartan"
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
-      "shape": 1
-    },
-    {
-      "id": 154,
-      "type": "ImpactSwitch",
-      "pos": [
-        -1306,
-        364
-      ],
-      "size": {
-        "0": 413.8647155761719,
-        "1": 142
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 68,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "input1",
-          "type": "STRING",
-          "link": 288,
-          "label": "1 Indoor"
-        },
-        {
-          "name": "input2",
-          "type": "STRING",
-          "link": 289,
-          "label": "2 landscape"
-        },
-        {
-          "name": "input3",
-          "type": "STRING",
-          "link": 837,
-          "slot_index": 2,
-          "label": "3 manual"
-        },
-        {
-          "name": "input4",
-          "type": "STRING",
-          "link": null,
-          "label": "not in use"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            755
-          ],
-          "shape": 3,
-          "label": "STRING",
-          "slot_index": 0
-        },
-        {
-          "name": "selected_label",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "selected_index",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "Switch (Any) Choice 2B",
-      "properties": {
-        "Node name for S&R": "ImpactSwitch"
-      },
-      "widgets_values": [
-        3,
-        true
-      ],
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": 1
-    },
-    {
       "id": 390,
       "type": "ImpactSwitch",
       "pos": [
         -1305,
         183
       ],
-      "size": [
-        409.84757934570325,
-        142
-      ],
+      "size": {
+        "0": 409.8475646972656,
+        "1": 142
+      },
       "flags": {
         "collapsed": false
       },
-      "order": 69,
+      "order": 71,
       "mode": 0,
       "inputs": [
         {
@@ -7595,7 +6762,7 @@
           "shape": 3
         }
       ],
-      "title": "Switch (Any) Choice 2A",
+      "title": "Switch (Any) Subject Prompt Options",
       "properties": {
         "Node name for S&R": "ImpactSwitch"
       },
@@ -7605,49 +6772,6 @@
       ],
       "color": "#432",
       "bgcolor": "#653",
-      "shape": 1
-    },
-    {
-      "id": 430,
-      "type": "HashText",
-      "pos": [
-        -1676,
-        361
-      ],
-      "size": [
-        257.1165799915477,
-        158.19349511058414
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 46,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "Text",
-          "type": "STRING",
-          "links": [
-            837
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "👑 HashText manual background",
-      "properties": {
-        "Node name for S&R": "HashText",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
-      },
-      "widgets_values": [
-        "# add your manual description for the background after the hash # standing in a luxury hotel lobby"
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
       "shape": 1
     },
     {
@@ -7664,7 +6788,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 47,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -7722,61 +6846,230 @@
       "shape": 1
     },
     {
-      "id": 431,
-      "type": "HashText",
+      "id": 368,
+      "type": "CR Color Gradient",
       "pos": [
-        -1675,
-        315
+        -2450,
+        1527
       ],
       "size": {
-        "0": 257.1165771484375,
-        "1": 158.19349670410156
+        "0": 315,
+        "1": 270
       },
       "flags": {
-        "collapsed": false
+        "collapsed": true
       },
-      "order": 48,
+      "order": 42,
       "mode": 0,
+      "inputs": [],
       "outputs": [
         {
-          "name": "Text",
-          "type": "STRING",
+          "name": "IMAGE",
+          "type": "IMAGE",
           "links": [
-            838
+            714
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Color Gradient"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        "white",
+        "black",
+        1,
+        0.5,
+        "vertical",
+        "#000000",
+        "#000000"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 427,
+      "type": "Image Overlay",
+      "pos": [
+        -3394,
+        1331
+      ],
+      "size": {
+        "0": 315,
+        "1": 290
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 98,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "base_image",
+          "type": "IMAGE",
+          "link": 830
+        },
+        {
+          "name": "overlay_image",
+          "type": "IMAGE",
+          "link": 831
+        },
+        {
+          "name": "optional_mask",
+          "type": "MASK",
+          "link": 832
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            851
           ],
           "shape": 3,
           "slot_index": 0
         }
       ],
-      "title": "👑 HashText manual subject",
       "properties": {
-        "Node name for S&R": "HashText",
-        "ttNbgOverride": {
-          "color": "#223",
-          "bgcolor": "#335",
-          "groupcolor": "#88A"
-        }
+        "Node name for S&R": "Image Overlay"
       },
       "widgets_values": [
-        "# add your manual description for the subject after the hash # pretty 21 year old blonde European woman with curtain bangs hairstyle, dressed in red belted short dress"
+        "Fit",
+        "nearest-exact",
+        1,
+        512,
+        512,
+        0,
+        0,
+        0,
+        0
       ],
-      "color": "#323",
-      "bgcolor": "#535",
+      "color": "#223",
+      "bgcolor": "#335",
+      "shape": 1
+    },
+    {
+      "id": 428,
+      "type": "ZoomCrop",
+      "pos": [
+        -3441,
+        1293
+      ],
+      "size": {
+        "0": 336.8979187011719,
+        "1": 135.1294403076172
+      },
+      "flags": {},
+      "order": 78,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_image",
+          "type": "IMAGE",
+          "link": 835
+        }
+      ],
+      "outputs": [
+        {
+          "name": "crop_image",
+          "type": "IMAGE",
+          "links": [
+            834
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ZoomCrop"
+      },
+      "widgets_values": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 409,
+      "type": "OptimalCrop",
+      "pos": [
+        -2902,
+        457
+      ],
+      "size": {
+        "0": 272.6552734375,
+        "1": 126
+      },
+      "flags": {},
+      "order": 68,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_image",
+          "type": "IMAGE",
+          "link": 788
+        },
+        {
+          "name": "aspect_ratio",
+          "type": "FLOAT",
+          "link": 787,
+          "widget": {
+            "name": "aspect_ratio"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "crop_image",
+          "type": "IMAGE",
+          "links": [
+            819
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OptimalCrop"
+      },
+      "widgets_values": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
       "shape": 1
     },
     {
       "id": 416,
       "type": "ZoomCrop",
       "pos": [
-        -2899.28646357442,
-        631.8283281908427
+        -2900,
+        616
       ],
       "size": {
         "0": 268.20184326171875,
         "1": 137.01585388183594
       },
       "flags": {},
-      "order": 74,
+      "order": 77,
       "mode": 0,
       "inputs": [
         {
@@ -7807,6 +7100,871 @@
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 325,
+      "type": "ImageScaleToTotalPixels",
+      "pos": [
+        -2898,
+        784
+      ],
+      "size": [
+        263.79517480977074,
+        106.12023435066044
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 81,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 820
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            808,
+            809,
+            845
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageScaleToTotalPixels"
+      },
+      "widgets_values": [
+        "nearest-exact",
+        1
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 438,
+      "type": "LoadImage",
+      "pos": [
+        -2893,
+        938
+      ],
+      "size": {
+        "0": 401.0738525390625,
+        "1": 687.1322631835938
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 43,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            854
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Load Image (Text2Image)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "Text2Image.png",
+        "image"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 289,
+      "type": "VAEEncode",
+      "pos": [
+        -2083,
+        529
+      ],
+      "size": {
+        "0": 220.00205993652344,
+        "1": 50.145347595214844
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 112,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 672
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 596
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            840,
+            841,
+            842
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 433,
+      "type": "ImpactSwitch",
+      "pos": [
+        -2058,
+        882.2672008167614
+      ],
+      "size": {
+        "0": 210,
+        "1": 158
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 113,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input1",
+          "type": "LATENT",
+          "link": 840
+        },
+        {
+          "name": "select",
+          "type": 0,
+          "link": 839,
+          "widget": {
+            "name": "select"
+          },
+          "slot_index": 1
+        },
+        {
+          "name": "input2",
+          "type": "LATENT",
+          "link": 841
+        },
+        {
+          "name": "input3",
+          "type": "LATENT",
+          "link": 842
+        },
+        {
+          "name": "input4",
+          "type": "LATENT",
+          "link": 843
+        },
+        {
+          "name": "input5",
+          "type": "LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            844
+          ],
+          "shape": 3,
+          "label": "LATENT",
+          "slot_index": 0
+        },
+        {
+          "name": "selected_label",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "selected_index",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Switch (Any) 1B",
+      "properties": {
+        "Node name for S&R": "ImpactSwitch"
+      },
+      "widgets_values": [
+        1,
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 436,
+      "type": "ImpactSwitch",
+      "pos": [
+        -2046,
+        920.2672008167614
+      ],
+      "size": {
+        "0": 210,
+        "1": 162
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 109,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input1",
+          "type": "IMAGE",
+          "link": 845
+        },
+        {
+          "name": "input2",
+          "type": "IMAGE",
+          "link": 846
+        },
+        {
+          "name": "input3",
+          "type": "IMAGE",
+          "link": 851
+        },
+        {
+          "name": "input4",
+          "type": "IMAGE",
+          "link": 854
+        },
+        {
+          "name": "input5",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "select",
+          "type": "INT",
+          "link": 849,
+          "widget": {
+            "name": "select"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            850
+          ],
+          "shape": 3,
+          "label": "IMAGE",
+          "slot_index": 0
+        },
+        {
+          "name": "selected_label",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "selected_index",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Switch (Any) 1A",
+      "properties": {
+        "Node name for S&R": "ImpactSwitch"
+      },
+      "widgets_values": [
+        2,
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 434,
+      "type": "JWInteger",
+      "pos": [
+        -2100,
+        873
+      ],
+      "size": {
+        "0": 237.98876953125,
+        "1": 77.40507507324219
+      },
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            839,
+            849,
+            852
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Integer - Scenario Choices (1-4)",
+      "properties": {
+        "Node name for S&R": "JWInteger"
+      },
+      "widgets_values": [
+        4
+      ],
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": 1
+    },
+    {
+      "id": 437,
+      "type": "IntFloatDict",
+      "pos": [
+        -2096,
+        675
+      ],
+      "size": [
+        217.4025356396487,
+        119.01262621826186
+      ],
+      "flags": {},
+      "order": 70,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "integer_value",
+          "type": "INT",
+          "link": 852,
+          "widget": {
+            "name": "integer_value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "float_value",
+          "type": "FLOAT",
+          "links": [
+            853
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IntFloatDict",
+        "ttNbgOverride": {
+          "color": "#223",
+          "bgcolor": "#335",
+          "groupcolor": "#88A"
+        }
+      },
+      "widgets_values": [
+        0,
+        "1,0.65\n2,0.65\n3,0.65\n4,1.0"
+      ],
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": 1
+    },
+    {
+      "id": 413,
+      "type": "Blend",
+      "pos": [
+        -2095,
+        298
+      ],
+      "size": {
+        "0": 218.74041748046875,
+        "1": 132.48150634765625
+      },
+      "flags": {
+        "collapsed": false,
+        "pinned": false
+      },
+      "order": 110,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 850
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 815
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            804
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Blend Image 2 Image",
+      "properties": {
+        "Node name for S&R": "Blend"
+      },
+      "widgets_values": [
+        0.3,
+        "normal"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 348,
+      "type": "Image Overlay",
+      "pos": [
+        -2618,
+        1453
+      ],
+      "size": {
+        "0": 315,
+        "1": 290
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 108,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "base_image",
+          "type": "IMAGE",
+          "link": 810
+        },
+        {
+          "name": "overlay_image",
+          "type": "IMAGE",
+          "link": 812
+        },
+        {
+          "name": "optional_mask",
+          "type": "MASK",
+          "link": 675
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            795,
+            846
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Overlay"
+      },
+      "widgets_values": [
+        "Fit",
+        "nearest-exact",
+        1,
+        512,
+        512,
+        0,
+        0,
+        0,
+        0
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 370,
+      "type": "PreviewImage",
+      "pos": [
+        -2475,
+        1139
+      ],
+      "size": {
+        "0": 436.1698303222656,
+        "1": 513.7900390625
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 106,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 738
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 431,
+      "type": "HashText",
+      "pos": [
+        -1675,
+        315
+      ],
+      "size": {
+        "0": 257.1165771484375,
+        "1": 158.19349670410156
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 45,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "Text",
+          "type": "STRING",
+          "links": [
+            838
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "👑 HashText manual subject",
+      "properties": {
+        "Node name for S&R": "HashText"
+      },
+      "widgets_values": [
+        "# add your manual description for the subject after the hash # pretty 21 year old blonde European woman with curtain bangs hairstyle, dressed in red belted short dress"
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
+      "id": 420,
+      "type": "Note",
+      "pos": [
+        -3994,
+        317
+      ],
+      "size": [
+        607.5743577293338,
+        672.343068494032
+      ],
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Preparation Steps:\n\n1. Install MokkaBoss1 Node Suite and any others missing using the ComfyUI-Manager \"Missing Nodes\" feature\n\n2. The seveninabox node requires personalisation of sampler settings. You need to ammend the \"..ComfyUI_Mokkaboss1\\model_settings\\model_data.py\" to fit with the models you use and ammend the settings you use. Then you will always have these default setting available as soon as you change the model.\n\n3. Switch comfy to \"Link Render Mode\" hidden to hide all the noodles. This can be found under the settings (Gear Icon above Queue Prompt)\n\n4. Include the Images needed to run the flow. I have provide example images\n    A) Example Input for Image to Image (I2I_Input.png) found in the same folder as this workflow.\n    B) Example Input for Background (I2I_Background.png) founf in the same folder as this workflow.\n    C) If you want to use section 6 which generates a slideshow image for 1080p vertical monitors:\n        C1) Black_Background.png\n        C2) White_PhotoFrame.png\n        C3) White_TextFrame.png\n\nRunning the Workflow:\n\nThe nodes are pinned to avoid unwanted moving around and disturbing the karma. The colour scheme is as follows. Nodes that provide a choice for the workflow flow are coloured yellow. Nodes that are meant to be opened and collapsed (revealing other nodes behind) are in purple. The rest of the nodes are in light blue.\n\nThere are some choices along the way\n\nThe scenario selector works as follows:\nChoice 1) This is an image to image workflow based on the input image including subject and background\nChoice 2) This is an image to image workflow based on the input image subject and a colour gradient background\nChoice 3) This is an image to image workflow based on the input image subject but replacing the background with another image.\nChoice 4) This is a text to image workflow based on an empty latent image.\n\nAlso there are various options to manipulate the text prompt aswell.\n  \n3. Choice 2A - This allows you to select the subject in the photo (wearing female clothes or male clothes)\n4. Choice 2B - This allows you to select the custom background (indoor, outdoor or custom)\n\nLast important point there is a node called \"AspectRatioCondition\" that checks if the image is 9:16 required for running section 6 of the workflow. If the image is not 9:16 the workflow will terminate  at this stage. This feature still allows auto queue. \n\nWhen you run the workflow, it will stop at the step \"Preview Chooser\". You need to highlight the image and press \"Progress selected Image\" or \"Cancel current run\". Alternatively you can of course just set this to \"pass through\" and then it won't stop each time. This is good if you are using the auto-queue feature.\n\nhope you get some use from this workflow\n\nMokkaBoss1"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 154,
+      "type": "ImpactSwitch",
+      "pos": [
+        -1306,
+        364
+      ],
+      "size": {
+        "0": 413.8647155761719,
+        "1": 142
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 72,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input1",
+          "type": "STRING",
+          "link": 288,
+          "label": "1 Indoor"
+        },
+        {
+          "name": "input2",
+          "type": "STRING",
+          "link": 289,
+          "label": "2 landscape"
+        },
+        {
+          "name": "input3",
+          "type": "STRING",
+          "link": 837,
+          "slot_index": 2,
+          "label": "3 manual"
+        },
+        {
+          "name": "input4",
+          "type": "STRING",
+          "link": null,
+          "label": "not in use"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            755
+          ],
+          "shape": 3,
+          "label": "STRING",
+          "slot_index": 0
+        },
+        {
+          "name": "selected_label",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "selected_index",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Switch (Any) Background Prompt Options",
+      "properties": {
+        "Node name for S&R": "ImpactSwitch"
+      },
+      "widgets_values": [
+        2,
+        true
+      ],
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": 1
+    },
+    {
+      "id": 430,
+      "type": "HashText",
+      "pos": [
+        -1676,
+        361
+      ],
+      "size": {
+        "0": 257.1165771484375,
+        "1": 158.19349670410156
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 47,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "Text",
+          "type": "STRING",
+          "links": [
+            837
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "👑 HashText manual background",
+      "properties": {
+        "Node name for S&R": "HashText"
+      },
+      "widgets_values": [
+        "# add your manual description for the background after the hash # standing in a luxury hotel lobby"
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
+      "id": 13,
+      "type": "workflow/sdxl aspect ratio & latent",
+      "pos": [
+        -2102,
+        486
+      ],
+      "size": {
+        "0": 219.43682861328125,
+        "1": 110.98493194580078
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 48,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "ratio",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            660,
+            843
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "title": "Empty Latent",
+      "properties": {
+        "Node name for S&R": "workflow/sdxl aspect ratio & latent"
+      },
+      "widgets_values": [
+        "9:16",
+        1
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 391,
+      "type": "X_In_a_Dress",
+      "pos": [
+        -1675,
+        146
+      ],
+      "size": {
+        "0": 346.0890197753906,
+        "1": 659.8716430664062
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 49,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "Positive Prompt",
+          "type": "STRING",
+          "links": [
+            763
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "X_In_a_Dress"
+      },
+      "widgets_values": [
+        189358029952954,
+        "increment",
+        "21 year old",
+        "",
+        "woman",
+        "German",
+        "blonde",
+        "curtain bangs hairstyle",
+        "Random",
+        "Random",
+        "Random"
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
+      "id": 147,
+      "type": "LandscapeBackgrounds",
+      "pos": [
+        -1675,
+        272
+      ],
+      "size": {
+        "0": 353.33026123046875,
+        "1": 583.9744873046875
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 50,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "Positive Prompt",
+          "type": "STRING",
+          "links": [
+            289
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LandscapeBackgrounds"
+      },
+      "widgets_values": [
+        1030,
+        "fixed",
+        "",
+        "",
+        "Ethereal",
+        "Caves",
+        "Misty day with glowing light during sunrise",
+        "Romantic",
+        "background slightly blurred",
+        "Balanced, Orderly, Balanced details, Structured background"
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
       "shape": 1
     }
   ],
@@ -8900,27 +9058,11 @@
       "VAE"
     ],
     [
-      609,
-      291,
-      0,
-      16,
-      3,
-      "LATENT"
-    ],
-    [
-      659,
-      289,
-      0,
-      291,
-      0,
-      "LATENT"
-    ],
-    [
       660,
       13,
       1,
       291,
-      1,
+      0,
       "LATENT"
     ],
     [
@@ -9336,7 +9478,7 @@
       348,
       0,
       411,
-      1,
+      0,
       "IMAGE"
     ],
     [
@@ -9372,14 +9514,6 @@
       "IMAGE"
     ],
     [
-      807,
-      325,
-      0,
-      411,
-      0,
-      "IMAGE"
-    ],
-    [
       808,
       325,
       0,
@@ -9409,14 +9543,6 @@
       0,
       348,
       1,
-      "IMAGE"
-    ],
-    [
-      814,
-      411,
-      0,
-      413,
-      0,
       "IMAGE"
     ],
     [
@@ -9540,14 +9666,6 @@
       "MASK"
     ],
     [
-      833,
-      427,
-      0,
-      411,
-      2,
-      "IMAGE"
-    ],
-    [
       834,
       428,
       0,
@@ -9578,6 +9696,142 @@
       390,
       2,
       "STRING"
+    ],
+    [
+      839,
+      434,
+      0,
+      433,
+      1,
+      "INT"
+    ],
+    [
+      840,
+      289,
+      0,
+      433,
+      0,
+      "*"
+    ],
+    [
+      841,
+      289,
+      0,
+      433,
+      2,
+      "LATENT"
+    ],
+    [
+      842,
+      289,
+      0,
+      433,
+      3,
+      "LATENT"
+    ],
+    [
+      843,
+      13,
+      1,
+      433,
+      4,
+      "LATENT"
+    ],
+    [
+      844,
+      433,
+      0,
+      16,
+      3,
+      "LATENT"
+    ],
+    [
+      845,
+      325,
+      0,
+      436,
+      0,
+      "*"
+    ],
+    [
+      846,
+      348,
+      0,
+      436,
+      1,
+      "IMAGE"
+    ],
+    [
+      849,
+      434,
+      0,
+      436,
+      5,
+      "INT"
+    ],
+    [
+      850,
+      436,
+      0,
+      413,
+      0,
+      "IMAGE"
+    ],
+    [
+      851,
+      427,
+      0,
+      436,
+      2,
+      "IMAGE"
+    ],
+    [
+      852,
+      434,
+      0,
+      437,
+      0,
+      "INT"
+    ],
+    [
+      853,
+      437,
+      0,
+      16,
+      11,
+      "FLOAT"
+    ],
+    [
+      854,
+      438,
+      0,
+      436,
+      3,
+      "IMAGE"
+    ],
+    [
+      855,
+      25,
+      0,
+      206,
+      3,
+      "INT"
+    ],
+    [
+      856,
+      25,
+      0,
+      16,
+      10,
+      "INT"
+    ],
+    [
+      857,
+      25,
+      0,
+      186,
+      10,
+      "INT"
     ]
   ],
   "groups": [
@@ -9630,7 +9884,7 @@
       "locked": false
     },
     {
-      "title": "(2) Remove and Replace Background (Choice1B -2)",
+      "title": "(2) Remove and Replace Background (Choice 2)",
       "bounding": [
         -2853,
         1048,
@@ -9654,7 +9908,7 @@
       "locked": false
     },
     {
-      "title": "          (2) Remove and Replace Background (Choice 1B -3)",
+      "title": "          (2) Remove and Replace Background (Choice 3)",
       "bounding": [
         -3549,
         1048,
@@ -9804,7 +10058,12 @@
           ]
         ]
       }
-    }
+    },
+    "0246.VERSION": [
+      0,
+      0,
+      4
+    ]
   },
   "version": 0.4
 }
