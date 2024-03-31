@@ -1,5 +1,6 @@
 import random
 import re
+from comfy.model_management import InterruptProcessingException
 
 class AspectRatioCondition:
 
@@ -25,8 +26,9 @@ class AspectRatioCondition:
         if min <= ar <= max:
             return (image, )
         else:
-
-            raise ValueError("Workflow terminated because the aspect ratio is not within the specified range. See Node AspectRatioCondition min and max values.")
+            raise InterruptProcessingException()
+#            raise ValueError("Workflow terminated because the aspect ratio is not within the specified range. See Node AspectRatioCondition min and max values.")
 
 NODE_CLASS_MAPPINGS = {"AspectRatioCondition": AspectRatioCondition}
 NODE_DISPLAY_NAME_MAPPINGS = {"AspectRatioCondition": "👑 AspectRatioCondition"}
+
