@@ -59,4 +59,4 @@ class seveninabox:
         return out
 
 NODE_CLASS_MAPPINGS = {"seveninabox": seveninabox}
-NODE_DISPLAY_NAME_MAPPINGS = {"seveninabox": "👑 7 in a box"}
+NODE_DISPLAY_NAME_MAPPINGS = {"seveninabox": "👑 7inabox(deprecated)"}

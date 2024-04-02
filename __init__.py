@@ -13,6 +13,7 @@ from ComfyUI_Mokkaboss1.nodes.AspectRatioCondition import AspectRatioCondition
 from ComfyUI_Mokkaboss1.nodes.SDXLAspectRatioDec import SDXLAspectRatioDec
 from ComfyUI_Mokkaboss1.nodes.ZoomCrop import ZoomCrop
 from ComfyUI_Mokkaboss1.nodes.IntFloatDict import IntFloatDict
+from ComfyUI_Mokkaboss1.nodes.WorkflowSettings import WorkflowSettings
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -30,6 +31,7 @@ NODE_CLASS_MAPPINGS = {
     "SDXLAspectRatioDec": SDXLAspectRatioDec,
     "ZoomCrop": ZoomCrop,
     "IntFloatDict": IntFloatDict,
+    "WorkflowSettings": WorkflowSettings,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -38,7 +40,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "LandscapeBackgrounds": "👑 LandscapeBackgrounds",
     "NatureColours": "👑 NatureColours",
     "OptimalCrop": "👑 OptimalCrop",
-    "seveninabox": "👑 seveninabox",
+    "seveninabox": "👑 7inabox(deprecated)",
     "UrbanColours": "👑 UrbanColours",
     "X_In_a_Dress": "👑 X_In_a_Dress",
     "X_In_a_Suit": "👑 X_In_a_Suit",
@@ -47,5 +49,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "SDXLAspectRatioDec": "👑 SDXLAspectRatioDec",
     "ZoomCrop": "👑 ZoomCrop",
     "IntFloatDict": "👑 IntFloatDict",
+    "WorkflowSettings": "👑 WorkflowSettings",
 }
-print ("👑 Mokkaboss1 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 16 Custom Nodes: Loaded")
