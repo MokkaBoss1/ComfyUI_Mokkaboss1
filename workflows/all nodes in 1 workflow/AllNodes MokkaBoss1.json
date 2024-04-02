@@ -94,7 +94,7 @@
       },
       "widgets_values": [
         "",
-        "hairstyle, wearing a orchid coloured animal print belted"
+        "hairstyle, wearing a maroon coloured animal print belted"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -2662,7 +2662,7 @@
         "color_restricted": false
       },
       "widgets_values": [
-        1216,
+        1217,
         "increment"
       ],
       "color": "#2a363b",
@@ -3881,7 +3881,7 @@
         "Node name for S&R": "X_In_a_Suit"
       },
       "widgets_values": [
-        157826875597477,
+        733057481172720,
         "randomize",
         "21 year old",
         "",
@@ -3928,7 +3928,7 @@
         "Node name for S&R": "IndoorBackgrounds"
       },
       "widgets_values": [
-        1096,
+        1097,
         "increment",
         "",
         "",
@@ -4596,7 +4596,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        429350259568009,
+        223177722043439,
         "randomize",
         20,
         7,
@@ -5824,7 +5824,7 @@
         "",
         "",
         "",
-        284298248113583,
+        158313396265855,
         "randomize",
         0,
         "%Y-%m-%d-%H%M%S"
@@ -6207,8 +6207,8 @@
       },
       "widgets_values": [
         [
-          "/view?filename=rgthree.compare._temp_xzznp_00017_.png&type=temp&subfolder=&rand=0.2728374124198574",
-          "/view?filename=rgthree.compare._temp_xzznp_00018_.png&type=temp&subfolder=&rand=0.760861709421748"
+          "/view?filename=rgthree.compare._temp_xzznp_00021_.png&type=temp&subfolder=&rand=0.16238610873946646",
+          "/view?filename=rgthree.compare._temp_xzznp_00022_.png&type=temp&subfolder=&rand=0.9905392519863787"
         ]
       ],
       "color": "#2a363b",
@@ -7163,7 +7163,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "21 year old German woman with blonde curtain bangs hairstyle, wearing a orchid coloured animal print belted shirt dress, highly detailed, ethereal fantasy concept art of  . magnificent, ethereal, majestic, harmonious, cinematic still . emotional, fantasy art, high budget, celestial, magical, epic, dreamy, vignette, bokeh, cover art, moody, cinemascope, painterly, gorgeous, film grain, grainy,  Ethereal Caves Rainy day with misty light Romantic background slightly blurred Average, Decent, Standard details, Typical background, "
+        "21 year old German woman with blonde curtain bangs hairstyle, wearing a maroon coloured animal print belted shirt dress, highly detailed, ethereal fantasy concept art of  . magnificent, ethereal, majestic, harmonious, cinematic still . emotional, fantasy art, high budget, celestial, magical, epic, dreamy, vignette, bokeh, cover art, moody, cinemascope, painterly, gorgeous, film grain, grainy,  Ethereal Caves Rainy day with misty light Romantic background slightly blurred Average, Decent, Standard details, Typical background, "
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -7377,29 +7377,6 @@
       "shape": 1
     },
     {
-      "id": 420,
-      "type": "Note",
-      "pos": [
-        -4538,
-        -71
-      ],
-      "size": {
-        "0": 783.56396484375,
-        "1": 633.5391845703125
-      },
-      "flags": {},
-      "order": 46,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Preparation Steps:\n\n1. Install MokkaBoss1 Node Suite and any others missing using the ComfyUI-Manager \"Missing Nodes\" feature\n\n2. The WorkflowSettings node requires personalisation of sampler settings. You need to amend the multiline text field values included to fit with the models you use and amend the settings you use. Then you will always have these default setting available as soon as you change the model.\n\n3. Switch comfy to \"Link Render Mode\" hidden to hide all the noodles. This can be found under the settings (Gear Icon above Queue Prompt)\n\n4. Include the Images needed to run the flow. I have provide example images\n    A) Example Input for Image to Image (I2I_Input.png) found in the same folder as this workflow. Load this image to group 1\n    B) Example Input for Background (I2I_Background.png) found in the same folder as this workflow. Load this image to group 2\n    C) Placeholder for Text to Image image (T2I.PNG) and a noise layer to be blended with the images (noise.png) add to group 3\n    D) If you want to use group 6 which generates a slideshow image for 1080p vertical monitors:\n        C1) Black_Background.png\n        C2) White_PhotoFrame.png\n        C3) White_TextFrame.png\n\nRunning the Workflow:\n\nThe nodes are pinned to avoid unwanted moving around and disturbing the karma. The colour scheme is as follows. Nodes that provide a choice for the workflow flow are coloured yellow. Nodes that are meant to be opened and collapsed (sometimes revealing other nodes behind) are in purple. The rest of the nodes are in light blue.\n\nThere are some choices along the way\n\n1. Choice 1 - Text to Image\n2. Choice 2 - Image to Image with Original Background\n3. Choice 3 - Image to Image with Colour Background\n4. Choice 4 - Image to Image with new Background\n\nChoice 1 will operate with an initial denoise of 1.00. The rest will used 0.65 denoise. To adjust modify the IntFloatDict node with the corresponding float values.\n\nThe prompts can be adapted as needed there are 3 alternatives for the subject and 3 for the background prompt. \n\nLast important point there is a node called \"AspectRatioCondition\" that checks if the image is 9:16 required for running section 6 of the workflow. If the image is not 9:16 the workflow will terminate  at this stage. If you don't like this, you can remove or deactivate this node and section 6 along with it. \n\nWhen you run the workflow, it will stop at the step \"Preview Chooser\". You need to highlight the image and press \"Progress selected Image\" or \"Cancel current run\". Alternatively you can of course just set this to \"pass through\" and then it won't stop each time. This is good if you are using the auto-queue feature.\n\nhope you get some use from this workflow\n\nMokkaBoss1\n\np.s. for more explanations on any of my nodes see my wiki under:\nhttps://github.com/MokkaBoss1/ComfyUI_Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack"
-      ],
-      "color": "#222",
-      "bgcolor": "#000"
-    },
-    {
       "id": 421,
       "type": "LoadImage",
       "pos": [
@@ -7411,7 +7388,7 @@
         "1": 443.73388671875
       },
       "flags": {},
-      "order": 47,
+      "order": 46,
       "mode": 0,
       "outputs": [
         {
@@ -7455,7 +7432,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 48,
+      "order": 47,
       "mode": 0,
       "outputs": [
         {
@@ -7495,7 +7472,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 49,
+      "order": 48,
       "mode": 0,
       "outputs": [
         {
@@ -7620,7 +7597,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 50,
+      "order": 49,
       "mode": 0,
       "outputs": [
         {
@@ -7637,7 +7614,7 @@
         "Node name for S&R": "X_In_a_Dress"
       },
       "widgets_values": [
-        189358029952936,
+        189358029952937,
         "increment",
         "21 year old",
         "",
@@ -7667,7 +7644,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 51,
+      "order": 50,
       "mode": 0,
       "inputs": [
         {
@@ -7953,7 +7930,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        541909492720570,
+        589262343229886,
         "randomize",
         20,
         7,
@@ -7997,6 +7974,29 @@
       "color": "#2a363b",
       "bgcolor": "#3f5159",
       "shape": 1
+    },
+    {
+      "id": 420,
+      "type": "Note",
+      "pos": [
+        -4538,
+        -71
+      ],
+      "size": [
+        793.604076726554,
+        678.8672985532592
+      ],
+      "flags": {},
+      "order": 51,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Preparation Steps:\n\n1. Install MokkaBoss1 Node Suite and any others missing using the ComfyUI-Manager \"Missing Nodes\" feature\n\n2. The WorkflowSettings node requires personalisation of sampler settings. You need to amend the multiline text field values included to fit with the models you use and amend the settings you use. Then you will always have these default setting available as soon as you change the model.\n\n3. Switch comfy to \"Link Render Mode\" hidden to hide all the noodles. This can be found under the settings (Gear Icon above Queue Prompt)\n\n4. Include the Images needed to run the flow. I have provide example images\n    A) Example Input for Image to Image (I2I_Input.png) found in the same folder as this workflow. Load this image to group 1\n    B) Example Input for Background (I2I_Background.png) found in the same folder as this workflow. Load this image to group 2\n    C) Placeholder for Text to Image image (T2I.PNG) and a noise layer to be blended with the images (noise.png) add to group 3\n    D) If you want to use group 6 which generates a slideshow image for 1080p vertical monitors:\n        C1) Black_Background.png\n        C2) White_PhotoFrame.png\n        C3) White_TextFrame.png\n\nRunning the Workflow:\n\nThe nodes are pinned to avoid unwanted moving around and disturbing the karma. The colour scheme is as follows. Nodes that provide a choice for the workflow flow are coloured yellow. Nodes that are meant to be opened and collapsed (sometimes revealing other nodes behind) are in purple. The rest of the nodes are in light blue.\n\nThere are some choices along the way\n\n1. Choice 1 - Text to Image\n2. Choice 2 - Image to Image with Original Background\n3. Choice 3 - Image to Image with Colour Background\n4. Choice 4 - Image to Image with new Background\n\nChoice 1 will operate with an initial denoise of 1.00. The rest will used 0.65 denoise. To adjust modify the IntFloatDict node with the corresponding float values.\n\nThe prompts can be adapted as needed there are 3 alternatives for the subject and 3 for the background prompt. \n\nLast important point there is a node called \"AspectRatioCondition\" that checks if the image is 9:16 required for running section 6 of the workflow. If the image is not 9:16 the workflow will terminate  at this stage. If you don't like this, you can remove or deactivate this node and section 6 along with it. \n\nWhen you run the workflow, it will stop at the step \"Preview Chooser\". You need to highlight the image and press \"Progress selected Image\" or \"Cancel current run\". Alternatively you can of course just set this to \"pass through\" and then it won't stop each time. This is good if you are using the auto-queue feature.\n\nhope you get some use from this workflow\n\nMokkaBoss1\n\np.s. for more explanations on any of my nodes see my wiki under:\nhttps://github.com/MokkaBoss1/ComfyUI_Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack\n\nfor more upscaling I tend to take the HighRes Image from this workflow, use TOPAZ 2x upscaler, then load the image into Fooocus and do a face inpaint to add more detail to the face only."
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
     }
   ],
   "links": [
