@@ -20,7 +20,7 @@ class WorkflowSettings:
         return {
             "required": {
                 "ckpt_name": (folder_paths.get_filename_list("checkpoints"), ),
-                "text_value": ("STRING", {"multiline": True, "default": ""}),
+                "text_value": ("STRING", {"multiline": True, "default": "0,juggernautXL_v9Rdphoto2Lightning.safetensors,5,1.5,dpmpp_sde,karras"}),
             }
         }
     
