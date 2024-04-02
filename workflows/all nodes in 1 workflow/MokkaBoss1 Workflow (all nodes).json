@@ -94,7 +94,7 @@
       },
       "widgets_values": [
         "",
-        "hairstyle, wearing a coral coloured houndstooth belted shirt"
+        "hairstyle, wearing a ivory coloured polka dots belted shirt"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -145,8 +145,7 @@
         [
           "linen ribbed off-shoulder midi dress, medium breasts,"
         ],
-        "linen ribbed off-shoulder midi dress, medium breasts,",
-        "dress, cinematic still . emotional, harmonious, vignette,"
+        "dress, highly detailed, ethereal fantasy concept art of ."
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -197,8 +196,7 @@
         [
           "cleavage, (plain gradient background:1.5) . high fashion,"
         ],
-        "cleavage, (plain gradient background:1.5) . high fashion,",
-        "highly detailed, high budget, bokeh, cinemascope, moody,"
+        "magnificent, ethereal, majestic, harmonious, cinematic still"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -249,8 +247,7 @@
         [
           "luxurious, extravagant, stylish, sensual, opulent, elegance,"
         ],
-        "luxurious, extravagant, stylish, sensual, opulent, elegance,",
-        "epic, gorgeous, film grain, grainy, glamorous photo . high"
+        ". emotional, fantasy art, high budget, celestial, magical,"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -301,8 +298,7 @@
         [
           "stunning beauty, professional, high contrast, detailed,"
         ],
-        "stunning beauty, professional, high contrast, detailed,",
-        "fashion, luxurious, extravagant, stylish, sensual, opulent,"
+        "epic, dreamy, vignette, bokeh, cover art, moody,"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -353,8 +349,7 @@
         [
           ""
         ],
-        "",
-        "elegance, stunning beauty, professional, high contrast,"
+        "cinemascope, painterly, gorgeous, film grain, grainy,"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -2201,7 +2196,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 75,
+      "order": 74,
       "mode": 0,
       "inputs": [
         {
@@ -2270,7 +2265,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 76,
+      "order": 75,
       "mode": 0,
       "inputs": [
         {
@@ -2339,7 +2334,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 77,
+      "order": 76,
       "mode": 0,
       "inputs": [
         {
@@ -2667,7 +2662,7 @@
         "color_restricted": false
       },
       "widgets_values": [
-        1212,
+        1215,
         "increment"
       ],
       "color": "#2a363b",
@@ -2945,7 +2940,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 82,
+      "order": 81,
       "mode": 0,
       "inputs": [
         {
@@ -3046,7 +3041,7 @@
         "1": 126
       },
       "flags": {},
-      "order": 69,
+      "order": 68,
       "mode": 0,
       "inputs": [
         {
@@ -3099,7 +3094,7 @@
         "1": 137.01585388183594
       },
       "flags": {},
-      "order": 78,
+      "order": 77,
       "mode": 0,
       "inputs": [
         {
@@ -3201,7 +3196,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 79,
+      "order": 80,
       "mode": 0,
       "inputs": [
         {
@@ -3316,7 +3311,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 86,
+      "order": 85,
       "mode": 0,
       "inputs": [
         {
@@ -3453,7 +3448,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 87,
+      "order": 86,
       "mode": 0,
       "inputs": [
         {
@@ -3615,7 +3610,7 @@
         26
       ],
       "flags": {},
-      "order": 63,
+      "order": 62,
       "mode": 0,
       "inputs": [
         {
@@ -3657,7 +3652,7 @@
         26
       ],
       "flags": {},
-      "order": 64,
+      "order": 63,
       "mode": 0,
       "inputs": [
         {
@@ -3699,7 +3694,7 @@
         26
       ],
       "flags": {},
-      "order": 65,
+      "order": 64,
       "mode": 0,
       "inputs": [
         {
@@ -3741,7 +3736,7 @@
         26
       ],
       "flags": {},
-      "order": 66,
+      "order": 65,
       "mode": 0,
       "inputs": [
         {
@@ -3783,7 +3778,7 @@
         26
       ],
       "flags": {},
-      "order": 67,
+      "order": 66,
       "mode": 0,
       "inputs": [
         {
@@ -3825,7 +3820,7 @@
         26
       ],
       "flags": {},
-      "order": 68,
+      "order": 67,
       "mode": 0,
       "inputs": [
         {
@@ -3886,7 +3881,7 @@
         "Node name for S&R": "X_In_a_Suit"
       },
       "widgets_values": [
-        985189811431804,
+        561470972388764,
         "randomize",
         "21 year old",
         "",
@@ -3933,7 +3928,7 @@
         "Node name for S&R": "IndoorBackgrounds"
       },
       "widgets_values": [
-        1092,
+        1095,
         "increment",
         "",
         "",
@@ -3941,52 +3936,6 @@
         "Dim and intimate",
         "Bokeh background",
         "Warm & Tactile: Rich tones, cozy texture"
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
-      "shape": 1
-    },
-    {
-      "id": 147,
-      "type": "LandscapeBackgrounds",
-      "pos": [
-        -2180.3527487368137,
-        -18.62879501616716
-      ],
-      "size": {
-        "0": 353.33026123046875,
-        "1": 583.9744873046875
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 18,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "Positive Prompt",
-          "type": "STRING",
-          "links": [
-            289
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LandscapeBackgrounds"
-      },
-      "widgets_values": [
-        1030,
-        "fixed",
-        "",
-        "",
-        "Ethereal",
-        "Historical landmark",
-        "Misty day with glowing light during sunrise",
-        "Romantic",
-        "background slightly blurred",
-        "Balanced, Orderly, Balanced details, Structured background"
       ],
       "color": "#323",
       "bgcolor": "#535",
@@ -4014,7 +3963,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 18,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4050,7 +3999,7 @@
         "collapsed": true,
         "pinned": false
       },
-      "order": 20,
+      "order": 19,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4085,7 +4034,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4190,7 +4139,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 21,
       "mode": 0,
       "outputs": [
         {
@@ -4435,7 +4384,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 23,
+      "order": 22,
       "mode": 0,
       "outputs": [
         {
@@ -4647,7 +4596,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        746557831921163,
+        962816958603475,
         "randomize",
         20,
         7,
@@ -4805,7 +4754,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 24,
+      "order": 23,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -4840,7 +4789,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 24,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5051,7 +5000,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "outputs": [
         {
@@ -5093,7 +5042,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 27,
+      "order": 26,
       "mode": 0,
       "outputs": [
         {
@@ -5135,7 +5084,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 28,
+      "order": 27,
       "mode": 0,
       "outputs": [
         {
@@ -5177,7 +5126,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 29,
+      "order": 28,
       "mode": 0,
       "outputs": [
         {
@@ -5221,7 +5170,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 88,
+      "order": 87,
       "mode": 0,
       "inputs": [
         {
@@ -5319,7 +5268,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 85,
+      "order": 88,
       "mode": 0,
       "inputs": [
         {
@@ -5340,48 +5289,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 421,
-      "type": "LoadImage",
-      "pos": [
-        -3612.28839733844,
-        1146.7814300774357
-      ],
-      "size": {
-        "0": 352.14129638671875,
-        "1": 443.73388671875
-      },
-      "flags": {},
-      "order": 30,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            825
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "eula73_photo_of_grassland_08171362-db77-43a9-b1c0-39a7dfe004af_3.png",
-        "image"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
       "id": 425,
       "type": "ImageScaleToTotalPixels",
       "pos": [
@@ -5395,7 +5302,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 81,
+      "order": 83,
       "mode": 0,
       "inputs": [
         {
@@ -5443,7 +5350,7 @@
         "1": 126
       },
       "flags": {},
-      "order": 62,
+      "order": 70,
       "mode": 0,
       "inputs": [
         {
@@ -5496,7 +5403,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 31,
+      "order": 29,
       "mode": 0,
       "outputs": [
         {
@@ -5532,7 +5439,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 32,
+      "order": 30,
       "mode": 0,
       "outputs": [
         {
@@ -5570,7 +5477,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 33,
+      "order": 31,
       "mode": 0,
       "outputs": [
         {
@@ -5602,7 +5509,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 34,
+      "order": 32,
       "mode": 0,
       "outputs": [
         {
@@ -5648,7 +5555,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 35,
+      "order": 33,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -5673,7 +5580,7 @@
         "1": 687.1322631835938
       },
       "flags": {},
-      "order": 36,
+      "order": 34,
       "mode": 0,
       "outputs": [
         {
@@ -5717,7 +5624,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 37,
+      "order": 35,
       "mode": 0,
       "outputs": [
         {
@@ -5762,7 +5669,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 38,
+      "order": 36,
       "mode": 0,
       "outputs": [
         {
@@ -5810,7 +5717,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 39,
+      "order": 37,
       "mode": 0,
       "outputs": [
         {
@@ -5917,7 +5824,7 @@
         "",
         "",
         "",
-        465841565117072,
+        745593310162618,
         "randomize",
         0,
         "%Y-%m-%d-%H%M%S"
@@ -6300,8 +6207,8 @@
       },
       "widgets_values": [
         [
-          "/view?filename=rgthree.compare._temp_xzznp_00013_.png&type=temp&subfolder=&rand=0.46581899610732624",
-          "/view?filename=rgthree.compare._temp_xzznp_00014_.png&type=temp&subfolder=&rand=0.9847641693492863"
+          "/view?filename=rgthree.compare._temp_xzznp_00015_.png&type=temp&subfolder=&rand=0.7643223814536197",
+          "/view?filename=rgthree.compare._temp_xzznp_00016_.png&type=temp&subfolder=&rand=0.2217383899596017"
         ]
       ],
       "color": "#2a363b",
@@ -6322,7 +6229,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 72,
+      "order": 69,
       "mode": 0,
       "inputs": [
         {
@@ -6475,7 +6382,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 83,
+      "order": 82,
       "mode": 0,
       "inputs": [
         {
@@ -6582,7 +6489,7 @@
         "1": 135.1294403076172
       },
       "flags": {},
-      "order": 74,
+      "order": 79,
       "mode": 0,
       "inputs": [
         {
@@ -6922,7 +6829,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 40,
+      "order": 38,
       "mode": 0,
       "outputs": [
         {
@@ -6966,7 +6873,7 @@
         "1": 94.41783905029297
       },
       "flags": {},
-      "order": 41,
+      "order": 39,
       "mode": 0,
       "title": "Note Choices Explained",
       "properties": {
@@ -7053,7 +6960,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 42,
+      "order": 40,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -7064,77 +6971,6 @@
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 76,
-      "type": "easy stylesSelector",
-      "pos": [
-        -1815,
-        -147
-      ],
-      "size": [
-        425,
-        500
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 43,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "positive",
-          "type": "STRING",
-          "link": null,
-          "widget": {
-            "name": "positive"
-          }
-        },
-        {
-          "name": "negative",
-          "type": "STRING",
-          "link": null,
-          "widget": {
-            "name": "negative"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "positive",
-          "type": "STRING",
-          "links": [
-            752
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "negative",
-          "type": "STRING",
-          "links": [
-            162
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "values": [
-          "Fooocus Cinematic",
-          "photo-glamour"
-        ],
-        "Node name for S&R": "easy stylesSelector"
-      },
-      "widgets_values": [
-        "fooocus_styles",
-        "",
-        "",
-        "Fooocus Cinematic,photo-glamour"
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
       "shape": 1
     },
     {
@@ -7151,7 +6987,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 44,
+      "order": 41,
       "mode": 0,
       "outputs": [
         {
@@ -7189,7 +7025,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 45,
+      "order": 42,
       "mode": 0,
       "outputs": [
         {
@@ -7214,53 +7050,6 @@
       "shape": 1
     },
     {
-      "id": 391,
-      "type": "X_In_a_Dress",
-      "pos": [
-        -2180,
-        -145
-      ],
-      "size": {
-        "0": 346.0890197753906,
-        "1": 659.8716430664062
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 46,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "Positive Prompt",
-          "type": "STRING",
-          "links": [
-            763
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "X_In_a_Dress"
-      },
-      "widgets_values": [
-        189358029952932,
-        "increment",
-        "21 year old",
-        "",
-        "woman",
-        "German",
-        "blonde",
-        "curtain bangs hairstyle",
-        "belted shirt dress",
-        "Random",
-        "Random"
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
-      "shape": 1
-    },
-    {
       "id": 390,
       "type": "ImpactSwitch",
       "pos": [
@@ -7274,7 +7063,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 71,
+      "order": 73,
       "mode": 0,
       "inputs": [
         {
@@ -7339,6 +7128,436 @@
       "shape": 1
     },
     {
+      "id": 192,
+      "type": "Checkpoint Selector",
+      "pos": [
+        -1812,
+        250
+      ],
+      "size": {
+        "0": 419.46124267578125,
+        "1": 72.3006362915039
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 43,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "ckpt_name",
+          "type": "COMBO",
+          "links": [
+            366,
+            839
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Checkpoint Selector"
+      },
+      "widgets_values": [
+        "devlishphotorealism_sdxl15.safetensors"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 341,
+      "type": "easy showAnything",
+      "pos": [
+        -1813,
+        368
+      ],
+      "size": {
+        "0": 421.3333435058594,
+        "1": 147.38888549804688
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 90,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 662
+        }
+      ],
+      "title": "           Show Any (Final Positive Prompt)",
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "21 year old German woman with blonde curtain bangs hairstyle, wearing a ivory coloured polka dots belted shirt dress, highly detailed, ethereal fantasy concept art of  . magnificent, ethereal, majestic, harmonious, cinematic still . emotional, fantasy art, high budget, celestial, magical, epic, dreamy, vignette, bokeh, cover art, moody, cinemascope, painterly, gorgeous, film grain, grainy,  Ethereal Caves Rainy day with misty light Romantic background slightly blurred Average, Decent, Standard details, Typical background, "
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 342,
+      "type": "easy showAnything",
+      "pos": [
+        -1815,
+        540
+      ],
+      "size": {
+        "0": 420.4444580078125,
+        "1": 118.72222900390625
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 92,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 663
+        }
+      ],
+      "title": "Show Any (Final Negative Prompt)",
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "\n, closed eyes, 35mm film, noise, realism, black and white, text, realistic, anime, glitch, dslr, crayon, bad anatomy, ugly, graphite, photographic, abstract, painting, frame, sloppy, cartoon, mutated, cropped, deformed, off-center, noisy, cross-eyed, duplicate, graphic, disfigured"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 437,
+      "type": "IntFloatDict",
+      "pos": [
+        -1984,
+        684
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 71,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "integer_value",
+          "type": "INT",
+          "link": 896,
+          "widget": {
+            "name": "integer_value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "float_value",
+          "type": "FLOAT",
+          "links": [
+            897
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IntFloatDict"
+      },
+      "widgets_values": [
+        0,
+        "1, 1.00\n2, 0.65\n3, 0.65\n4, 0.65"
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
+      "id": 431,
+      "type": "LoadImage",
+      "pos": [
+        -2874,
+        -31
+      ],
+      "size": {
+        "0": 210,
+        "1": 232.0543212890625
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 44,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            885
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Load Image (T2I)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "Text2Image (1).png",
+        "image"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 295,
+      "type": "LoadImage",
+      "pos": [
+        -2691,
+        -29
+      ],
+      "size": {
+        "0": 332.0392761230469,
+        "1": 405.6418762207031
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": false
+      },
+      "order": 45,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            815
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Load Image (Add Noise)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "noise layer.png",
+        "image"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 343,
+      "type": "easy showAnything",
+      "pos": [
+        -2182.19090871246,
+        550.6673453610754
+      ],
+      "size": {
+        "0": 345.5525817871094,
+        "1": 94.83224487304688
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 78,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 859
+        }
+      ],
+      "title": "Show Any (Sampler Settings)",
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "Model could be identified from the text field: model: devlishphotorealism_sdxl15.safetensors, steps: 30, cfg: 4.0, sampler: dpmpp_2m_sde, scheduler: karras"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 420,
+      "type": "Note",
+      "pos": [
+        -4538,
+        -71
+      ],
+      "size": {
+        "0": 783.56396484375,
+        "1": 633.5391845703125
+      },
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Preparation Steps:\n\n1. Install MokkaBoss1 Node Suite and any others missing using the ComfyUI-Manager \"Missing Nodes\" feature\n\n2. The WorkflowSettings node requires personalisation of sampler settings. You need to amend the multiline text field values included to fit with the models you use and amend the settings you use. Then you will always have these default setting available as soon as you change the model.\n\n3. Switch comfy to \"Link Render Mode\" hidden to hide all the noodles. This can be found under the settings (Gear Icon above Queue Prompt)\n\n4. Include the Images needed to run the flow. I have provide example images\n    A) Example Input for Image to Image (I2I_Input.png) found in the same folder as this workflow. Load this image to group 1\n    B) Example Input for Background (I2I_Background.png) found in the same folder as this workflow. Load this image to group 2\n    C) Placeholder for Text to Image image (T2I.PNG) and a noise layer to be blended with the images (noise.png) add to group 3\n    D) If you want to use group 6 which generates a slideshow image for 1080p vertical monitors:\n        C1) Black_Background.png\n        C2) White_PhotoFrame.png\n        C3) White_TextFrame.png\n\nRunning the Workflow:\n\nThe nodes are pinned to avoid unwanted moving around and disturbing the karma. The colour scheme is as follows. Nodes that provide a choice for the workflow flow are coloured yellow. Nodes that are meant to be opened and collapsed (sometimes revealing other nodes behind) are in purple. The rest of the nodes are in light blue.\n\nThere are some choices along the way\n\n1. Choice 1 - Text to Image\n2. Choice 2 - Image to Image with Original Background\n3. Choice 3 - Image to Image with Colour Background\n4. Choice 4 - Image to Image with new Background\n\nChoice 1 will operate with an initial denoise of 1.00. The rest will used 0.65 denoise. To adjust modify the IntFloatDict node with the corresponding float values.\n\nThe prompts can be adapted as needed there are 3 alternatives for the subject and 3 for the background prompt. \n\nLast important point there is a node called \"AspectRatioCondition\" that checks if the image is 9:16 required for running section 6 of the workflow. If the image is not 9:16 the workflow will terminate  at this stage. If you don't like this, you can remove or deactivate this node and section 6 along with it. \n\nWhen you run the workflow, it will stop at the step \"Preview Chooser\". You need to highlight the image and press \"Progress selected Image\" or \"Cancel current run\". Alternatively you can of course just set this to \"pass through\" and then it won't stop each time. This is good if you are using the auto-queue feature.\n\nhope you get some use from this workflow\n\nMokkaBoss1\n\np.s. for more explanations on any of my nodes see my wiki under:\nhttps://github.com/MokkaBoss1/ComfyUI_Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 421,
+      "type": "LoadImage",
+      "pos": [
+        -3612.28839733844,
+        1146.7814300774357
+      ],
+      "size": {
+        "0": 352.14129638671875,
+        "1": 443.73388671875
+      },
+      "flags": {},
+      "order": 47,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            825
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "eula73_photo_of_grassland_08171362-db77-43a9-b1c0-39a7dfe004af_3.png",
+        "image"
+      ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 433,
+      "type": "JWInteger",
+      "pos": [
+        -2871.6783112536614,
+        21.789107525329577
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 48,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            889,
+            896,
+            898
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Integer Choice (1-4)",
+      "properties": {
+        "Node name for S&R": "JWInteger"
+      },
+      "widgets_values": [
+        1
+      ],
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": 1
+    },
+    {
+      "id": 147,
+      "type": "LandscapeBackgrounds",
+      "pos": [
+        -2180,
+        -19
+      ],
+      "size": {
+        "0": 353.33026123046875,
+        "1": 583.9744873046875
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 49,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "Positive Prompt",
+          "type": "STRING",
+          "links": [
+            289
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LandscapeBackgrounds"
+      },
+      "widgets_values": [
+        1030,
+        "fixed",
+        "",
+        "",
+        "Ethereal",
+        "Caves",
+        "Random",
+        "Romantic",
+        "Random",
+        "Random"
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
       "id": 154,
       "type": "ImpactSwitch",
       "pos": [
@@ -7352,7 +7571,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 70,
+      "order": 72,
       "mode": 0,
       "inputs": [
         {
@@ -7410,7 +7629,7 @@
         "Node name for S&R": "ImpactSwitch"
       },
       "widgets_values": [
-        3,
+        2,
         true
       ],
       "color": "#432",
@@ -7418,106 +7637,194 @@
       "shape": 1
     },
     {
-      "id": 192,
-      "type": "Checkpoint Selector",
+      "id": 391,
+      "type": "X_In_a_Dress",
       "pos": [
-        -1812,
-        250
+        -2180,
+        -145
       ],
       "size": {
-        "0": 419.46124267578125,
-        "1": 72.3006362915039
+        "0": 346.0890197753906,
+        "1": 659.8716430664062
       },
       "flags": {
         "collapsed": false
       },
-      "order": 47,
+      "order": 50,
       "mode": 0,
       "outputs": [
         {
-          "name": "ckpt_name",
-          "type": "COMBO",
+          "name": "Positive Prompt",
+          "type": "STRING",
           "links": [
-            366,
-            839
+            763
           ],
           "shape": 3,
           "slot_index": 0
         }
       ],
       "properties": {
-        "Node name for S&R": "Checkpoint Selector"
+        "Node name for S&R": "X_In_a_Dress"
       },
       "widgets_values": [
-        "devlishphotorealism_sdxl15.safetensors"
+        189358029952935,
+        "increment",
+        "21 year old",
+        "",
+        "woman",
+        "German",
+        "blonde",
+        "curtain bangs hairstyle",
+        "belted shirt dress",
+        "Random",
+        "Random"
       ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
+      "color": "#323",
+      "bgcolor": "#535",
       "shape": 1
     },
     {
-      "id": 341,
-      "type": "easy showAnything",
-      "pos": [
-        -1813,
-        368
-      ],
-      "size": {
-        "0": 421.3333435058594,
-        "1": 147.38888549804688
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 90,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "anything",
-          "type": "*",
-          "link": 662
-        }
-      ],
-      "title": "           Show Any (Final Positive Prompt)",
-      "properties": {
-        "Node name for S&R": "easy showAnything"
-      },
-      "widgets_values": [
-        "21 year old German woman with blonde curtain bangs hairstyle, wearing a coral coloured houndstooth belted shirt dress, cinematic still . emotional, harmonious, vignette, highly detailed, high budget, bokeh, cinemascope, moody, epic, gorgeous, film grain, grainy, glamorous photo . high fashion, luxurious, extravagant, stylish, sensual, opulent, elegance, stunning beauty, professional, high contrast, detailed,  "
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 342,
-      "type": "easy showAnything",
+      "id": 76,
+      "type": "easy stylesSelector",
       "pos": [
         -1815,
-        540
+        -147
       ],
-      "size": {
-        "0": 420.4444580078125,
-        "1": 118.72222900390625
-      },
+      "size": [
+        425,
+        500
+      ],
       "flags": {
-        "collapsed": false
+        "collapsed": true
       },
-      "order": 92,
+      "order": 51,
       "mode": 0,
       "inputs": [
         {
-          "name": "anything",
-          "type": "*",
-          "link": 663
+          "name": "positive",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "positive"
+          }
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "negative"
+          }
         }
       ],
-      "title": "Show Any (Final Negative Prompt)",
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "STRING",
+          "links": [
+            752
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "links": [
+            162
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
       "properties": {
-        "Node name for S&R": "easy showAnything"
+        "values": [
+          "Fooocus Cinematic",
+          "sai-fantasy art"
+        ],
+        "Node name for S&R": "easy stylesSelector"
       },
       "widgets_values": [
-        "\n, sketch, text, anime, glitch, crayon, ugly, modest, graphite, dull, abstract, painting, low contrast, plain, blurry, cartoon, mutated, deformed, noisy, grainy, graphic, distorted, disfigured"
+        "fooocus_styles",
+        "",
+        "",
+        "Fooocus Cinematic,sai-fantasy art"
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
+      "id": 346,
+      "type": "Preview Chooser",
+      "pos": [
+        -2881,
+        124
+      ],
+      "size": {
+        "0": 234.89706420898438,
+        "1": 402
+      },
+      "flags": {
+        "collapsed": false,
+        "pinned": false
+      },
+      "order": 112,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 804
+        },
+        {
+          "name": "latents",
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "masks",
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            672
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "latents",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "masks",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "selected",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Preview Chooser"
+      },
+      "widgets_values": [
+        "Pass through",
+        1,
+        "",
+        ""
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -7535,7 +7842,7 @@
         "1": 803.236572265625
       },
       "flags": {
-        "collapsed": true,
+        "collapsed": false,
         "pinned": false
       },
       "order": 115,
@@ -7676,7 +7983,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        941449729464518,
+        299676137584954,
         "randomize",
         20,
         7,
@@ -7690,318 +7997,6 @@
       "color": "#2a363b",
       "bgcolor": "#3f5159",
       "shape": 1
-    },
-    {
-      "id": 437,
-      "type": "IntFloatDict",
-      "pos": [
-        -1984,
-        684
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 73,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "integer_value",
-          "type": "INT",
-          "link": 896,
-          "widget": {
-            "name": "integer_value"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "float_value",
-          "type": "FLOAT",
-          "links": [
-            897
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "IntFloatDict"
-      },
-      "widgets_values": [
-        0,
-        "1, 1.00\n2, 0.65\n3, 0.65\n4, 0.65"
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
-      "shape": 1
-    },
-    {
-      "id": 431,
-      "type": "LoadImage",
-      "pos": [
-        -2874,
-        -31
-      ],
-      "size": {
-        "0": 210,
-        "1": 232.0543212890625
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 48,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            885
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "Load Image (T2I)",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "Text2Image (1).png",
-        "image"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 295,
-      "type": "LoadImage",
-      "pos": [
-        -2691,
-        -29
-      ],
-      "size": {
-        "0": 332.0392761230469,
-        "1": 405.6418762207031
-      },
-      "flags": {
-        "collapsed": true,
-        "pinned": false
-      },
-      "order": 49,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            815
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "title": "Load Image (Add Noise)",
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "noise layer.png",
-        "image"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 433,
-      "type": "JWInteger",
-      "pos": [
-        -2871.6783112536614,
-        21.789107525329577
-      ],
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 50,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            889,
-            896,
-            898
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Integer Choice (1-4)",
-      "properties": {
-        "Node name for S&R": "JWInteger"
-      },
-      "widgets_values": [
-        4
-      ],
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": 1
-    },
-    {
-      "id": 346,
-      "type": "Preview Chooser",
-      "pos": [
-        -2881,
-        124
-      ],
-      "size": {
-        "0": 234.89706420898438,
-        "1": 402
-      },
-      "flags": {
-        "collapsed": true,
-        "pinned": false
-      },
-      "order": 112,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 804
-        },
-        {
-          "name": "latents",
-          "type": "LATENT",
-          "link": null
-        },
-        {
-          "name": "masks",
-          "type": "MASK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            672
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "latents",
-          "type": "LATENT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "masks",
-          "type": "MASK",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "selected",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Preview Chooser"
-      },
-      "widgets_values": [
-        "Always pause",
-        1,
-        "",
-        ""
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 343,
-      "type": "easy showAnything",
-      "pos": [
-        -2182.19090871246,
-        550.6673453610754
-      ],
-      "size": {
-        "0": 345.5525817871094,
-        "1": 94.83224487304688
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 80,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "anything",
-          "type": "*",
-          "link": 859
-        }
-      ],
-      "title": "Show Any (Sampler Settings)",
-      "properties": {
-        "Node name for S&R": "easy showAnything"
-      },
-      "widgets_values": [
-        "Model could be identified from the text field: model: devlishphotorealism_sdxl15.safetensors, steps: 30, cfg: 4.0, sampler: dpmpp_2m_sde, scheduler: karras"
-      ],
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
-      "id": 420,
-      "type": "Note",
-      "pos": [
-        -4538,
-        -71
-      ],
-      "size": {
-        "0": 783.56396484375,
-        "1": 633.5391845703125
-      },
-      "flags": {},
-      "order": 51,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "Preparation Steps:\n\n1. Install MokkaBoss1 Node Suite and any others missing using the ComfyUI-Manager \"Missing Nodes\" feature\n\n2. The WorkflowSettings node requires personalisation of sampler settings. You need to amend the multiline text field values included to fit with the models you use and amend the settings you use. Then you will always have these default setting available as soon as you change the model.\n\n3. Switch comfy to \"Link Render Mode\" hidden to hide all the noodles. This can be found under the settings (Gear Icon above Queue Prompt)\n\n4. Include the Images needed to run the flow. I have provide example images\n    A) Example Input for Image to Image (I2I_Input.png) found in the same folder as this workflow. Load this image to group 1\n    B) Example Input for Background (I2I_Background.png) found in the same folder as this workflow. Load this image to group 2\n    C) Placeholder for Text to Image image (T2I.PNG) and a noise layer to be blended with the images (noise.png) add to group 3\n    D) If you want to use group 6 which generates a slideshow image for 1080p vertical monitors:\n        C1) Black_Background.png\n        C2) White_PhotoFrame.png\n        C3) White_TextFrame.png\n\nRunning the Workflow:\n\nThe nodes are pinned to avoid unwanted moving around and disturbing the karma. The colour scheme is as follows. Nodes that provide a choice for the workflow flow are coloured yellow. Nodes that are meant to be opened and collapsed (sometimes revealing other nodes behind) are in purple. The rest of the nodes are in light blue.\n\nThere are some choices along the way\n\n1. Choice 1 - Text to Image\n2. Choice 2 - Image to Image with Original Background\n3. Choice 3 - Image to Image with Colour Background\n4. Choice 4 - Image to Image with new Background\n\nChoice 1 will operate with an initial denoise of 1.00. The rest will used 0.65 denoise. To adjust modify the IntFloatDict node with the corresponding float values.\n\nThe prompts can be adapted as needed there are 3 alternatives for the subject and 3 for the background prompt. \n\nLast important point there is a node called \"AspectRatioCondition\" that checks if the image is 9:16 required for running section 6 of the workflow. If the image is not 9:16 the workflow will terminate  at this stage. If you don't like this, you can remove or deactivate this node and section 6 along with it. \n\nWhen you run the workflow, it will stop at the step \"Preview Chooser\". You need to highlight the image and press \"Progress selected Image\" or \"Cancel current run\". Alternatively you can of course just set this to \"pass through\" and then it won't stop each time. This is good if you are using the auto-queue feature.\n\nhope you get some use from this workflow\n\nMokkaBoss1\n\np.s. for more explanations on any of my nodes see my wiki under:\nhttps://github.com/MokkaBoss1/ComfyUI_Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack"
-      ],
-      "color": "#222",
-      "bgcolor": "#000"
     }
   ],
   "links": [
