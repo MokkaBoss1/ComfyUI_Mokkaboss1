@@ -5939,36 +5939,6 @@
       "shape": 1
     },
     {
-      "id": 185,
-      "type": "PreviewImage",
-      "pos": [
-        -2088.244978797844,
-        1096.0502751384215
-      ],
-      "size": {
-        "0": 336.6807556152344,
-        "1": 530.4505615234375
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 123,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 348
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
       "id": 190,
       "type": "VAEEncode",
       "pos": [
@@ -7997,6 +7967,36 @@
       ],
       "color": "#222",
       "bgcolor": "#000"
+    },
+    {
+      "id": 185,
+      "type": "PreviewImage",
+      "pos": [
+        -2088,
+        1096
+      ],
+      "size": {
+        "0": 336.6807556152344,
+        "1": 530.4505615234375
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 123,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 348
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
     }
   ],
   "links": [
