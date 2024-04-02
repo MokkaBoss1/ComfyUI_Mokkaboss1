@@ -94,7 +94,7 @@
       },
       "widgets_values": [
         "",
-        "hairstyle, wearing a ivory coloured polka dots belted shirt"
+        "hairstyle, wearing a orchid coloured animal print belted"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -145,7 +145,7 @@
         [
           "linen ribbed off-shoulder midi dress, medium breasts,"
         ],
-        "dress, highly detailed, ethereal fantasy concept art of ."
+        "shirt dress, highly detailed, ethereal fantasy concept art"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -196,7 +196,7 @@
         [
           "cleavage, (plain gradient background:1.5) . high fashion,"
         ],
-        "magnificent, ethereal, majestic, harmonious, cinematic still"
+        "of . magnificent, ethereal, majestic, harmonious, cinematic"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -247,7 +247,7 @@
         [
           "luxurious, extravagant, stylish, sensual, opulent, elegance,"
         ],
-        ". emotional, fantasy art, high budget, celestial, magical,"
+        "still . emotional, fantasy art, high budget, celestial,"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -298,7 +298,7 @@
         [
           "stunning beauty, professional, high contrast, detailed,"
         ],
-        "epic, dreamy, vignette, bokeh, cover art, moody,"
+        "magical, epic, dreamy, vignette, bokeh, cover art, moody,"
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -2662,7 +2662,7 @@
         "color_restricted": false
       },
       "widgets_values": [
-        1215,
+        1216,
         "increment"
       ],
       "color": "#2a363b",
@@ -3881,7 +3881,7 @@
         "Node name for S&R": "X_In_a_Suit"
       },
       "widgets_values": [
-        561470972388764,
+        157826875597477,
         "randomize",
         "21 year old",
         "",
@@ -3928,7 +3928,7 @@
         "Node name for S&R": "IndoorBackgrounds"
       },
       "widgets_values": [
-        1095,
+        1096,
         "increment",
         "",
         "",
@@ -4596,7 +4596,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        962816958603475,
+        429350259568009,
         "randomize",
         20,
         7,
@@ -5824,7 +5824,7 @@
         "",
         "",
         "",
-        745593310162618,
+        284298248113583,
         "randomize",
         0,
         "%Y-%m-%d-%H%M%S"
@@ -6207,8 +6207,8 @@
       },
       "widgets_values": [
         [
-          "/view?filename=rgthree.compare._temp_xzznp_00015_.png&type=temp&subfolder=&rand=0.7643223814536197",
-          "/view?filename=rgthree.compare._temp_xzznp_00016_.png&type=temp&subfolder=&rand=0.2217383899596017"
+          "/view?filename=rgthree.compare._temp_xzznp_00017_.png&type=temp&subfolder=&rand=0.2728374124198574",
+          "/view?filename=rgthree.compare._temp_xzznp_00018_.png&type=temp&subfolder=&rand=0.760861709421748"
         ]
       ],
       "color": "#2a363b",
@@ -6336,36 +6336,6 @@
       ],
       "color": "#323",
       "bgcolor": "#535",
-      "shape": 1
-    },
-    {
-      "id": 370,
-      "type": "PreviewImage",
-      "pos": [
-        -2636.6660097502327,
-        831.5581570559015
-      ],
-      "size": {
-        "0": 436.1698303222656,
-        "1": 513.7900390625
-      },
-      "flags": {
-        "collapsed": true
-      },
-      "order": 107,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 738
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
       "shape": 1
     },
     {
@@ -7193,7 +7163,7 @@
         "Node name for S&R": "easy showAnything"
       },
       "widgets_values": [
-        "21 year old German woman with blonde curtain bangs hairstyle, wearing a ivory coloured polka dots belted shirt dress, highly detailed, ethereal fantasy concept art of  . magnificent, ethereal, majestic, harmonious, cinematic still . emotional, fantasy art, high budget, celestial, magical, epic, dreamy, vignette, bokeh, cover art, moody, cinemascope, painterly, gorgeous, film grain, grainy,  Ethereal Caves Rainy day with misty light Romantic background slightly blurred Average, Decent, Standard details, Typical background, "
+        "21 year old German woman with blonde curtain bangs hairstyle, wearing a orchid coloured animal print belted shirt dress, highly detailed, ethereal fantasy concept art of  . magnificent, ethereal, majestic, harmonious, cinematic still . emotional, fantasy art, high budget, celestial, magical, epic, dreamy, vignette, bokeh, cover art, moody, cinemascope, painterly, gorgeous, film grain, grainy,  Ethereal Caves Rainy day with misty light Romantic background slightly blurred Average, Decent, Standard details, Typical background, "
       ],
       "color": "#2a363b",
       "bgcolor": "#3f5159",
@@ -7667,7 +7637,7 @@
         "Node name for S&R": "X_In_a_Dress"
       },
       "widgets_values": [
-        189358029952935,
+        189358029952936,
         "increment",
         "21 year old",
         "",
@@ -7983,7 +7953,7 @@
         "Node name for S&R": "Fooocus_KSamplerEfficient"
       },
       "widgets_values": [
-        299676137584954,
+        541909492720570,
         "randomize",
         20,
         7,
@@ -7994,6 +7964,36 @@
         "true",
         2
       ],
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 370,
+      "type": "PreviewImage",
+      "pos": [
+        -2637,
+        832
+      ],
+      "size": {
+        "0": 436.1698303222656,
+        "1": 513.7900390625
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 107,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 738
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
       "color": "#2a363b",
       "bgcolor": "#3f5159",
       "shape": 1
