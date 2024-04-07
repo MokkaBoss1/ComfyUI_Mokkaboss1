@@ -67,4 +67,4 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ConnectFloat": "👑 ConnectFloat"
     
 }
-print ("👑 Mokkaboss1 17 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 21 Custom Nodes: Loaded")
