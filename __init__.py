@@ -15,6 +15,10 @@ from ComfyUI_Mokkaboss1.nodes.ZoomCrop import ZoomCrop
 from ComfyUI_Mokkaboss1.nodes.IntFloatDict import IntFloatDict
 from ComfyUI_Mokkaboss1.nodes.WorkflowSettings import WorkflowSettings
 from ComfyUI_Mokkaboss1.nodes.IntStringDict import IntStringDict
+from ComfyUI_Mokkaboss1.nodes.ConnectImage import ConnectImage
+from ComfyUI_Mokkaboss1.nodes.ConnectString import ConnectString
+from ComfyUI_Mokkaboss1.nodes.ConnectInteger import ConnectInteger
+from ComfyUI_Mokkaboss1.nodes.ConnectFloat import ConnectFloat
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -34,6 +38,10 @@ NODE_CLASS_MAPPINGS = {
     "IntFloatDict": IntFloatDict,
     "WorkflowSettings": WorkflowSettings,
     "IntStringDict": IntStringDict,
+    "ConnectImage": ConnectImage,
+    "ConnectInteger": ConnectInteger,
+    "ConnectString": ConnectString,
+    "ConnectFloat": ConnectFloat,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -53,5 +61,10 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "IntFloatDict": "👑 IntFloatDict",
     "WorkflowSettings": "👑 WorkflowSettings",
     "IntStringDict": "👑 IntStringDict",
+    "ConnectImage": "👑 ConnectImage",
+    "ConnectInteger": "👑 ConnectInteger",
+    "ConnectString": "👑 ConnectString",
+    "ConnectFloat": "👑 ConnectFloat"
+    
 }
 print ("👑 Mokkaboss1 17 Custom Nodes: Loaded")
