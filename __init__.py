@@ -19,7 +19,7 @@ from ComfyUI_Mokkaboss1.nodes.ConnectImage import ConnectImage
 from ComfyUI_Mokkaboss1.nodes.ConnectString import ConnectString
 from ComfyUI_Mokkaboss1.nodes.ConnectInteger import ConnectInteger
 from ComfyUI_Mokkaboss1.nodes.ConnectFloat import ConnectFloat
-from ComfyUI_Mokkaboss1.nodes.ConnectFloat import
+from ComfyUI_Mokkaboss1.nodes.ConnectLatent import ConnectLatent
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -67,7 +67,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ConnectInteger": "👑 ConnectInteger",
     "ConnectString": "👑 ConnectString",
     "ConnectFloat": "👑 ConnectFloat",
-    "ConnectLatent": "👑 ConnectLatent"
-    
+    "ConnectLatent": "👑 ConnectLatent",   
 }
 print ("👑 Mokkaboss1 22 Custom Nodes: Loaded")
