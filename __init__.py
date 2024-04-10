@@ -67,7 +67,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ConnectInteger": "👑 ConnectInteger",
     "ConnectString": "👑 ConnectString",
     "ConnectFloat": "👑 ConnectFloat",
-    "ConnectLatent": "👑 ConnectLatent
+    "ConnectLatent": "👑 ConnectLatent"
     
 }
 print ("👑 Mokkaboss1 22 Custom Nodes: Loaded")
