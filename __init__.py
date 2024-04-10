@@ -20,6 +20,7 @@ from ComfyUI_Mokkaboss1.nodes.ConnectString import ConnectString
 from ComfyUI_Mokkaboss1.nodes.ConnectInteger import ConnectInteger
 from ComfyUI_Mokkaboss1.nodes.ConnectFloat import ConnectFloat
 from ComfyUI_Mokkaboss1.nodes.ConnectLatent import ConnectLatent
+from ComfyUI_Mokkaboss1.nodes.TimeStamp import TimeStamp
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -44,6 +45,7 @@ NODE_CLASS_MAPPINGS = {
     "ConnectString": ConnectString,
     "ConnectFloat": ConnectFloat,
     "ConnectLatent": ConnectLatent,
+    "TimeStamp": TimeStamp,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -67,6 +69,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ConnectInteger": "👑 ConnectInteger",
     "ConnectString": "👑 ConnectString",
     "ConnectFloat": "👑 ConnectFloat",
-    "ConnectLatent": "👑 ConnectLatent",   
+    "ConnectLatent": "👑 ConnectLatent",
+    "TimeStamp": "👑 TimeStamp",
 }
-print ("👑 Mokkaboss1 22 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 23 Custom Nodes: Loaded")
