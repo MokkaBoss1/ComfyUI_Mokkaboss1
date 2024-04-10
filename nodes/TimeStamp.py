@@ -9,7 +9,7 @@ class TimeStamp:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
-            "format": ("STRING", {"default": "(%Y-%m-%d)(%H:%M:%S)", "multiline": False}),
+            "format": ("STRING", {"default": "(%Y-%m-%d)(%H-%M-%S)", "multiline": False}),
         }}
 
     RETURN_TYPES = ("STRING",)
