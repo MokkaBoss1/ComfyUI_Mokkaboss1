@@ -18,7 +18,7 @@ class TimeStamp:
     FUNCTION = "date_string"
     CATEGORY = "👑 MokkaBoss1/Other"
 
-    def date_string(self, format): 
+    def date_string(self, seed, format): 
         
         
         now = datetime.now()
