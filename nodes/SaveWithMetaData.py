@@ -67,9 +67,9 @@ class SaveWithMetaData:
                 "extension": (['png', 'jpeg', 'webp'],),
                 "steps": ("INT", {"default": 20, "min": 1, "max": 10000}),
                 "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0}),
-                "modelname": (folder_paths.get_filename_list("checkpoints"),),
-                "sampler_name": (comfy.samplers.KSampler.SAMPLERS,),
-                "scheduler": (comfy.samplers.KSampler.SCHEDULERS,),
+                "modelname_string": ("STRING", {"default": '', "multiline": False}),
+                "sampler_name_string": ("STRING", {"default": '', "multiline": False}),
+                "scheduler_string": ("STRING", {"default": '', "multiline": False}),
             },
             "optional": {
                 "positive": ("STRING", {"default": 'unknown', "multiline": True}),
@@ -95,13 +95,13 @@ class SaveWithMetaData:
 
     CATEGORY = "👑 MokkaBoss1/Other"
 
-    def save_files(self, images, seed_value, steps, cfg, sampler_name, scheduler, positive, negative, modelname, quality_jpeg_or_webp,
+    def save_files(self, images, seed_value, steps, cfg, sampler_name_string, scheduler_string, positive, negative, modelname_string, quality_jpeg_or_webp,
                    lossless_webp, width, height, counter, filename, path, extension, time_format, prompt=None, extra_pnginfo=None):
-        filename = make_filename(filename, seed_value, modelname, counter, time_format)
-        path = make_pathname(path, seed_value, modelname, counter, time_format)
-        ckpt_path = folder_paths.get_full_path("checkpoints", modelname)
-        basemodelname = parse_name(modelname)
-        comment = f"{handle_whitespace(positive)}\nNegative prompt: {handle_whitespace(negative)}\nSteps: {steps}, Sampler: {sampler_name}{f'_{scheduler}' if scheduler != 'normal' else ''}, CFG Scale: {cfg}, Seed: {seed_value}, Size: {width}x{height}, Model: {basemodelname}, Version: ComfyUI"
+        filename = make_filename(filename, seed_value, modelname_string, counter, time_format)
+        path = make_pathname(path, seed_value, modelname_string, counter, time_format)
+        ckpt_path = folder_paths.get_full_path("checkpoints", modelname_string)
+        
+        comment = f"Positive: {handle_whitespace(positive)}\nNegative prompt: {handle_whitespace(negative)}\nSteps: {steps}, Sampler: {sampler_name_string}, {f'_{scheduler_string}' if scheduler != 'normal' else ''}, CFG Scale: {cfg}, Seed: {seed_value}, Size: {width}x{height}, Model: {modelname_string}, Version: ComfyUI"
         output_path = os.path.join(self.output_dir, path)
 
         if output_path.strip() != '':
