@@ -10,8 +10,8 @@ class WorkflowSettings:
     def __init__(self):
         pass
 
-    RETURN_TYPES = ("INT", "FLOAT", comfy.samplers.KSampler.SAMPLERS, comfy.samplers.KSampler.SCHEDULERS, "MODEL", "CLIP", "VAE", "STRING",)
-    RETURN_NAMES = ("chosen_steps", "chosen_cfg", "chosen_sampler", "chosen_scheduler", "MODEL", "CLIP", "VAE", "settings")
+    RETURN_TYPES = ("INT", "FLOAT", comfy.samplers.KSampler.SAMPLERS, "STRING", comfy.samplers.KSampler.SCHEDULERS, "STRING", "STRING", "MODEL", "CLIP", "VAE", "STRING",)
+    RETURN_NAMES = ("chosen_steps", "chosen_cfg", "chosen_sampler", "sampler_string", "chosen_scheduler", "Scheduler_string", "modelname_string", "MODEL", "CLIP", "VAE", "settings")
     FUNCTION = "load_checkpoint"
     CATEGORY = "👑 MokkaBoss1/Other"
     
@@ -59,6 +59,9 @@ class WorkflowSettings:
         chosen_cfg = None
         chosen_sampler = None
         chosen_scheduler = None
+        scheduler_string = ""
+        sampler_string = ""
+        modelname_string = ""
 
         # Check if the specified modelname exists in the dictionary
         for key, values in result_dict.items():
@@ -88,12 +91,18 @@ class WorkflowSettings:
                 if len(first_line_values) > 4:
                     chosen_scheduler = first_line_values[4]
         
+        scheduler_string = str(chosen_scheduler)
+        sampler_string = str(chosen_sampler)
+        modelname_string = str(chosen_modelname)
+        
+        
         settings = f"{model_found}: model: {ckpt_name}, steps: {chosen_steps}, cfg: {chosen_cfg}, sampler: {chosen_sampler}, scheduler: {chosen_scheduler}" 
 
-        out = (chosen_steps, chosen_cfg, chosen_sampler, chosen_scheduler, *out[:3], settings)
+        out = (chosen_steps, chosen_cfg, chosen_sampler, sampler_string, chosen_scheduler, scheduler_string, modelname_string, *out[:3], settings)
         return out
 
 # Now you can use chosen_modelname, chosen_steps, chosen_cfg, chosen_sampler, and chosen_scheduler as needed
 
 NODE_CLASS_MAPPINGS = {"WorkflowSettings": WorkflowSettings}
 NODE_DISPLAY_NAME_MAPPINGS = {"WorkflowSettings": "👑 WorkflowSettings"}
+
