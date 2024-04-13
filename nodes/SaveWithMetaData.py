@@ -101,7 +101,7 @@ class SaveWithMetaData:
         path = make_pathname(path, seed_value, modelname_string, counter, time_format)
         ckpt_path = folder_paths.get_full_path("checkpoints", modelname_string)
         
-        comment = f"Positive: {handle_whitespace(positive)}\nNegative prompt: {handle_whitespace(negative)}\nSteps: {steps}, Sampler: {sampler_name_string}, {{scheduler_string}, CFG Scale: {cfg}, Seed: {seed_value}, Size: {width}x{height}, Model: {modelname_string}, Version: ComfyUI"
+        comment = f"Positive: {handle_whitespace(positive)}\nNegative prompt: {handle_whitespace(negative)}\nSteps: {steps}, Sampler: {sampler_name_string}, {scheduler_string}, CFG Scale: {cfg}, Seed: {seed_value}, Size: {width}x{height}, Model: {modelname_string}, Version: ComfyUI"
         output_path = os.path.join(self.output_dir, path)
 
         if output_path.strip() != '':
