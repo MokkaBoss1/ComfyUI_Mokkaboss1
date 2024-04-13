@@ -9,6 +9,7 @@ class TimeStamp:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
+            "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
             "format": ("STRING", {"default": "(%Y-%m-%d)(%H-%M-%S)", "multiline": False}),
         }}
 
