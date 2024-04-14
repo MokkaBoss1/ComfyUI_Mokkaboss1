@@ -21,14 +21,29 @@ class WorkflowSettings:
             "required": {
                 "ckpt_name": (folder_paths.get_filename_list("checkpoints"), ),
                 "text_value": ("STRING", {"multiline": True, "default": "0,juggernautXL_v9Rdphoto2Lightning.safetensors,5,1.5,dpmpp_sde,karras"}),
+            },
+            "optional": {
+                "modelname_string_input": ("STRING", {"multiline": False, "default": ""}),
             }
         }
     
-    def load_checkpoint(self, ckpt_name, text_value, output_vae=True, output_clip=True):
+    def load_checkpoint(self, ckpt_name, modelname_string_input, text_value, output_vae=True, output_clip=True):
+        
+        if modelname_string_input != "":
+                    #check if modelname_string_input is an allowed value within the model list
+                    is_in_modelname = modelname_string_input in folder_paths.get_filename_list("checkpoints")
+
+                    if is_in_modelname:
+                        print(f"{modelname_string_input} is in the list of models.")
+                        ckpt_name = modelname_string_input
+                    else:
+                        print(f"{modelname_string_input} is not in the list of models.")
+                                        
+        print (f"The modelname applied is: {ckpt_name}.")    
         
         ckpt_path = folder_paths.get_full_path("checkpoints", ckpt_name)
         out = comfy.sd.load_checkpoint_guess_config(ckpt_path, output_vae=True, output_clip=True, embedding_directory=folder_paths.get_folder_paths("embeddings"))
-
+        
 
         multi_line_string = text_value
         result_dict = {}
