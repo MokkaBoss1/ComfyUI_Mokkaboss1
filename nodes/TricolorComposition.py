@@ -20,6 +20,7 @@ class TricolorComposition:
             "white_replace_hex": ("STRING", {"default": "FFFFFF", "multiline": False}),
             "grey_replace_hex": ("STRING", {"default": "808080", "multiline": False}),
             "black_replace_hex": ("STRING", {"default": "000000", "multiline": False}),
+            "tolerance": ("INT", {"default": 30, "min": 0, "max": 255})
         }}
 
     RETURN_TYPES = ("IMAGE",)
@@ -27,7 +28,7 @@ class TricolorComposition:
     FUNCTION = "color_comp"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def color_comp(self, input_image, white_replace_hex, grey_replace_hex, black_replace_hex): 
+    def color_comp(self, input_image, white_replace_hex, grey_replace_hex, black_replace_hex, tolerance): 
         # Remove '#' symbol if it exists
         if white_replace_hex.startswith("#"):
             white_replace_hex = white_replace_hex[1:]
@@ -50,11 +51,14 @@ class TricolorComposition:
         for x in range(width):
             for y in range(height):
                 pixel = pixels[x, y]
-                if pixel == (255, 255, 255):  # White color
+                r, g, b = pixel
+                # Check if the pixel color is within the tolerance level of white or black
+                if r >= (255 - tolerance) and g >= (255 - tolerance) and b >= (255 - tolerance):
                     pixels[x, y] = white_rgb
-                elif pixel == (0, 0, 0):      # Black color
+                elif r <= tolerance and g <= tolerance and b <= tolerance:
                     pixels[x, y] = black_rgb
-                elif pixel[0] == pixel[1] == pixel[2]:  # Grey color (R = G = B)
+                # Check if the pixel color is closer to grey than white or black
+                elif abs(r - g) <= tolerance and abs(g - b) <= tolerance and abs(b - r) <= tolerance:
                     pixels[x, y] = grey_rgb
 
         # Convert PIL image back to tensor

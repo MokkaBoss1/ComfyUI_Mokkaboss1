@@ -23,6 +23,7 @@ from ComfyUI_Mokkaboss1.nodes.ConnectLatent import ConnectLatent
 from ComfyUI_Mokkaboss1.nodes.TimeStamp import TimeStamp
 from ComfyUI_Mokkaboss1.nodes.SaveWithMetaData import SaveWithMetaData
 from ComfyUI_Mokkaboss1.nodes.TricolorComposition import TricolorComposition
+from ComfyUI_Mokkaboss1.nodes.Colors import Colors
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -50,6 +51,7 @@ NODE_CLASS_MAPPINGS = {
     "TimeStamp": TimeStamp,
     "SaveWithMetaData": SaveWithMetaData,
     "TricolorComposition": TricolorComposition,
+    "Colors": Colors,
     
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -57,10 +59,10 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "HashText": "👑 HashText",
     "IndoorBackgrounds": "👑 IndoorBackgrounds",
     "LandscapeBackgrounds": "👑 LandscapeBackgrounds",
-    "NatureColours": "👑 NatureColours",
+    "NatureColours": "👑 NatureColours(deprecated)",
     "OptimalCrop": "👑 OptimalCrop",
     "seveninabox": "👑 7inabox(deprecated)",
-    "UrbanColours": "👑 UrbanColours",
+    "UrbanColours": "👑 UrbanColours(deprecated)",
     "X_In_a_Dress": "👑 X_In_a_Dress",
     "X_In_a_Suit": "👑 X_In_a_Suit",
     "WrapText": "👑 WrapText",
@@ -78,5 +80,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "TimeStamp": "👑 TimeStamp",
     "SaveWithMetaData": "👑 SaveWithMetaData",
     "TricolorComposition": "👑 TricolorComposition",
+    "Colors":"👑 Colors",
 }
 print ("👑 Mokkaboss1 25 Custom Nodes: Loaded")
