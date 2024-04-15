@@ -22,6 +22,7 @@ from ComfyUI_Mokkaboss1.nodes.ConnectFloat import ConnectFloat
 from ComfyUI_Mokkaboss1.nodes.ConnectLatent import ConnectLatent
 from ComfyUI_Mokkaboss1.nodes.TimeStamp import TimeStamp
 from ComfyUI_Mokkaboss1.nodes.SaveWithMetaData import SaveWithMetaData
+from ComfyUI_Mokkaboss1.nodes.TricolorComposition import TricolorComposition
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -48,6 +49,7 @@ NODE_CLASS_MAPPINGS = {
     "ConnectLatent": ConnectLatent,
     "TimeStamp": TimeStamp,
     "SaveWithMetaData": SaveWithMetaData,
+    "TricolorComposition": TricolorComposition,
     
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -75,5 +77,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ConnectLatent": "👑 ConnectLatent",
     "TimeStamp": "👑 TimeStamp",
     "SaveWithMetaData": "👑 SaveWithMetaData",
+    "TricolorComposition": "👑 TricolorComposition",
 }
-print ("👑 Mokkaboss1 24 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 25 Custom Nodes: Loaded")
