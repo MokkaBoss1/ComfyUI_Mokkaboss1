@@ -106,7 +106,6 @@ class Colors:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
-#			"seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
 			"color": ((colors_list), ),
 		}}
 
@@ -115,7 +114,7 @@ class Colors:
     FUNCTION = "Colors"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def Colours(self, color):
+    def Colors(self, color):
 
         hex_color = None
 
