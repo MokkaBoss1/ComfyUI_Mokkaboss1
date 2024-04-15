@@ -24,6 +24,7 @@ from ComfyUI_Mokkaboss1.nodes.TimeStamp import TimeStamp
 from ComfyUI_Mokkaboss1.nodes.SaveWithMetaData import SaveWithMetaData
 from ComfyUI_Mokkaboss1.nodes.TricolorComposition import TricolorComposition
 from ComfyUI_Mokkaboss1.nodes.Colors import Colors
+from ComfyUI_Mokkaboss1.nodes.hsl import hsl
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -52,6 +53,7 @@ NODE_CLASS_MAPPINGS = {
     "SaveWithMetaData": SaveWithMetaData,
     "TricolorComposition": TricolorComposition,
     "Colors": Colors,
+    "hsl": hsl,
     
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -81,5 +83,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "SaveWithMetaData": "👑 SaveWithMetaData",
     "TricolorComposition": "👑 TricolorComposition",
     "Colors":"👑 Colors",
+    "hsl", "👑 HSL",
 }
-print ("👑 Mokkaboss1 25 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 27 Custom Nodes: Loaded")
