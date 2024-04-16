@@ -85,7 +85,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "SaveWithMetaData": "👑 SaveWithMetaData",
     "TricolorComposition": "👑 TricolorComposition",
     "Colors":"👑 Colors",
-    "HSL", "👑 HSL",
-    "EmbeddingLoader", "👑 EmbeddingLoader",
+    "HSL": "👑 HSL",
+    "EmbeddingLoader": "👑 EmbeddingLoader",
 }
 print ("👑 Mokkaboss1 28 Custom Nodes: Loaded")
