@@ -24,7 +24,7 @@ from ComfyUI_Mokkaboss1.nodes.TimeStamp import TimeStamp
 from ComfyUI_Mokkaboss1.nodes.SaveWithMetaData import SaveWithMetaData
 from ComfyUI_Mokkaboss1.nodes.TricolorComposition import TricolorComposition
 from ComfyUI_Mokkaboss1.nodes.Colors import Colors
-from ComfyUI_Mokkaboss1.nodes.HSL import HSL
+from ComfyUI_Mokkaboss1.nodes.HueSatLum import HueSatLum
 from ComfyUI_Mokkaboss1.nodes.EmbeddingLoader import EmbeddingLoader
 
 NODE_CLASS_MAPPINGS = {
@@ -54,7 +54,7 @@ NODE_CLASS_MAPPINGS = {
     "SaveWithMetaData": SaveWithMetaData,
     "TricolorComposition": TricolorComposition,
     "Colors": Colors,
-    "HSL": HSL,
+    "HueSatLum": HueSatLum,
     "EmbeddingLoader": EmbeddingLoader,
     
 }
@@ -85,7 +85,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "SaveWithMetaData": "👑 SaveWithMetaData",
     "TricolorComposition": "👑 TricolorComposition",
     "Colors":"👑 Colors",
-    "HSL": "👑 HSL",
+    "HueSatLum": "👑 HueSatLum",
     "EmbeddingLoader": "👑 EmbeddingLoader",
 }
 print ("👑 Mokkaboss1 28 Custom Nodes: Loaded")

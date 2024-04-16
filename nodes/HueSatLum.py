@@ -58,7 +58,7 @@ colors_list = [
 ]
 
 
-class HSL:
+class HueSatLum:
 
     def __init__(self):
         pass
@@ -99,5 +99,5 @@ class HSL:
         return (hex_color,)
 
 		
-NODE_CLASS_MAPPINGS = {"HSL": HSL}
-NODE_DISPLAY_NAME_MAPPINGS = {"HSL": "👑 HSL"}
+NODE_CLASS_MAPPINGS = {"HueSatLum": HueSatLum}
+NODE_DISPLAY_NAME_MAPPINGS = {"HueSatLum": "👑 HueSatLum"}
