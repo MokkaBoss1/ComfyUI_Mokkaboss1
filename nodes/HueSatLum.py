@@ -1,6 +1,15 @@
 # https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
 # colors provided by icolorpalette.com based on the hexvalue
+
+from PIL import Image, ImageDraw
+import numpy as np
+import torch
 import colorsys
+
+def pil2tensor(image):
+    return torch.from_numpy(np.array(image).astype(np.float32) / 255.0).unsqueeze(0)
+
+
 
 colors_dict = {
     "Red Rubiate (0)": 0,
@@ -29,34 +38,7 @@ colors_dict = {
     "Saffron Desires (345)": 345
 }
 
-
-colors_list = [
-    "Red Rubiate (0)",
-    "Husky Orange (15)",
-    "Beeswax Candle Orange (30)",
-    "Tiki Torch Yellow (45)",
-    "Tropic Canary Yellow (60)",
-    "Green Caterpillar (75)",
-    "Hill Lands Green (90)",
-    "Skirret Green (105)",
-    "Grass Green (120)",
-    "Artificial Turf (135)",
-    "Esmeralda Green (150)",
-    "Macau Green (165)",
-    "Montego Bay Blue (180)",
-    "Fairy Tale Blue (195)",
-    "Tufts Blue (210)",
-    "Free Speech Blue (225)",
-    "Early Spring Night Blue (240)",
-    "Dragonlord Purple (255)",
-    "Purple Rain (270)",
-    "Akebi Purple (285)",
-    "Ultraviolet Cryner (300)",
-    "Boat Orchid Pink (315)",
-    "Razzle Dazzle (330)",
-    "Saffron Desires (345)"
-]
-
+colors_list = list(colors_dict.keys())
 
 class HueSatLum:
 
@@ -66,13 +48,13 @@ class HueSatLum:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
-			"hue": ((colors_list), ),
+            "hue": ((colors_list), ),
             "saturation": ("INT", {"default": 50, "min": 0, "max": 100}),
             "luminosity": ("INT", {"default": 50, "min": 0, "max": 100}),
-		}}
+        }}
 
-    RETURN_TYPES = ("STRING", )
-    RETURN_NAMES = ("hex_color", )
+    RETURN_TYPES = ("STRING", "IMAGE",)
+    RETURN_NAMES = ("hex_color", "image")
     FUNCTION = "hsl_func"
     CATEGORY = "👑 MokkaBoss1/Image"
 
@@ -96,8 +78,13 @@ class HueSatLum:
         # Convert RGB to hex color
         hex_color = "#{:02x}{:02x}{:02x}".format(int(r * 255), int(g * 255), int(b * 255))
 
-        return (hex_color,)
+        # Generate 100x100 pixel image with the calculated color
+        image = Image.new("RGB", (100, 100), color=(int(r * 255), int(g * 255), int(b * 255)))
 
+        # Convert PIL image to tensor
+        image_tensor = pil2tensor(image)
+
+        return (hex_color, image_tensor)
 		
 NODE_CLASS_MAPPINGS = {"HueSatLum": HueSatLum}
 NODE_DISPLAY_NAME_MAPPINGS = {"HueSatLum": "👑 HueSatLum"}
