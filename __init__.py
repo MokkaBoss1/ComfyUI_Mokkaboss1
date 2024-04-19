@@ -26,6 +26,7 @@ from ComfyUI_Mokkaboss1.nodes.TricolorComposition import TricolorComposition
 from ComfyUI_Mokkaboss1.nodes.Colors import Colors
 from ComfyUI_Mokkaboss1.nodes.HueSatLum import HueSatLum
 from ComfyUI_Mokkaboss1.nodes.EmbeddingLoader import EmbeddingLoader
+from ComfyUI_Mokkaboss1.nodes.ImageDimensions import ImageDimensions
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -56,6 +57,7 @@ NODE_CLASS_MAPPINGS = {
     "Colors": Colors,
     "HueSatLum": HueSatLum,
     "EmbeddingLoader": EmbeddingLoader,
+    "ImageDimensions": ImageDimensions,
     
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -87,5 +89,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Colors":"👑 Colors",
     "HueSatLum": "👑 HueSatLum",
     "EmbeddingLoader": "👑 EmbeddingLoader",
+    "ImageDimensions": "👑 ImageDimensions",
 }
-print ("👑 Mokkaboss1 28 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 29 Custom Nodes: Loaded")
