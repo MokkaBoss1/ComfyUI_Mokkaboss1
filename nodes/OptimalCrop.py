@@ -35,19 +35,46 @@ class OptimalCrop:
     CATEGORY = "👑 MokkaBoss1/Image"
 
     def Optimal_Crop(self, input_image, rounding, aspect_ratio, x_offset, y_offset):
-
+        
+        if aspect_ratio == "1:1  1024x1024 (1.00)":
+            width, height = 1024, 1024
+        elif aspect_ratio == "2:3  832x1216  (0.68)":
+            width, height = 832, 1216
+        elif aspect_ratio == "3:4  896x1152  (0.78)":
+            width, height = 896, 1152
+        elif aspect_ratio == "5:8  768x1216  (0.63)":
+            width, height = 768, 1216
+        elif aspect_ratio == "9:16 768x1344  (0.57)":
+            width, height = 768, 1344
+        elif aspect_ratio == "9:19 704x1472  (0.48)":
+            width, height = 704, 1472
+        elif aspect_ratio == "9:21 640x1536  (0.42)":
+            width, height = 640, 1536
+        elif aspect_ratio == "3:2  1216x832  (1.46)":
+            width, height = 1216, 832
+        elif aspect_ratio == "4:3  1152x896  (1.29)":
+            width, height = 1152, 896
+        elif aspect_ratio == "8:5  1216x768  (1.58)":
+            width, height = 1216, 768
+        elif aspect_ratio == "16:9 1344x768  (1.75)":
+            width, height = 1344, 768
+        elif aspect_ratio == "19:9 1472x704  (2.09)":
+            width, height = 1472, 704
+        elif aspect_ratio == "21:9 1536x640  (2.40)":
+            width, height = 1536, 640
+        
+        ratio = float(width/height)
+        
+        
         _, input_height, input_width, _ = input_image.shape
     
         # Calculate output width based on input width and aspect ratio
-        output_width = int(min(input_width, input_height * aspect_ratio))
+        output_width = int(min(input_width, input_height * ratio))
         
-#        print(f"input_width: {input_width}")
-#        print(f"input_height: {input_height}")
-        
-#        print(f"output width: {output_width}")        
+ 
         
         # Calculate output height based on output width and aspect ratio
-        output_height = int(output_width / aspect_ratio)
+        output_height = int(output_width / ratio)
         
 #        print(f"output height: {output_height}")
         
