@@ -4,23 +4,16 @@
 
 class DoubleClipTextEncode:
 
-#    def __init__(self):
-#        pass
+    def __init__(self):
+        pass
     
     @classmethod
-    def INPUT_TYPES(s):
-
+    def INPUT_TYPES(cls):
         return {
             "required": {
                 "clip": ("CLIP",),
-                "positive_prompt": ("STRING", {
-                     "multiline": True, #True if you want the field to look like the one on the ClipTextEncode node
-                     "default": ""
-                }),
-                "negative_prompt": ("STRING", {
-                     "multiline": True, #True if you want the field to look like the one on the ClipTextEncode node
-                     "default": "nsfw, watermark, text,"
-                }),
+                "positive_prompt": ("STRING", {"forceInput":True},),
+                "negative_prompt": ("STRING", {"forceInput":True},),
             }
         }
 
