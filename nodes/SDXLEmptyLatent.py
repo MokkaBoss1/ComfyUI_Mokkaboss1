@@ -4,7 +4,7 @@
 
 import torch
 
-class SDXLAspectRatioDec:
+class SDXLEmptyLatent:
     def __init__(self):
         pass
 
@@ -73,8 +73,8 @@ class SDXLAspectRatioDec:
 
             
 NODE_CLASS_MAPPINGS = {
-    "SDXLAspectRatioDec": SDXLAspectRatioDec
+    "SDXLEmptyLatent": SDXLEmptyLatent
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "SDXLAspectRatioDec": "👑 SDXLAspectRatioDec"
+    "SDXLEmptyLatent": "👑 SDXLEmptyLatent"
 }
