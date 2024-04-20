@@ -18,7 +18,7 @@ class SimplePrompts:
     RETURN_TYPES = ("STRING", "STRING")
     RETURN_NAMES = ("pos_prompt", "neg_prompt",)
     FUNCTION = "simple_prompts"
-    CATEGORY = "👑 MokkaBoss1/Other"
+    CATEGORY = "👑 MokkaBoss1/Text"
 
     def simple_prompts(self, pos_prompt, neg_prompt): 
         
