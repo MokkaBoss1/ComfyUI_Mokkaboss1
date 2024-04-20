@@ -11,8 +11,8 @@ class SimplePrompts:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
-            "pos_prompt": ("STRING", {"default": "Documentation", "multiline": True}),
-            "neg_prompt": ("STRING", {"default": "string", "multiline": True}),
+            "pos_prompt": ("STRING", {"default": "# Positive Prompt #", "multiline": True}),
+            "neg_prompt": ("STRING", {"default": "# Negative Prompt #", "multiline": True}),
         }}
 
     RETURN_TYPES = ("STRING", "STRING")
