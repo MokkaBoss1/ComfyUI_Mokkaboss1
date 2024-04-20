@@ -69,7 +69,7 @@ class SDXLAspectRatioDec:
         
         
         latent = torch.zeros([batch_size, 4, adj_height, adj_width])
-        return (adj_width * 8, adj_height * 8, ratio, {"samples":latent}, parameters)
+        return (adj_width * 8, adj_height * 8, ratio, {"samples":latent}, )
 
             
 NODE_CLASS_MAPPINGS = {
