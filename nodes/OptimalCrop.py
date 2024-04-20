@@ -1,5 +1,5 @@
 # https://github.com/MokkaBoss1/ComfyUI_Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
-
+# MokkaBoss1 April 2024
 
 class OptimalCrop:
 
