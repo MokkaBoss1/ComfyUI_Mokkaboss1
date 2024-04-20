@@ -2,6 +2,8 @@
 #quick node to set SDXL-friendly aspect ratios showing their decimal values
 # insprired by throttlekitty
 
+import torch
+
 class SDXLAspectRatioDec:
     def __init__(self):
         pass
@@ -10,8 +12,7 @@ class SDXLAspectRatioDec:
     def INPUT_TYPES(s):
         return {
                 "required": {
-                    "width": ("INT", {"default": 64, "min": 64, "max": 2048,}),
-                    "height": ("INT", {"default": 64, "min": 64, "max": 2048}),
+                    "batch_size": ("INT", {"default": 1, "min": 1, "max": 64}),
                     "aspectRatio": ([
                     "9:21 640x1536  (0.42)",
                     "9:19 704x1472  (0.48)",
@@ -28,12 +29,12 @@ class SDXLAspectRatioDec:
                     "21:9 1536x640  (2.40)"],)
             }
         }
-    RETURN_TYPES = ("INT", "INT", "FLOAT")
-    RETURN_NAMES = ("Width", "Height", "Ratio")
+    RETURN_TYPES = ("INT", "INT", "FLOAT", "LATENT", )
+    RETURN_NAMES = ("Width", "Height", "Ratio", "Latent",)
     FUNCTION = "SDXL_AspectRatio"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def SDXL_AspectRatio(self, width, height, aspectRatio):
+    def SDXL_AspectRatio(self, batch_size, aspectRatio):
         if aspectRatio == "1:1  1024x1024 (1.00)":
             width, height = 1024, 1024
         elif aspectRatio == "2:3  832x1216  (0.68)":
@@ -61,9 +62,14 @@ class SDXLAspectRatioDec:
         elif aspectRatio == "21:9 1536x640  (2.40)":
             width, height = 1536, 640
         
-        ratio = float(width/height)
+        ratio = round(float(width/height),3)
         
-        return(width, height, ratio)
+        adj_width = width // 8
+        adj_height = height // 8
+        
+        
+        latent = torch.zeros([batch_size, 4, adj_height, adj_width])
+        return (adj_width * 8, adj_height * 8, ratio, {"samples":latent}, parameters)
 
             
 NODE_CLASS_MAPPINGS = {
