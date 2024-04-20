@@ -94,4 +94,4 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ImageDimensions": "👑 ImageDimensions",
     "SimplePrompts": "👑 SimplePrompts",
 }
-print ("👑 Mokkaboss1 29 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 30 Custom Nodes: Loaded")
