@@ -11,7 +11,7 @@ class OptimalCrop:
         return {"required": {
             "input_image": ("IMAGE", ),
             "rounding": ("INT", {"default": 1, "min": 1, "max": 64, "step": 1}),
-            "aspect_ratio": ([
+            "aspect_ratio": ((
                     "9:21 640x1536  (0.42)",
                     "9:19 704x1472  (0.48)",
                     "9:16 768x1344  (0.57)",
@@ -24,7 +24,7 @@ class OptimalCrop:
                     "8:5  1216x768  (1.58)",
                     "16:9 1344x768  (1.75)",
                     "19:9 1472x704  (2.09)",
-                    "21:9 1536x640  (2.40)"],),
+                    "21:9 1536x640  (2.40)"),),
             "x_offset": ("INT", {"default": 0, "min": -9999, "max": 9999, "step": 1}),
             "y_offset": ("INT", {"default": 0, "min": -9999, "max": 9999, "step": 1}),
         }}
