@@ -25,6 +25,8 @@ from ComfyUI_Mokkaboss1.nodes.HueSatLum import HueSatLum
 from ComfyUI_Mokkaboss1.nodes.EmbeddingLoader import EmbeddingLoader
 from ComfyUI_Mokkaboss1.nodes.ImageDimensions import ImageDimensions
 from ComfyUI_Mokkaboss1.nodes.SimplePrompts import SimplePrompts
+from ComfyUI_Mokkaboss1.nodes.IntEvaluate import IntEvaluate
+from ComfyUI_Mokkaboss1.nodes.ImageResizeLong import ImageResizeLong
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -54,6 +56,8 @@ NODE_CLASS_MAPPINGS = {
     "EmbeddingLoader": EmbeddingLoader,
     "ImageDimensions": ImageDimensions,
     "SimplePrompts": SimplePrompts,
+    "IntEvaluate": IntEvaluate,
+    "ImageResizeLong": ImageResizeLong,
     
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -84,5 +88,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "EmbeddingLoader": "👑 EmbeddingLoader",
     "ImageDimensions": "👑 ImageDimensions",
     "SimplePrompts": "👑 SimplePrompts",
+    "IntEvaluate": "👑 IntEvaluate",
+    "ImageResizeLong": "👑 ImageResizeLong",
 }
-print ("👑 Mokkaboss1 27 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 29 Custom Nodes: Loaded")
