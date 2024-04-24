@@ -28,6 +28,7 @@ from ComfyUI_Mokkaboss1.nodes.SimplePrompts import SimplePrompts
 from ComfyUI_Mokkaboss1.nodes.IntEvaluate import IntEvaluate
 from ComfyUI_Mokkaboss1.nodes.ImageResizeLong import ImageResizeLong
 from ComfyUI_Mokkaboss1.nodes.PhotomontageA import PhotomontageA
+from ComfyUI_Mokkaboss1.nodes.PhotomontageB import PhotomontageB
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -60,6 +61,7 @@ NODE_CLASS_MAPPINGS = {
     "IntEvaluate": IntEvaluate,
     "ImageResizeLong": ImageResizeLong,
     "PhotomontageA": PhotomontageA,
+    "PhotomontageB": PhotomontageB,
     
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -93,5 +95,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "IntEvaluate": "👑 IntEvaluate",
     "ImageResizeLong": "👑 ImageResizeLong",
     "PhotomontageA": "👑 PhotomontageA",
+    "PhotomontageB": "👑 PhotomontageB",
 }
-print ("👑 Mokkaboss1 30 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 31 Custom Nodes: Loaded")
