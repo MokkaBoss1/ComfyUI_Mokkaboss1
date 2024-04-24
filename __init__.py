@@ -1,35 +1,4 @@
-from ComfyUI_Mokkaboss1.nodes.DoubleClipTextEncode import DoubleClipTextEncode
-from ComfyUI_Mokkaboss1.nodes.HashText import HashText
-from ComfyUI_Mokkaboss1.nodes.IndoorBackgrounds import IndoorBackgrounds
-from ComfyUI_Mokkaboss1.nodes.LandscapeBackgrounds import LandscapeBackgrounds
-from ComfyUI_Mokkaboss1.nodes.OptimalCrop import OptimalCrop
-from ComfyUI_Mokkaboss1.nodes.X_In_a_Dress import X_In_a_Dress
-from ComfyUI_Mokkaboss1.nodes.X_In_a_Suit import X_In_a_Suit
-from ComfyUI_Mokkaboss1.nodes.WrapText import WrapText
-from ComfyUI_Mokkaboss1.nodes.AspectRatioCondition import AspectRatioCondition
-from ComfyUI_Mokkaboss1.nodes.SDXLEmptyLatent import SDXLEmptyLatent
-from ComfyUI_Mokkaboss1.nodes.ZoomCrop import ZoomCrop
-from ComfyUI_Mokkaboss1.nodes.IntFloatDict import IntFloatDict
-from ComfyUI_Mokkaboss1.nodes.WorkflowSettings import WorkflowSettings
-from ComfyUI_Mokkaboss1.nodes.IntStringDict import IntStringDict
-from ComfyUI_Mokkaboss1.nodes.ConnectImage import ConnectImage
-from ComfyUI_Mokkaboss1.nodes.ConnectString import ConnectString
-from ComfyUI_Mokkaboss1.nodes.ConnectInteger import ConnectInteger
-from ComfyUI_Mokkaboss1.nodes.ConnectFloat import ConnectFloat
-from ComfyUI_Mokkaboss1.nodes.ConnectLatent import ConnectLatent
-from ComfyUI_Mokkaboss1.nodes.TimeStamp import TimeStamp
-from ComfyUI_Mokkaboss1.nodes.SaveWithMetaData import SaveWithMetaData
-from ComfyUI_Mokkaboss1.nodes.TricolorComposition import TricolorComposition
-from ComfyUI_Mokkaboss1.nodes.Colors import Colors
-from ComfyUI_Mokkaboss1.nodes.HueSatLum import HueSatLum
-from ComfyUI_Mokkaboss1.nodes.EmbeddingLoader import EmbeddingLoader
-from ComfyUI_Mokkaboss1.nodes.ImageDimensions import ImageDimensions
-from ComfyUI_Mokkaboss1.nodes.SimplePrompts import SimplePrompts
-from ComfyUI_Mokkaboss1.nodes.IntEvaluate import IntEvaluate
-from ComfyUI_Mokkaboss1.nodes.ImageResizeLong import ImageResizeLong
-from ComfyUI_Mokkaboss1.nodes.PhotomontageA import PhotomontageA
-from ComfyUI_Mokkaboss1.nodes.PhotomontageB import PhotomontageB
-from ComfyUI_Mokkaboss1.nodes.PhotomontageC import PhotomontageC
+from ComfyUI_Mokkaboss1.nodes import *
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
