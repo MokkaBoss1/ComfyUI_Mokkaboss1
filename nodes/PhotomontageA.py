@@ -101,7 +101,7 @@ class PhotomontageA:
     RETURN_TYPES = ("IMAGE", "STRING")
     RETURN_NAMES = ("output_image", "parameters")
     FUNCTION = "photomontage_a"
-    CATEGORY = "👑 MokkaBoss1/Other"
+    CATEGORY = "👑 MokkaBoss1/Image"
 
     def photomontage_a(self, spacing, unit_width, unit_height, rec1_image1, rec1_image2, rec1_image3, rec2_image4, rec2_image5, rec1_image6, rec1_image7, rec1_image8): 
         
@@ -131,15 +131,7 @@ class PhotomontageA:
         image5 = crop_image(tensor2pil(rec2_image5), rec2_image_ar)
         image6 = crop_image(tensor2pil(rec1_image6), rec1_image_ar)
         image7 = crop_image(tensor2pil(rec1_image7), rec1_image_ar)
-        image8 = crop_image(tensor2pil(rec1_image8), rec1_image_ar)
-        
-        width, height = image1.size
-        print("Width of cropped image 1:", width)
-        print("Height of image 1:", height)
-        width, height = image4.size
-        print("Width of cropped image 4:", width)
-        print("Height of image 4:", height)
-        
+        image8 = crop_image(tensor2pil(rec1_image8), rec1_image_ar)      
         
         # resize images to calculated values
         
@@ -151,18 +143,7 @@ class PhotomontageA:
         image6 = resize_image(image6, rec1_image_width, rec1_image_height)
         image7 = resize_image(image7, rec1_image_width, rec1_image_height)
         image8 = resize_image(image8, rec1_image_width, rec1_image_height)        
- 
- 
-        width, height = image1.size
-        print("Width of resized image 1:", width)
-        print("Height of image 1:", height)
-        width, height = image4.size
-        print("Width of resized image 4:", width)
-        print("Height of image 4:", height) 
- 
- 
- 
- 
+
  
         # superimpose images onto empty background
         

@@ -97,7 +97,7 @@ class PhotomontageB:
     RETURN_TYPES = ("IMAGE", "STRING")
     RETURN_NAMES = ("output_image", "parameters")
     FUNCTION = "photomontage_b"
-    CATEGORY = "👑 MokkaBoss1/Other"
+    CATEGORY = "👑 MokkaBoss1/Image"
 
     def photomontage_b(self, spacing, unit_width, unit_height, rec1_image1, rec1_image2, rec2_image3,): 
         
