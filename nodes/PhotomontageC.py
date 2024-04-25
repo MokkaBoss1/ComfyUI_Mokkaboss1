@@ -144,7 +144,7 @@ class PhotomontageC:
         # return photomontage, parameters
         rec1_image_mp = round((rec1_image_height * rec1_image_width) / (1024*1024),3)
         rec2_image_mp = round((rec1_image_height * rec2_image_width) / (1024*1024),3)
-        parameters = f"Rectangular1 image width: {rec1_image_width},\nRectangular1 image height: {rec1_image_height}\nRectangular1 image aspect ratio: {rec1_image_ar}\nRectangular image megapixels: {rec1_image_mp}\nRectangular2 image width: {rec2_image_width},\nRectangular2 image height: {rec2_image_height},\nRectangular2 image aspect ratio: {rec2_image_ar},\nRectangular2 image megapixels: {rec2_image_mp}\nPage width: {page_width},\nPage height: {page_height}"
+        parameters = f"Rectangular1 image width: {rec1_image_width},\nRectangular1 image height: {rec1_image_height}\nRectangular1 image aspect ratio: {rec1_image_ar}\nRectangular1 image megapixels: {rec1_image_mp}\nRectangular2 image width: {rec2_image_width},\nRectangular2 image height: {rec2_image_height},\nRectangular2 image aspect ratio: {rec2_image_ar},\nRectangular2 image megapixels: {rec2_image_mp}\nPage width: {page_width},\nPage height: {page_height}"
         output_pil = pil2tensor(output_image)
         print("Type of output image:", type(output_pil))
         
