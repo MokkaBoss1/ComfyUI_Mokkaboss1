@@ -62,7 +62,7 @@ def common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, 
     latent["samples"] = samples
     return latent
 
-class MBKSampler:
+class MbKsampler:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {"model": ("MODEL",),
@@ -109,5 +109,5 @@ class MBKSampler:
     
         return (latent,)
     
-NODE_CLASS_MAPPINGS = {"MBKSampler": MBKSampler}
-NODE_DISPLAY_NAME_MAPPINGS = {"MBKSampler": "👑 MBKSampler"}
+NODE_CLASS_MAPPINGS = {"MbKsampler": MbKsampler}
+NODE_DISPLAY_NAME_MAPPINGS = {"MbKsampler": "👑 MB KSampler"}
