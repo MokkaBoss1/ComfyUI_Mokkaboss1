@@ -78,7 +78,7 @@ class MBKSampler:
 
     RETURN_TYPES = ("LATENT",)
     FUNCTION = "sample"
-    CATEGORY = "sampling"
+    CATEGORY = "👑 MokkaBoss1/Other"
 
     @classmethod
     def sample(cls, model, seed, steps, cfg, sampler_name_string, scheduler_string, positive, negative, latent, denoise=1.0):
