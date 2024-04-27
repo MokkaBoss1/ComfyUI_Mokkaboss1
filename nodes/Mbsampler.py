@@ -69,7 +69,7 @@ class Mbsampler:
                              "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
                              "steps": ("INT", {"default": 20, "min": 1, "max": 10000, "forceInput":True}),
                              "cfg": ("FLOAT", {"default": 8.0, "min": 0.0, "max": 100.0, "step": 0.1, "round": 0.01, "forceInput":True}),
-                             "sampler_name_string": ("STRING", {"default": '', "multiline": False, "forceInput":True}),
+                             "sampler_string": ("STRING", {"default": '', "multiline": False, "forceInput":True}),
                              "scheduler_string": ("STRING", {"default": '', "multiline": False, "forceInput":True}),
                              "positive": ("CONDITIONING",),
                              "negative": ("CONDITIONING",),
@@ -81,15 +81,15 @@ class Mbsampler:
     CATEGORY = "👑 MokkaBoss1/Other"
 
     @classmethod
-    def sample(cls, model, seed, steps, cfg, sampler_name_string, scheduler_string, positive, negative, latent, denoise=1.0):
+    def sample(cls, model, seed, steps, cfg, sampler_string, scheduler_string, positive, negative, latent, denoise=1.0):
         
         if sampler_name_string != "":
             #check if sampler_name_string is an allowed value within the sampler list
-            is_in_samplers = sampler_name_string in comfy.samplers.KSampler.SAMPLERS
+            is_in_samplers = sampler_string in comfy.samplers.KSampler.SAMPLERS
 
             if is_in_samplers:
                 #print(f"{sampler_name_string} is in the list of samplers.")
-                sampler_name = sampler_name_string
+                sampler_name = sampler_string
             #else:
                 #print(f"{sampler_name_string} is not in the list of samplers.")
                 
