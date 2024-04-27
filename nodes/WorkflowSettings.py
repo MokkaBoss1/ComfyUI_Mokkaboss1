@@ -6,12 +6,12 @@ import comfy.sd  # Import the necessary module containing `load_checkpoint_guess
 # Attempt to import hide_sampler from a file two directories up
 try:
     import sys
-    sys.path.append('../../')  # Adds the directory two levels up to the path
+    sys.path.append('../../../')  # Adds the directory two levels up to the path
     from hide_sampler import hide_sampler
 except ImportError:
     hide_sampler = 0
 finally:
-    sys.path.remove('../../')  # Clean up by removing the added path
+    sys.path.remove('../../../')  # Clean up by removing the added path
 
 class WorkflowSettings:
 
