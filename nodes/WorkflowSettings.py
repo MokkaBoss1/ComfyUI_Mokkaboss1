@@ -17,10 +17,10 @@ class WorkflowSettings:
 
     if hide_sampler == 0:
         RETURN_TYPES = ("INT", "FLOAT", comfy.samplers.KSampler.SAMPLERS, "STRING", comfy.samplers.KSampler.SCHEDULERS, "STRING", "STRING", "MODEL", "CLIP", "VAE", "STRING",)
-        RETURN_NAMES = ("chosen_steps", "chosen_cfg", "chosen_sampler", "sampler_string", "chosen_scheduler", "Scheduler_string", "modelname_string", "MODEL", "CLIP", "VAE", "settings")
+        RETURN_NAMES = ("chosen_steps", "chosen_cfg", "chosen_sampler", "sampler_string", "chosen_scheduler", "scheduler_string", "modelname_string", "MODEL", "CLIP", "VAE", "settings")
     else:
         RETURN_TYPES = ("INT", "FLOAT", "STRING", "STRING", "STRING", "MODEL", "CLIP", "VAE", "STRING",)
-        RETURN_NAMES = ("chosen_steps", "chosen_cfg", "sampler_string", "Scheduler_string", "modelname_string", "MODEL", "CLIP", "VAE", "settings")
+        RETURN_NAMES = ("chosen_steps", "chosen_cfg", "sampler_string", "scheduler_string", "modelname_string", "MODEL", "CLIP", "VAE", "settings")
 
     FUNCTION = "load_checkpoint"
     CATEGORY = "👑 MokkaBoss1/Other"
