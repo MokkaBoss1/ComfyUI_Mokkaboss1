@@ -4,14 +4,19 @@ import folder_paths
 import comfy.sd  # Import the necessary module containing `load_checkpoint_guess_config`
 #from ..model_settings.model_data import multi_field_list  # Import multi_field_list.
 
+hide_sampler = 0
 
 class WorkflowSettings:
 
     def __init__(self):
         pass
 
-    RETURN_TYPES = ("INT", "FLOAT", comfy.samplers.KSampler.SAMPLERS, "STRING", comfy.samplers.KSampler.SCHEDULERS, "STRING", "STRING", "MODEL", "CLIP", "VAE", "STRING",)
-    RETURN_NAMES = ("chosen_steps", "chosen_cfg", "chosen_sampler", "sampler_string", "chosen_scheduler", "Scheduler_string", "modelname_string", "MODEL", "CLIP", "VAE", "settings")
+    if hide_sampler == 0:
+        RETURN_TYPES = ("INT", "FLOAT", comfy.samplers.KSampler.SAMPLERS, "STRING", comfy.samplers.KSampler.SCHEDULERS, "STRING", "STRING", "MODEL", "CLIP", "VAE", "STRING",)
+        RETURN_NAMES = ("chosen_steps", "chosen_cfg", "chosen_sampler", "sampler_string", "chosen_scheduler", "Scheduler_string", "modelname_string", "MODEL", "CLIP", "VAE", "settings")
+    else:
+        RETURN_TYPES = ("INT", "FLOAT", "STRING", "STRING", "STRING", "MODEL", "CLIP", "VAE", "STRING",)
+        RETURN_NAMES = ("chosen_steps", "chosen_cfg", "sampler_string", "Scheduler_string", "modelname_string", "MODEL", "CLIP", "VAE", "settings")
     FUNCTION = "load_checkpoint"
     CATEGORY = "👑 MokkaBoss1/Other"
     
