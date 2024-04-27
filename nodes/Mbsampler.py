@@ -83,15 +83,15 @@ class Mbsampler:
     @classmethod
     def sample(cls, model, seed, steps, cfg, sampler_string, scheduler_string, positive, negative, latent, denoise=1.0):
         
-        if sampler_name_string != "":
-            #check if sampler_name_string is an allowed value within the sampler list
+        if sampler_string != "":
+            #check if sampler_string is an allowed value within the sampler list
             is_in_samplers = sampler_string in comfy.samplers.KSampler.SAMPLERS
 
             if is_in_samplers:
-                #print(f"{sampler_name_string} is in the list of samplers.")
+                #print(f"{sampler_string} is in the list of samplers.")
                 sampler_name = sampler_string
             #else:
-                #print(f"{sampler_name_string} is not in the list of samplers.")
+                #print(f"{sampler_string} is not in the list of samplers.")
                 
         if scheduler_string != "":
             #check if scheduler_string is an allowed value within the scheduler list
