@@ -8,11 +8,28 @@ import comfy.sd  # Import the necessary module containing `load_checkpoint_guess
 try:
     import sys
     sys.path.append('../../../')  # Adds the directory two levels up to the path
-    from hide_sampler import hide_sampler
+    from mokkaboss1_workflowsettings import hide_sampler
+    from mokkaboss1_workflowsettings import hide_parameters
 except ImportError:
     hide_sampler = 0
+    hide_parameters = 0
 finally:
     sys.path.remove('../../../')  # Clean up by removing the added path
+
+parameters = """0,devlishphotorealism_sdxl15.safetensors,30,4.0,dpmpp_2m_sde,karras
+1,sdxlUnstableDiffusers_v8HEAVENSWRATH.safetensors,30,4.0,dpmpp_2m_sde,karras
+2,lovexlAllInOneMega_v20.safetensors,30,4.0,dpmpp_2m_sde,karras
+3,juggernautXL_v9Rdphoto2Lightning.safetensors,5,1.5,dpmpp_sde,karras
+4,dreamshaperXL_v21TurboDPMSDE.safetensors,6,2.0,dpmpp_sde,karras
+5,devlish LoveXL 050.safetensors,30,4.0,dpmpp_2m_sde,karras
+6,sdxlUnstableDiffusers_v11.safetensors,30,4.0,dpmpp_2m_sde,karras
+7,DEVLISH LIGHTNING.safetensors,5,1.5,dpmpp_sde,karras
+8,sdxlUnstableDiffusers_nihilmania.safetensors,30,4.0,dpmpp_2m_sde,karras
+9,realvisxlV40_v40Bakedvae.safetensors,30,4.0,dpmpp_2m,karras
+10,realvisxlV40_v40LightningBakedvae.safetensors,5,1.5,dpmpp_sde,karras
+11,juggernautXL_v8Rundiffusion.safetensors,30,4.0,dpmpp_2m,karras
+12,amuz_v30.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
+"""
 
 class WorkflowSettings:
 
@@ -30,12 +47,23 @@ class WorkflowSettings:
     
     @classmethod
     def INPUT_TYPES(cls):
-        return {
-            "required": {
-                "ckpt_name": (folder_paths.get_filename_list("checkpoints"), ),
-                "text_value": ("STRING", {"multiline": True, "default": "0,juggernautXL_v9Rdphoto2Lightning.safetensors,5,1.5,dpmpp_sde,karras"}),
-            },
-        }
+        if hide_parameters == 0:     
+            return {
+                "required": {
+                    "ckpt_name": (folder_paths.get_filename_list("checkpoints"), ),
+                    "text_value": ("STRING", {"multiline": True, "default": "0,juggernautXL_v9Rdphoto2Lightning.safetensors,5,1.5,dpmpp_sde,karras"}),
+                },
+            }
+        else:
+            return {
+                "required": {
+                    "ckpt_name": (folder_paths.get_filename_list("checkpoints"), ),
+                    "text_value": ("STRING", {"multiline": True, "default": parameters}),
+                },
+            }
+        
+    
+        
     
     def load_checkpoint(self, ckpt_name, text_value, output_vae=True, output_clip=True):
         
@@ -123,3 +151,6 @@ class WorkflowSettings:
 
 NODE_CLASS_MAPPINGS = {"WorkflowSettings": WorkflowSettings}
 NODE_DISPLAY_NAME_MAPPINGS = {"WorkflowSettings": "👑 WorkflowSettings"}
+
+
+
