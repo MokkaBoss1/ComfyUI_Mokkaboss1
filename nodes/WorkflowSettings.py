@@ -29,6 +29,9 @@ parameters = """0,devlishphotorealism_sdxl15.safetensors,30,4.0,dpmpp_2m_sde,kar
 10,realvisxlV40_v40LightningBakedvae.safetensors,5,1.5,dpmpp_sde,karras
 11,juggernautXL_v8Rundiffusion.safetensors,30,4.0,dpmpp_2m,karras
 12,amuz_v30.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
+13,CHEYENNE_v16.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
+14,devlish loveXL 050.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
+15,loveXL Lightning.safetensors,8,1.5,dpmpp_sde,karras
 """
 
 class WorkflowSettings:
