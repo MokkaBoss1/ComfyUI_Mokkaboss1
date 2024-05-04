@@ -8,6 +8,7 @@ formulae = [
     """c+(a+b)/2""",
     """(a*b)""",
     """(a/b)""",
+    """(a*b)+c""",
     ]
 class IntEvaluate:
 
@@ -39,6 +40,8 @@ class IntEvaluate:
             output = int(a*b)
         elif formula == """(a/b)""":
             output = int(a/b)
+        elif formula == """(a*b)+c""":
+            output = int(a*b + c)
         else:
             output = 0
         return (output, )
