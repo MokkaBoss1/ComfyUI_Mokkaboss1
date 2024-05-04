@@ -19,8 +19,8 @@ class IntEvaluate:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "a": ("INT", {"default": 1, "min": 1, "max": 99999999, "step": 1, "forceInput": True}),
-                "b": ("INT", {"default": 1, "min": 1, "max": 99999999, "step": 1, "forceInput": True}),
+                "a": ("INT", {"default": 1, "min": 1, "max": 99999999, "step": 1, "forceInput": False}),
+                "b": ("INT", {"default": 1, "min": 1, "max": 99999999, "step": 1, "forceInput": False}),
                 "c": ("INT", {"default": 1, "min": -99999999, "max": 99999999, "step": 1, "forceInput": False}),
                 "formula": ((formulae), ),
             }
