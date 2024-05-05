@@ -32,6 +32,7 @@ from ComfyUI_Mokkaboss1.nodes.PhotomontageB import PhotomontageB
 from ComfyUI_Mokkaboss1.nodes.PhotomontageC import PhotomontageC
 from ComfyUI_Mokkaboss1.nodes.PostSamplerCrop import PostSamplerCrop
 from ComfyUI_Mokkaboss1.nodes.Mbsampler import Mbsampler
+from ComfyUI_Mokkaboss1.nodes.Overlay import Overlay
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -68,6 +69,7 @@ NODE_CLASS_MAPPINGS = {
     "PhotomontageC": PhotomontageC,
     "PostSamplerCrop": PostSamplerCrop,
     "Mbsampler": Mbsampler,
+    "Overlay": Overlay,
     
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -105,5 +107,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "PhotomontageC": "👑 PhotomontageC",
     "PostSamplerCrop": "👑 PostSamplerCrop",
     "Mbsampler": "👑 Mbsampler",
+    "Overlay": "👑 Overlay",
 }
-print ("👑 Mokkaboss1 34 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 35 Custom Nodes: Loaded")
