@@ -54,7 +54,6 @@ class HueSatLum:
             "luminosity": ("INT", {"default": 50, "min": 0, "max": 100}),
             "width": ("INT", {"default": 512, "min": 0, "max": 99999}),
             "height": ("INT", {"default": 512, "min": 0, "max": 99999}),
-            "custom_hue": ("INT", {"default": 0, "min": 0, "max": 360}),
         }}
 
     RETURN_TYPES = ("STRING", "IMAGE",)
