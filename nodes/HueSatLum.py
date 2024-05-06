@@ -48,11 +48,13 @@ class HueSatLum:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
-            "hue": ((colors_list), ),
+            "hue_preset": ((colors_list), ),
+            "custom_hue": ("INT", {"default": 0, "min": 0, "max": 360}),
             "saturation": ("INT", {"default": 50, "min": 0, "max": 100}),
             "luminosity": ("INT", {"default": 50, "min": 0, "max": 100}),
             "width": ("INT", {"default": 512, "min": 0, "max": 99999}),
             "height": ("INT", {"default": 512, "min": 0, "max": 99999}),
+            "custom_hue": ("INT", {"default": 0, "min": 0, "max": 360}),
         }}
 
     RETURN_TYPES = ("STRING", "IMAGE",)
@@ -60,12 +62,15 @@ class HueSatLum:
     FUNCTION = "hsl_func"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def hsl_func(self, hue, saturation, luminosity, width, height):
+    def hsl_func(self, hue_preset, custom_hue, saturation, luminosity, width, height):
 
         hex_color = None
         
         # Retrieve hue value from colors_dict
-        hue_value = colors_dict[hue]
+        hue_value = colors_dict[hue_preset]
+
+        if custom_hue != 0:
+            hue_value = custom_hue
 
         # Convert hue value to degrees
         hue_degrees = hue_value / 360.0
