@@ -51,6 +51,8 @@ class HueSatLum:
             "hue": ((colors_list), ),
             "saturation": ("INT", {"default": 50, "min": 0, "max": 100}),
             "luminosity": ("INT", {"default": 50, "min": 0, "max": 100}),
+            "width": ("INT", {"default": 512, "min": 0, "max": 99999}),
+            "height": ("INT", {"default": 512, "min": 0, "max": 99999}),
         }}
 
     RETURN_TYPES = ("STRING", "IMAGE",)
@@ -58,7 +60,7 @@ class HueSatLum:
     FUNCTION = "hsl_func"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def hsl_func(self, hue, saturation, luminosity):
+    def hsl_func(self, hue, saturation, luminosity, width, height):
 
         hex_color = None
         
@@ -79,7 +81,7 @@ class HueSatLum:
         hex_color = "#{:02x}{:02x}{:02x}".format(int(r * 255), int(g * 255), int(b * 255))
 
         # Generate 100x100 pixel image with the calculated color
-        image = Image.new("RGB", (100, 100), color=(int(r * 255), int(g * 255), int(b * 255)))
+        image = Image.new("RGB", (width, height), color=(int(r * 255), int(g * 255), int(b * 255)))
 
         # Convert PIL image to tensor
         image_tensor = pil2tensor(image)
