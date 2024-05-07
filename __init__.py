@@ -19,6 +19,7 @@ from ComfyUI_Mokkaboss1.nodes.ConnectFloat import ConnectFloat
 from ComfyUI_Mokkaboss1.nodes.ConnectLatent import ConnectLatent
 from ComfyUI_Mokkaboss1.nodes.TimeStamp import TimeStamp
 from ComfyUI_Mokkaboss1.nodes.SaveWithMetaData import SaveWithMetaData
+from ComfyUI_Mokkaboss1.nodes.SaveWithMetaData2 import SaveWithMetaData2
 from ComfyUI_Mokkaboss1.nodes.TricolorComposition import TricolorComposition
 from ComfyUI_Mokkaboss1.nodes.Colors import Colors
 from ComfyUI_Mokkaboss1.nodes.HueSatLum import HueSatLum
@@ -57,6 +58,7 @@ NODE_CLASS_MAPPINGS = {
     "ConnectLatent": ConnectLatent,
     "TimeStamp": TimeStamp,
     "SaveWithMetaData": SaveWithMetaData,
+    "SaveWithMetaData2": SaveWithMetaData2,
     "TricolorComposition": TricolorComposition,
     "Colors": Colors,
     "HueSatLum": HueSatLum,
@@ -96,6 +98,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ConnectLatent": "👑 ConnectLatent",
     "TimeStamp": "👑 TimeStamp",
     "SaveWithMetaData": "👑 SaveWithMetaData",
+    "SaveWithMetaData2": "👑 SaveWithMetaData2",
     "TricolorComposition": "👑 TricolorComposition",
     "Colors":"👑 Colors",
     "HueSatLum": "👑 HueSatLum",
@@ -112,4 +115,4 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Overlay": "👑 Overlay",
     "HueShift": "👑 HueShift",
 }
-print ("👑 Mokkaboss1 36 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 37 Custom Nodes: Loaded")
