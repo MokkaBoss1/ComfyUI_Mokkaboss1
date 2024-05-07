@@ -59,7 +59,7 @@ def date_string(format):
     now = datetime.now()
     return now.strftime(format)
 
-class SaveWithMetaData:
+class SaveWithMetaData2:
 
     def __init__(self):
         self.output_dir = folder_paths.output_directory
@@ -166,5 +166,5 @@ class SaveWithMetaData:
             img_count += 1
         return paths
 
-NODE_CLASS_MAPPINGS = {"SaveWithMetaData": SaveWithMetaData}
-NODE_DISPLAY_NAME_MAPPINGS = {"SaveWithMetaData": "👑 SaveWithMetaData"}
+NODE_CLASS_MAPPINGS = {"SaveWithMetaData2": SaveWithMetaData2}
+NODE_DISPLAY_NAME_MAPPINGS = {"SaveWithMetaData2": "👑 SaveWithMetaData2"}
