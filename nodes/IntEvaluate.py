@@ -39,12 +39,15 @@ class IntEvaluate:
             }
         }
 
-    RETURN_TYPES = ("INT",)
-    RETURN_NAMES = ("output",)
+    RETURN_TYPES = ("INT", "STRING", "FLOAT")
+    RETURN_NAMES = ("output_int", "output_string", "output_float",)
     FUNCTION = "ave_int"
     CATEGORY = "👑 MokkaBoss1/Other"
 
-    def ave_int(self, a, b, c, formula): 
+    def ave_int(self, a, b, c, formula):
+
+        output = 0
+    
         if formula == """c+(a-b)/2""":
             output = int(c+(a - b)/2)
         elif formula == """c+(a+b)/2""":
@@ -65,7 +68,12 @@ class IntEvaluate:
             output = int(a*b*c)
         else:
             output = 0
-        return (output, )
+            
+        output_int = int(output)
+        output_string = str(output)
+        output_float = float(output)
+        
+        return (output_int, output_string, output_float, )
 
 NODE_CLASS_MAPPINGS = {"IntEvaluate": IntEvaluate}
 NODE_DISPLAY_NAME_MAPPINGS = {"IntEvaluate": "👑 IntEvaluate"}
