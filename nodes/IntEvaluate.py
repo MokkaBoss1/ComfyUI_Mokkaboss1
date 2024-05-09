@@ -61,7 +61,7 @@ class IntEvaluate:
             output = int(a+b+c)
         elif formula == """(a-b-c)""":
             output = int(a-b-c)
-        elif formula = """(a*b*c)""":
+        elif formula == """(a*b*c)""":
             output = int(a*b*c)
         else:
             output = 0
