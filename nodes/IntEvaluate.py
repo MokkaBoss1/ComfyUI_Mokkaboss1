@@ -1,5 +1,14 @@
 # https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
 
+#██╗███╗   ██╗████████╗    ███████╗██╗   ██╗ █████╗ ██╗     ██╗   ██╗ █████╗ ████████╗███████╗
+#██║████╗  ██║╚══██╔══╝    ██╔════╝██║   ██║██╔══██╗██║     ██║   ██║██╔══██╗╚══██╔══╝██╔════╝
+#██║██╔██╗ ██║   ██║       █████╗  ██║   ██║███████║██║     ██║   ██║███████║   ██║   █████╗  
+#██║██║╚██╗██║   ██║       ██╔══╝  ╚██╗ ██╔╝██╔══██║██║     ██║   ██║██╔══██║   ██║   ██╔══╝  
+#██║██║ ╚████║   ██║       ███████╗ ╚████╔╝ ██║  ██║███████╗╚██████╔╝██║  ██║   ██║   ███████╗
+#╚═╝╚═╝  ╚═══╝   ╚═╝       ╚══════╝  ╚═══╝  ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
+                                                                                             
+# Mokkaboss1 May 2024
+
 import random
 import re
 
@@ -9,6 +18,10 @@ formulae = [
     """(a*b)""",
     """(a/b)""",
     """(a*b)+c""",
+    """(a*b)/c""",
+    """(a+b+c)""",
+    """(a-b-c)""",
+    """(a*b*c)""",
     ]
 class IntEvaluate:
 
@@ -42,6 +55,14 @@ class IntEvaluate:
             output = int(a/b)
         elif formula == """(a*b)+c""":
             output = int(a*b + c)
+        elif formula == """(a*b)/c""":
+            output = int((a*b)/c)
+        elif formula == """(a+b+c)""":
+            output = int(a+b+c)
+        elif formula == """(a-b-c)""":
+            output = int(a-b-c)
+        elif formula = """(a*b*c)""":
+            output = int(a*b*c)
         else:
             output = 0
         return (output, )
