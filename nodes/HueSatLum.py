@@ -1,6 +1,17 @@
 # https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
 # colors provided by icolorpalette.com based on the hexvalue
 
+
+
+# ██╗  ██╗██╗   ██╗███████╗███████╗ █████╗ ████████╗██╗     ██╗   ██╗███╗   ███╗
+# ██║  ██║██║   ██║██╔════╝██╔════╝██╔══██╗╚══██╔══╝██║     ██║   ██║████╗ ████║
+# ███████║██║   ██║█████╗  ███████╗███████║   ██║   ██║     ██║   ██║██╔████╔██║
+# ██╔══██║██║   ██║██╔══╝  ╚════██║██╔══██║   ██║   ██║     ██║   ██║██║╚██╔╝██║
+# ██║  ██║╚██████╔╝███████╗███████║██║  ██║   ██║   ███████╗╚██████╔╝██║ ╚═╝ ██║
+# ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝ ╚═════╝ ╚═╝     ╚═╝
+                                                                              
+
+
 from PIL import Image, ImageDraw
 import numpy as np
 import torch
