@@ -19,7 +19,7 @@ class ConnectLatent:
     def INPUT_TYPES(cls):
         return {"required": {
             "documentation": ("STRING", {"default": "Documentation", "multiline": True}),
-            "i_lat": ("LATENT", "ForceInput": True),
+            "i_lat": ("LATENT", {"ForceInput": True}),
 
         }}
 
