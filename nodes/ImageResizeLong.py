@@ -1,6 +1,5 @@
 # https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
 
-
 # ██╗███╗   ███╗ █████╗  ██████╗ ███████╗██████╗ ███████╗███████╗██╗███████╗███████╗██╗      ██████╗ ███╗   ██╗ ██████╗ 
 # ██║████╗ ████║██╔══██╗██╔════╝ ██╔════╝██╔══██╗██╔════╝██╔════╝██║╚══███╔╝██╔════╝██║     ██╔═══██╗████╗  ██║██╔════╝ 
 # ██║██╔████╔██║███████║██║  ███╗█████╗  ██████╔╝█████╗  ███████╗██║  ███╔╝ █████╗  ██║     ██║   ██║██╔██╗ ██║██║  ███╗
@@ -8,8 +7,6 @@
 # ██║██║ ╚═╝ ██║██║  ██║╚██████╔╝███████╗██║  ██║███████╗███████║██║███████╗███████╗███████╗╚██████╔╝██║ ╚████║╚██████╔╝
 # ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ 
                                                                                                                       
-
-
 from PIL import Image
 import numpy as np
 import torch
@@ -33,8 +30,8 @@ class ImageResizeLong:
             "background_image": ("IMAGE", ),
         }}
 
-    RETURN_TYPES = ("IMAGE",)
-    RETURN_NAMES = ("output_image",)
+    RETURN_TYPES = ("IMAGE","STRING",)
+    RETURN_NAMES = ("output_image","parameters",)
     FUNCTION = "resize"
     CATEGORY = "👑 MokkaBoss1/Image"
 
@@ -66,7 +63,10 @@ class ImageResizeLong:
 
         # Convert back to tensor
         subject_image_return = pil2tensor(resized_subject_image)
-        return (subject_image_return,)
+        
+        parameters = f"New height: {new_height}\nNew width: {new_width}\nScale factor: {scale_factor}\nScale width: {scale_width}\nScale height: {scale_height}\nSubject image type: {subject_image_type}\nBackground image type: {background_image_type}\nSubject image width: {subject_image_width}\nSubject image height: {subject_image_height}\nBackground image width: {background_image_width}\nBackground image height: {background_image_height}"
+        
+        return (subject_image_return, parameters)
 
 NODE_CLASS_MAPPINGS = {"ImageResizeLong": ImageResizeLong}
 NODE_DISPLAY_NAME_MAPPINGS = {"ImageResizeLong": "👑 ImageResizeLong"}
