@@ -12,7 +12,7 @@ class ConnectString:
     def INPUT_TYPES(cls):
         return {"required": {
             "documentation": ("STRING", {"default": "Documentation", "multiline": True}),
-            "i_string": ("STRING", {"default": "string", "multiline": True, "ForceInput": True}),
+            "i_string": ("STRING", {"default": "string", "ForceInput": True}),
         }}
 
     RETURN_TYPES = ("STRING",)
