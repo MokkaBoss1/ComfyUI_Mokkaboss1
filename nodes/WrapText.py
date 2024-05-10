@@ -1,4 +1,13 @@
 # Node to wrap text into 7 lines based on a long text and integer representing the width
+# https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
+
+# ██╗    ██╗██████╗  █████╗ ██████╗     ████████╗███████╗██╗  ██╗████████╗
+# ██║    ██║██╔══██╗██╔══██╗██╔══██╗    ╚══██╔══╝██╔════╝╚██╗██╔╝╚══██╔══╝
+# ██║ █╗ ██║██████╔╝███████║██████╔╝       ██║   █████╗   ╚███╔╝    ██║   
+# ██║███╗██║██╔══██╗██╔══██║██╔═══╝        ██║   ██╔══╝   ██╔██╗    ██║   
+# ╚███╔███╔╝██║  ██║██║  ██║██║            ██║   ███████╗██╔╝ ██╗   ██║   
+#  ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝            ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝   
+                                                                        
 
 class WrapText:
 

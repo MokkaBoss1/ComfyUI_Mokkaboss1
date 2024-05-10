@@ -3,6 +3,13 @@
 # also I updated the x and y offset step to 1 for more precise positioning
 # Mokkaboss1 5th May 2024
 
+# ██████╗ ██╗   ██╗███████╗██████╗ ██╗      █████╗ ██╗   ██╗
+#██╔═══██╗██║   ██║██╔════╝██╔══██╗██║     ██╔══██╗╚██╗ ██╔╝
+#██║   ██║██║   ██║█████╗  ██████╔╝██║     ███████║ ╚████╔╝ 
+#██║   ██║╚██╗ ██╔╝██╔══╝  ██╔══██╗██║     ██╔══██║  ╚██╔╝  
+#╚██████╔╝ ╚████╔╝ ███████╗██║  ██║███████╗██║  ██║   ██║   
+# ╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   
+                                                           
 from torch import Tensor
 from PIL import Image, ImageOps, ImageDraw, ImageFont
 from PIL.PngImagePlugin import PngInfo

@@ -1,6 +1,15 @@
 # https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
 # this node is based on the "Save w/ meta data"node from giriss \ comfy-image-saver (https://github.com/giriss/comfy-image-saver)
 # I noticed the original node was taking a long time to process so after debugging I found that reading the modelhash was the culprit. This step is removed in this version of the node.
+
+
+# ███████╗ █████╗ ██╗   ██╗███████╗██╗    ██╗██╗████████╗██╗  ██╗███╗   ███╗███████╗████████╗ █████╗ ██████╗  █████╗ ████████╗ █████╗ ██████╗ 
+# ██╔════╝██╔══██╗██║   ██║██╔════╝██║    ██║██║╚══██╔══╝██║  ██║████╗ ████║██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗╚════██╗
+# ███████╗███████║██║   ██║█████╗  ██║ █╗ ██║██║   ██║   ███████║██╔████╔██║█████╗     ██║   ███████║██║  ██║███████║   ██║   ███████║ █████╔╝
+# ╚════██║██╔══██║╚██╗ ██╔╝██╔══╝  ██║███╗██║██║   ██║   ██╔══██║██║╚██╔╝██║██╔══╝     ██║   ██╔══██║██║  ██║██╔══██║   ██║   ██╔══██║██╔═══╝ 
+# ███████║██║  ██║ ╚████╔╝ ███████╗╚███╔███╔╝██║   ██║   ██║  ██║██║ ╚═╝ ██║███████╗   ██║   ██║  ██║██████╔╝██║  ██║   ██║   ██║  ██║███████╗
+# ╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝ ╚══╝╚══╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝
+                                                                                                                                            
 from datetime import datetime
 import os
 from datetime import datetime
