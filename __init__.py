@@ -35,6 +35,7 @@ from ComfyUI_Mokkaboss1.nodes.PostSamplerCrop import PostSamplerCrop
 from ComfyUI_Mokkaboss1.nodes.Mbsampler import Mbsampler
 from ComfyUI_Mokkaboss1.nodes.Overlay import Overlay
 from ComfyUI_Mokkaboss1.nodes.HueShift import HueShift
+from ComfyUI_Mokkaboss1.nodes.JoinImages import JoinImages
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -74,6 +75,7 @@ NODE_CLASS_MAPPINGS = {
     "Mbsampler": Mbsampler,
     "Overlay": Overlay,
     "HueShift": HueShift,
+    "JoinImages": JoinImages,
     
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -114,5 +116,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Mbsampler": "👑 Mbsampler",
     "Overlay": "👑 Overlay",
     "HueShift": "👑 HueShift",
+    "JoinImages": "👑 JoinImages",
 }
-print ("👑 Mokkaboss1 37 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 38 Custom Nodes: Loaded")
