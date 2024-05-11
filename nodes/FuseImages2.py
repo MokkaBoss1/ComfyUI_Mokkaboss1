@@ -1,12 +1,4 @@
-    # https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
-
-    #      ██╗ ██████╗ ██╗███╗   ██╗██╗███╗   ███╗ █████╗  ██████╗ ███████╗███████╗
-    #      ██║██╔═══██╗██║████╗  ██║██║████╗ ████║██╔══██╗██╔════╝ ██╔════╝██╔════╝
-    #      ██║██║   ██║██║██╔██╗ ██║██║██╔████╔██║███████║██║  ███╗█████╗  ███████╗
-    # ██   ██║██║   ██║██║██║╚██╗██║██║██║╚██╔╝██║██╔══██║██║   ██║██╔══╝  ╚════██║
-    # ╚█████╔╝╚██████╔╝██║██║ ╚████║██║██║ ╚═╝ ██║██║  ██║╚██████╔╝███████╗███████║
-    #  ╚════╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝
-                                                                                                                                                           
+    # https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack                                                                                                                                                      
 
 from PIL import Image, ImageDraw
 import numpy as np
@@ -42,10 +34,10 @@ class FuseImages2:
 
     RETURN_TYPES = ("IMAGE",)
     RETURN_NAMES = ("output_image",)
-    FUNCTION = "JoinImages"
+    FUNCTION = "FuseImages_two"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def JoinImages(self, required_image1, required_image2, optional_image3=None, optional_image4=None, optional_image5=None, optional_image6=None, optional_image7=None, optional_image8=None, join_type="horizontal"):
+    def FuseImages_two(self, required_image1, required_image2, optional_image3=None, optional_image4=None, optional_image5=None, optional_image6=None, optional_image7=None, optional_image8=None, join_type="horizontal"):
         # Convert tensors back to PIL images if they are not already in that format
         def tensor_to_pil(tensor_image):
             if isinstance(tensor_image, torch.Tensor):
