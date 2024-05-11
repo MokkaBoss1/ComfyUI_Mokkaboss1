@@ -17,7 +17,7 @@ def pil2tensor(image):
 
 join_type_list = ["horizontal", "vertical"]
 
-class JoinImages:
+class FuseImages:
 
     def __init__(self):
         pass
@@ -66,6 +66,6 @@ class JoinImages:
 
         return (output_image,)
 		
-NODE_CLASS_MAPPINGS = {"JoinImages": JoinImages}
-NODE_DISPLAY_NAME_MAPPINGS = {"JoinImages": "👑 JoinImages"}
+NODE_CLASS_MAPPINGS = {"FuseImages": FuseImages}
+NODE_DISPLAY_NAME_MAPPINGS = {"FuseImages": "👑 FuseImages"}
 
