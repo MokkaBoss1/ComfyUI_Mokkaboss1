@@ -36,6 +36,7 @@ from ComfyUI_Mokkaboss1.nodes.Mbsampler import Mbsampler
 from ComfyUI_Mokkaboss1.nodes.Overlay import Overlay
 from ComfyUI_Mokkaboss1.nodes.HueShift import HueShift
 from ComfyUI_Mokkaboss1.nodes.FuseImages import FuseImages
+from ComfyUI_Mokkaboss1.nodes.FuseImages2 import FuseImages2
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -76,6 +77,7 @@ NODE_CLASS_MAPPINGS = {
     "Overlay": Overlay,
     "HueShift": HueShift,
     "FuseImages": FuseImages,
+    "FuseImages2": FuseImages2,
     
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -117,5 +119,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Overlay": "👑 Overlay",
     "HueShift": "👑 HueShift",
     "FuseImages": "👑 FuseImages",
+    "FuseImages2": "👑 FuseImages2",
 }
-print ("👑 Mokkaboss1 38 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 39 Custom Nodes: Loaded")
