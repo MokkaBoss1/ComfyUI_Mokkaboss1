@@ -12,6 +12,14 @@ import os
 import re
 import folder_paths  # Ensure this module is correctly defined and available
 
+# Function to clean text
+def clean_text(text):
+    text = re.sub(r' {3,}', ' ', text)    # Replace three or more spaces with a single space
+    text = re.sub(r' {2}', ' ', text)     # Replace two spaces with a single space
+    text = re.sub(r',{2,}', ',', text)    # Replace two or more commas with a single comma
+    text = re.sub(r', ,', ',', text)      # Replace ", ," with ","
+    return text
+
 def date_string(format):        
     now = datetime.now()
     return now.strftime(format)
@@ -62,6 +70,12 @@ class SavePrompt:
     CATEGORY = "👑 MokkaBoss1/Other"
 
     def SavePrompt(self, positive_prompt, negative_prompt, model_name, sampler_name, scheduler_name, steps, cfg, width, height, seed): 
+        
+        if positive_prompt.endswith(','):
+            positive_prompt = positive_prompt[:-1]
+        if negative_prompt.endswith(','):
+            negative_prompt = negative_prompt[:-1]        
+        
         ar = round(float(width) / float(height), 3)
         mp = round(float(width) * float(height) / (1024 * 1024), 3)
         part1 = f"Positive Prompt\n{positive_prompt}\n\nNegative Prompt\n{negative_prompt}\n\n"
@@ -70,17 +84,7 @@ class SavePrompt:
         save_string = part1 + part2 + part3
         
         #remove extra spaces    
-        save_string = re.sub(r'      ', ' ', save_string)
-        save_string = re.sub(r'     ', ' ', save_string)
-        save_string = re.sub(r'    ', ' ', save_string)
-        save_string = re.sub(r'   ', ' ', save_string)       
-        save_string = re.sub(r' , ', ', ', save_string)
-        save_string = re.sub(r'  ', ' ', save_string)
-        if save_string == ", ":
-            save_string = ""
-        if save_string == " ":
-            save_string = ""        
-        
+        save_string = clean_text(save_string)
 
         format1 = "(%Y-%m-%d)(%H-%M-%S)"
         format2 = "(%Y-%m-%d)"
