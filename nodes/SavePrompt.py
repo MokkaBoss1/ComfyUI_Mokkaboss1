@@ -1,7 +1,36 @@
 # https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
 
-import random
+# ███████╗ █████╗ ██╗   ██╗███████╗██████╗ ██████╗  ██████╗ ███╗   ███╗██████╗ ████████╗
+# ██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗████╗ ████║██╔══██╗╚══██╔══╝
+# ███████╗███████║██║   ██║█████╗  ██████╔╝██████╔╝██║   ██║██╔████╔██║██████╔╝   ██║   
+# ╚════██║██╔══██║╚██╗ ██╔╝██╔══╝  ██╔═══╝ ██╔══██╗██║   ██║██║╚██╔╝██║██╔═══╝    ██║   
+# ███████║██║  ██║ ╚████╔╝ ███████╗██║     ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║        ██║   
+# ╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝        ╚═╝   
+                                                                                      
+from datetime import datetime
 import re
+import os
+import folder_paths
+
+def date_string(format):        
+    now = datetime.now()
+    return now.strftime(format)
+
+def save_text_to_file(file_path, text):
+    """
+    Save the given text to a file at the specified path.
+    Ensure the directory exists before saving.
+    
+    :param file_path: Path of the file where the text will be saved.
+    :param text: The text content to be saved in the file.
+    """
+    try:
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)  # Create directories if they don't exist
+        with open(file_path, 'w') as file:
+            file.write(text)
+        print(f"Text has been successfully saved to {file_path}.")
+    except Exception as e:
+        print(f"An error occurred while saving the file: {e}")
 
 class SavePrompt:
 
@@ -35,6 +64,17 @@ class SavePrompt:
         part2 = f"Dimensions\nWidth: {width}\nHeight: {height}\nAspect Ratio: {ar}\nMegapixels: {mp}\n\n"
         part3 = f"Generation Parameters\nModel Name: {model_name}\nSampler Name: {sampler_name}\nScheduler: {scheduler_name}\nSteps: {steps}\nCfg: {cfg}\nSeed: {seed}"
         save_string = part1 + part2 + part3
+
+        time_format = ""
+        format1 = "(%Y-%m-%d)(%H-%M-%S)"
+        format2 = "(%Y-%m-%d)"
+        
+        path_initial = folder_paths.output_directory
+        
+        filename = date_string(format1)
+        path = os.path.join(path_initial, date_string(format2), "prompts", f"{filename}.txt")
+                        
+        save_text_to_file(path, save_string)
         
         return (save_string, )
 
