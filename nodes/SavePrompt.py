@@ -67,6 +67,19 @@ class SavePrompt:
         part2 = f"Dimensions\nWidth: {width}\nHeight: {height}\nAspect Ratio: {ar}\nMegapixels: {mp}\n\n"
         part3 = f"Generation Parameters\nModel Name: {model_name}\nSampler Name: {sampler_name}\nScheduler: {scheduler_name}\nSteps: {steps}\nCfg: {cfg}\nSeed: {seed}"
         save_string = part1 + part2 + part3
+        
+        #remove extra spaces    
+        save_string = re.sub(r'      ', ' ', save_string)
+        save_string = re.sub(r'     ', ' ', save_string)
+        save_string = re.sub(r'    ', ' ', save_string)
+        save_string = re.sub(r'   ', ' ', save_string)       
+        save_string = re.sub(r' , ', ', ', save_string)
+        save_string = re.sub(r'  ', ' ', save_string)
+        if save_string == ", ":
+            save_string = ""
+        if save_string == " ":
+            save_string = ""        
+        
 
         format1 = "(%Y-%m-%d)(%H-%M-%S)"
         format2 = "(%Y-%m-%d)"
