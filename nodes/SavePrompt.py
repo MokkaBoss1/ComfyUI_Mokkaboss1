@@ -72,7 +72,7 @@ class SavePrompt:
         path_initial = folder_paths.output_directory
         
         filename = date_string(format1)
-        path = os.path.join(path_initial, date_string(format2), "prompts", f"{filename}.txt")
+        path = os.path.join(path_initial, date_string(format2), f"{date_string(format2)}_txt", f"{filename}.txt")
                         
         save_text_to_file(path, save_string)
         
