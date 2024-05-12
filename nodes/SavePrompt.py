@@ -55,8 +55,8 @@ class SavePrompt:
             "seed": ("INT", {"ForceInput": True}),
         }}
 
-    RETURN_TYPES = ("STRING")
-    RETURN_NAMES = ("save_string")
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("save_string",)
     FUNCTION = "SavePrompt"
     CATEGORY = "👑 MokkaBoss1/Other"
 
