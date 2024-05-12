@@ -8,9 +8,8 @@
 # ╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝        ╚═╝   
                                                                                       
 from datetime import datetime
-import re
 import os
-import folder_paths
+import folder_paths  # Ensure this module is correctly defined and available
 
 def date_string(format):        
     now = datetime.now()
@@ -29,8 +28,12 @@ def save_text_to_file(file_path, text):
         with open(file_path, 'w') as file:
             file.write(text)
         print(f"Text has been successfully saved to {file_path}.")
+    except FileNotFoundError:
+        print(f"Error: The directory {os.path.dirname(file_path)} does not exist.")
+    except IOError as e:
+        print(f"IO error occurred: {e}")
     except Exception as e:
-        print(f"An error occurred while saving the file: {e}")
+        print(f"An unexpected error occurred: {e}")
 
 class SavePrompt:
 
@@ -65,14 +68,13 @@ class SavePrompt:
         part3 = f"Generation Parameters\nModel Name: {model_name}\nSampler Name: {sampler_name}\nScheduler: {scheduler_name}\nSteps: {steps}\nCfg: {cfg}\nSeed: {seed}"
         save_string = part1 + part2 + part3
 
-        time_format = ""
         format1 = "(%Y-%m-%d)(%H-%M-%S)"
         format2 = "(%Y-%m-%d)"
         
         path_initial = folder_paths.output_directory
         
         filename = date_string(format1)
-        path = os.path.join(path_initial, date_string(format2), f"{date_string(format2)}_txt", f"{filename}.txt")
+        path = os.path.join(path_initial, date_string(format2), "prompts", f"{filename}.txt")
                         
         save_text_to_file(path, save_string)
         
@@ -80,3 +82,4 @@ class SavePrompt:
 
 NODE_CLASS_MAPPINGS = {"SavePrompt": SavePrompt}
 NODE_DISPLAY_NAME_MAPPINGS = {"SavePrompt": "👑 SavePrompt"}
+
