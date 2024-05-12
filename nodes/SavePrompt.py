@@ -12,6 +12,13 @@ import os
 import re
 import folder_paths  # Ensure this module is correctly defined and available
 
+#function to remove trailing spaces and a last comma
+def remove_comma_at_end(s):
+    s = s.rstrip()  # Remove trailing whitespace
+    if s.endswith(','):
+        s = s[:-1]
+    return s
+
 # Function to clean text
 def clean_text(text):
     text = re.sub(r' {3,}', ' ', text)    # Replace three or more spaces with a single space
@@ -71,10 +78,11 @@ class SavePrompt:
 
     def SavePrompt(self, positive_prompt, negative_prompt, model_name, sampler_name, scheduler_name, steps, cfg, width, height, seed): 
         
-        if positive_prompt.endswith(','):
-            positive_prompt = positive_prompt[:-1]
-        if negative_prompt.endswith(','):
-            negative_prompt = negative_prompt[:-1]        
+        positive_prompt = remove_comma_at_end(positive_prompt) 
+        negative_prompt = remove_comma_at_end(negative_prompt)
+
+        print (f"pos: {positive_prompt}")
+        print (f"neg: {negative_prompt}")
         
         ar = round(float(width) / float(height), 3)
         mp = round(float(width) * float(height) / (1024 * 1024), 3)
