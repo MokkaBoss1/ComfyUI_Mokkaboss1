@@ -284,7 +284,7 @@ class LandscapeBackgrounds:
         if positive_prompt == " ":
             positive_prompt = ""
             
-        positive_prompt = re.sub(r'[A-Z]', '', positive_prompt)
+        result = re.sub(r'[A-Z]', lambda x: x.group(0).lower(), input_string)
         
         print(positive_prompt)
 
