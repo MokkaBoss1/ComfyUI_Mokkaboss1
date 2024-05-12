@@ -38,6 +38,7 @@ from ComfyUI_Mokkaboss1.nodes.HueShift import HueShift
 from ComfyUI_Mokkaboss1.nodes.FuseImages import FuseImages
 from ComfyUI_Mokkaboss1.nodes.FuseImages2 import FuseImages2
 from ComfyUI_Mokkaboss1.nodes.StringJoin import StringJoin
+from ComfyUI_Mokkaboss1.nodes.SearchReplace import SearchReplace
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -80,6 +81,7 @@ NODE_CLASS_MAPPINGS = {
     "FuseImages": FuseImages,
     "FuseImages2": FuseImages2,
     "StringJoin": StringJoin,
+    "SearchReplace": SearchReplace,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -122,5 +124,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "FuseImages": "👑 FuseImages",
     "FuseImages2": "👑 FuseImages2",
     "StringJoin": "👑 StringJoin",
+    "SearchReplace": "👑 SearchReplace",
 }
-print ("👑 Mokkaboss1 40 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 41 Custom Nodes: Loaded")
