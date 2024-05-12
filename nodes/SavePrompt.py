@@ -55,8 +55,8 @@ class SavePrompt:
             "seed": ("INT", {"ForceInput": True}),
         }}
 
-    RETURN_TYPES = ()
-    RETURN_NAMES = ()
+    RETURN_TYPES = ("STRING")
+    RETURN_NAMES = ("save_string")
     FUNCTION = "SavePrompt"
     CATEGORY = "👑 MokkaBoss1/Other"
 
@@ -78,7 +78,7 @@ class SavePrompt:
                         
         save_text_to_file(path, save_string)
         
-        return ()
+        return (save_string, )
 
 NODE_CLASS_MAPPINGS = {"SavePrompt": SavePrompt}
 NODE_DISPLAY_NAME_MAPPINGS = {"SavePrompt": "👑 SavePrompt"}
