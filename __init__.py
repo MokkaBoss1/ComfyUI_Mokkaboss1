@@ -1,3 +1,12 @@
+# https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
+
+# ███╗   ███╗ ██████╗ ██╗  ██╗██╗  ██╗ █████╗ ██████╗  ██████╗ ███████╗███████╗ ██╗    ██╗███╗   ██╗██╗████████╗
+# ████╗ ████║██╔═══██╗██║ ██╔╝██║ ██╔╝██╔══██╗██╔══██╗██╔═══██╗██╔════╝██╔════╝███║    ██║████╗  ██║██║╚══██╔══╝
+# ██╔████╔██║██║   ██║█████╔╝ █████╔╝ ███████║██████╔╝██║   ██║███████╗███████╗╚██║    ██║██╔██╗ ██║██║   ██║   
+# ██║╚██╔╝██║██║   ██║██╔═██╗ ██╔═██╗ ██╔══██║██╔══██╗██║   ██║╚════██║╚════██║ ██║    ██║██║╚██╗██║██║   ██║   
+# ██║ ╚═╝ ██║╚██████╔╝██║  ██╗██║  ██╗██║  ██║██████╔╝╚██████╔╝███████║███████║ ██║    ██║██║ ╚████║██║   ██║   
+# ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚══════╝╚══════╝ ╚═╝    ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   
+                                                                                                              
 from ComfyUI_Mokkaboss1.nodes.DoubleClipTextEncode import DoubleClipTextEncode
 from ComfyUI_Mokkaboss1.nodes.HashText import HashText
 from ComfyUI_Mokkaboss1.nodes.IndoorBackgrounds import IndoorBackgrounds
@@ -40,6 +49,9 @@ from ComfyUI_Mokkaboss1.nodes.FuseImages2 import FuseImages2
 from ComfyUI_Mokkaboss1.nodes.StringJoin import StringJoin
 from ComfyUI_Mokkaboss1.nodes.SearchReplace import SearchReplace
 from ComfyUI_Mokkaboss1.nodes.SavePrompt import SavePrompt
+from ComfyUI_Mokkaboss1.nodes.PresetSave import PresetSave
+from ComfyUI_Mokkaboss1.nodes.PresetLoad import PresetLoad
+from ComfyUI_Mokkaboss1.nodes.PresetRemove import PresetRemove
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -84,6 +96,9 @@ NODE_CLASS_MAPPINGS = {
     "StringJoin": StringJoin,
     "SearchReplace": SearchReplace,
     "SavePrompt": SavePrompt,
+    "PresetSave": PresetSave,
+    "PresetLoad": PresetLoad,
+    "PresetRemove": PresetRemove,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -128,5 +143,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "StringJoin": "👑 StringJoin",
     "SearchReplace": "👑 SearchReplace",
     "SavePrompt": "👑 SavePrompt",
+    "PresetSave": "👑 PresetSave",
+    "PresetLoad": "👑 PresetLoad",
+    "PresetRemove": "👑 PresetRemove",
 }
-print ("👑 Mokkaboss1 42 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 44 Custom Nodes: Loaded")
