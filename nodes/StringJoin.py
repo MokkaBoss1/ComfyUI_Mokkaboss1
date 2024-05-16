@@ -20,6 +20,10 @@ def remove_consecutive_separators(input_string, separator):
     result = re.sub(pattern, separator, input_string)
     return result
 
+def remove_trailing_spaces_and_punctuation(input_string):
+    # Use re.sub() to remove all trailing spaces and punctuation marks
+    result = re.sub(r'[\s\.,;!?]+$', '', input_string)
+    return result
 
 class StringJoin:
 
@@ -31,14 +35,14 @@ class StringJoin:
         return {
             "required": {
                 "separator": ("STRING", {"default": ","}),
-                "required_string1":   ("STRING", {"forceInput": True}),
-                "required_string2":   ("STRING", {"forceInput": True}),
-                "optional_string3":   ("STRING", {"forceInput": False}),
-                "optional_string4":   ("STRING", {"forceInput": False}),
-                "optional_string5":   ("STRING", {"forceInput": False}),
-                "optional_string6":   ("STRING", {"forceInput": False}),
-                "optional_string7":   ("STRING", {"forceInput": False}),
-                "optional_string8":   ("STRING", {"forceInput": False}),                
+                "required_string1": ("STRING", {"forceInput": True}),
+                "required_string2": ("STRING", {"forceInput": True}),
+                "optional_string3": ("STRING", {"forceInput": False}),
+                "optional_string4": ("STRING", {"forceInput": False}),
+                "optional_string5": ("STRING", {"forceInput": False}),
+                "optional_string6": ("STRING", {"forceInput": False}),
+                "optional_string7": ("STRING", {"forceInput": False}),
+                "optional_string8": ("STRING", {"forceInput": False}),                
             }
         }
 
@@ -47,14 +51,18 @@ class StringJoin:
     FUNCTION = "stringjoin"
     CATEGORY = "👑 MokkaBoss1/Text"
 
-    def stringjoin(self, separator, required_string1, required_string2, optional_string3, optional_string4, optional_string5, optional_string6, optional_string7, optional_string8):
-        output = required_string1 + separator + required_string2 + separator + optional_string3 +  separator + optional_string4 + separator + optional_string5 + separator + optional_string6 + separator + optional_string7 + separator + optional_string8 
-        
+    def stringjoin(self, separator, required_string1, required_string2, optional_string3=None, optional_string4=None, optional_string5=None, optional_string6=None, optional_string7=None, optional_string8=None):
+        strings = [required_string1, required_string2, optional_string3, optional_string4, optional_string5, optional_string6, optional_string7, optional_string8]
+        # Filter out None values
+        strings = [s for s in strings if s is not None]
+        # Join the strings with the separator
+        output = separator.join(strings)
        
         output = remove_consecutive_separators(output, separator)
-        if output.endswith(","):
-            output = output[:-1]        
+        # Remove trailing spaces and punctuation marks
+        output = remove_trailing_spaces_and_punctuation(output)
         return (output,)
 
 NODE_CLASS_MAPPINGS = {"StringJoin": StringJoin}
 NODE_DISPLAY_NAME_MAPPINGS = {"StringJoin": "👑 StringJoin"}
+
