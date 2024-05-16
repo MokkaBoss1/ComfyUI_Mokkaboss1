@@ -31,10 +31,10 @@ class PromptSwitcher:
 
     RETURN_TYPES = ("STRING", "STRING")
     RETURN_NAMES = ("pos_prompt", "neg_prompt",)
-    FUNCTION = "simple_prompts"
+    FUNCTION = "prompt_switcher"
     CATEGORY = "👑 MokkaBoss1/Text"
 
-    def simple_prompts(self, pos_prompt1, neg_prompt1, pos_prompt2, neg_prompt2, selection): 
+    def prompt_switcher(self, pos_prompt1, neg_prompt1, pos_prompt2, neg_prompt2, selection): 
         
         if selection == "1":
             pos_prompt = pos_prompt1

@@ -54,7 +54,7 @@ from ComfyUI_Mokkaboss1.nodes.PresetLoad import PresetLoad
 from ComfyUI_Mokkaboss1.nodes.PresetRemove import PresetRemove
 from ComfyUI_Mokkaboss1.nodes.RandomString import RandomString
 from ComfyUI_Mokkaboss1.nodes.JsonSearch import JsonSearch
-from ComfyUI-Mokkaboss1.nodes.PromptSwitcher import PromptSwitcher
+from ComfyUI_Mokkaboss1.nodes.PromptSwitcher import PromptSwitcher
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
