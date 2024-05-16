@@ -52,6 +52,8 @@ from ComfyUI_Mokkaboss1.nodes.SavePrompt import SavePrompt
 from ComfyUI_Mokkaboss1.nodes.PresetSave import PresetSave
 from ComfyUI_Mokkaboss1.nodes.PresetLoad import PresetLoad
 from ComfyUI_Mokkaboss1.nodes.PresetRemove import PresetRemove
+from ComfyUI_Mokkaboss1.nodes.RandomString import RandomString
+from ComfyUI_Mokkaboss1.nodes.JsonSearch import JsonSearch
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -99,6 +101,8 @@ NODE_CLASS_MAPPINGS = {
     "PresetSave": PresetSave,
     "PresetLoad": PresetLoad,
     "PresetRemove": PresetRemove,
+    "JsonSearch": JsonSearch,
+    "RandomString": RandomString,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -146,5 +150,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "PresetSave": "👑 PresetSave",
     "PresetLoad": "👑 PresetLoad",
     "PresetRemove": "👑 PresetRemove",
+    "JsonSearch": "👑 JsonSearch",
+    "RandomString": "👑 RandomString",
 }
 print ("👑 Mokkaboss1 44 Custom Nodes: Loaded")

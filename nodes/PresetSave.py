@@ -25,15 +25,15 @@ class PresetSave:
             }
         }
 
-    RETURN_TYPES = ("STRING", "STRING")
-    RETURN_NAMES = ("pos_prompt", "neg_prompt")
+    RETURN_TYPES = ("STRING",)  # Single return type
+    RETURN_NAMES = ("prompt_summary",)  # Name the return value
     FUNCTION = "savepreset"
     CATEGORY = "👑 MokkaBoss1/Text"
 
     def savepreset(self, name, pos_prompt, neg_prompt):
         # Step 0: Ensure the name is not blank or only contains spaces
         if not name.strip():
-            return pos_prompt, neg_prompt
+            return ""
         
         preset_path = os.path.join(os.path.dirname(__file__), '../presets/presetlist.json')
         
@@ -62,9 +62,13 @@ class PresetSave:
         # Step 5: Save the updated list back to the JSON file
         with open(preset_path, 'w', encoding='utf-8') as file:
             json.dump(presets, file, indent=4)
-
-        # Step 6: Return the values of pos_prompt and neg_prompt
-        return pos_prompt, neg_prompt
+        
+        # Create the concatenated string
+        prompt_summary = f"positive prompt: {pos_prompt}\nnegative prompt: {neg_prompt}"
+        print (prompt_summary)
+        
+        # Return the concatenated string
+        return (prompt_summary, )
 
 NODE_CLASS_MAPPINGS = {"PresetSave": PresetSave}
 NODE_DISPLAY_NAME_MAPPINGS = {"PresetSave": "👑 PresetSave"}

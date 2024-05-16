@@ -8,7 +8,6 @@
 # ██║     ██║  ██║███████╗███████║███████╗   ██║   ███████╗╚██████╔╝██║  ██║██████╔╝
 # ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝   ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ 
                                                                                  
-
 import json
 import os
 
@@ -19,32 +18,9 @@ class PresetLoad:
 
     @classmethod
     def INPUT_TYPES(cls):
-        def get_preset_names():
-            # Path to the JSON file
-            preset_path = os.path.join(os.path.dirname(__file__), '../presets/presetlist.json')
-            
-            # Initialize an empty list for preset names
-            preset_names = ["<select name>"]
-
-            # Try to read the JSON file and extract preset names
-            if os.path.exists(preset_path):
-                try:
-                    with open(preset_path, 'r', encoding='utf-8') as file:
-                        presets = json.load(file)
-                        preset_names.extend([preset['name'] for preset in presets if 'name' in preset])
-                except Exception as e:
-                    print(f"An error occurred while reading {preset_path}: {str(e)}")
-            else:
-                print(f"Warning: The file {preset_path} does not exist.")
-            
-            return preset_names
-
-        # Get the preset names by calling the helper function
-        preset_names = get_preset_names()
-
         return {
             "required": {
-                "name": (preset_names, {"default": "<select name>"}),
+                "name": ("STRING", {"default": ""}),
                 "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
             }
         }
@@ -65,12 +41,9 @@ class PresetLoad:
             raise FileNotFoundError(f"The file {preset_path} does not exist.")
 
         # Step 2: create a multiline string of all preset names
-        preset_list = "\n".join([preset['name'] for preset in presets])
+        preset_list = "\n".join([preset['name'] for preset in presets if 'name' in preset])
 
-        # Refresh the list of names in case the content has changed
-        preset_names = [preset['name'] for preset in presets if 'name' in preset]
-
-        if not name or name == "<select name>" or name not in preset_names:
+        if not name or name not in [preset['name'] for preset in presets if 'name' in preset]:
             # Return empty strings if name is not selected or not in the updated list
             return "", "", preset_list
 
@@ -89,4 +62,3 @@ class PresetLoad:
 
 NODE_CLASS_MAPPINGS = {"PresetLoad": PresetLoad}
 NODE_DISPLAY_NAME_MAPPINGS = {"PresetLoad": "👑 PresetLoad"}
-

@@ -17,32 +17,9 @@ class PresetRemove:
     
     @classmethod
     def INPUT_TYPES(cls):
-        def get_preset_names():
-            # Path to the JSON file
-            preset_path = os.path.join(os.path.dirname(__file__), '../presets/presetlist.json')
-            
-            # Initialize an empty list for preset names
-            preset_names = ["<select name>"]
-
-            # Try to read the JSON file and extract preset names
-            if os.path.exists(preset_path):
-                try:
-                    with open(preset_path, 'r', encoding='utf-8') as file:
-                        presets = json.load(file)
-                        preset_names.extend([preset['name'] for preset in presets if 'name' in preset])
-                except Exception as e:
-                    print(f"An error occurred while reading {preset_path}: {str(e)}")
-            else:
-                print(f"Warning: The file {preset_path} does not exist.")
-            
-            return preset_names
-
-        # Get the preset names by calling the helper function
-        preset_names = get_preset_names()
-
         return {
             "required": {
-                "name": (preset_names, {"default": "<select name>"}),
+                "name": ("STRING", {"default": "", "multiline": False}),
                 "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
             }
         }
@@ -52,7 +29,7 @@ class PresetRemove:
     FUNCTION = "removepreset"
     CATEGORY = "👑 MokkaBoss1/Text"
 
-    def removepreset(self, name, seed): 
+    def removepreset(self, name, seed):
         preset_path = os.path.join(os.path.dirname(__file__), '../presets/presetlist.json')
         
         # Step 1: read the json file called "presetlist.json"
@@ -63,11 +40,11 @@ class PresetRemove:
             raise FileNotFoundError(f"The file {preset_path} does not exist.")
 
         # Step 2: create a multiline string of all preset names before removal
-        preset_list = "\n".join([preset['name'] for preset in presets])
+        preset_list = "\n".join([preset['name'] for preset in presets if 'name' in preset])
 
         # Step 3: find the entry with the given name and remove it if it exists
         initial_count = len(presets)
-        if name != "<select name>" and name in [preset['name'] for preset in presets]:
+        if name.strip() and name in [preset['name'] for preset in presets if 'name' in preset]:
             presets = [preset for preset in presets if preset['name'] != name]
 
             # Step 4: check if an entry was removed and save the updated list if necessary
@@ -76,13 +53,13 @@ class PresetRemove:
                     json.dump(presets, file, indent=4)
 
             # Step 5: create a multiline string of all preset names after removal
-            preset_list = "\n".join([preset['name'] for preset in presets])
+            preset_list = "\n".join([preset['name'] for preset in presets if 'name' in preset])
 
         # Debugging output to ensure names are correctly retrieved
         print("Preset names in the list after removal:")
         print(preset_list)
         
-        return (preset_list,)
+        return (preset_list, )
 
 # Example invocation
 if __name__ == "__main__":
