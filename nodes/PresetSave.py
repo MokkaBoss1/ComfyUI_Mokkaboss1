@@ -35,7 +35,7 @@ class PresetSave:
         if not name.strip():
             return ""
         
-        preset_path = os.path.join(os.path.dirname(__file__), '../presets/presetlist.json')
+        preset_path = os.path.join(os.path.dirname(__file__), '../../../mokkaboss1_presetlist.json')
         
         # Step 1: Read the json file called "presetlist.json"
         if os.path.exists(preset_path):

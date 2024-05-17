@@ -8,6 +8,9 @@
 #  ╚════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
                                                                                    
 import json
+import os
+
+preset_path = os.path.join(os.path.dirname(__file__), '../../../mokkaboss1_presetlist.json')
 
 class JsonSearch:
 
@@ -18,7 +21,6 @@ class JsonSearch:
     def INPUT_TYPES(s):
         return {"required": {
             "search_terms": ("STRING", {"forceInput": False}),
-            "filename": ("STRING", {"default": "F:\\COMFYAPRIL\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI_Mokkaboss1\\presets\\presetlist.json"}),
             "max_number_displayed": ("INT", {"default": 1, "min": 1, "max": 100, "step": 1, "forceInput": False}),
             "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
         }}
@@ -28,7 +30,10 @@ class JsonSearch:
     FUNCTION = "json_search"
     CATEGORY = "👑 MokkaBoss1/Other"
 
-    def json_search(self, search_terms, filename, max_number_displayed, seed):
+    def json_search(self, search_terms, max_number_displayed, seed):
+        
+        filename = preset_path
+        
         def read_json_file(file_path):
             try:
                 with open(file_path, 'r') as file:

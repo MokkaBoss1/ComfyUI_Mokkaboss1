@@ -30,7 +30,7 @@ class PresetRemove:
     CATEGORY = "👑 MokkaBoss1/Text"
 
     def removepreset(self, name, seed):
-        preset_path = os.path.join(os.path.dirname(__file__), '../presets/presetlist.json')
+        preset_path = os.path.join(os.path.dirname(__file__), '../../../mokkaboss1_presetlist.json')
         
         # Step 1: read the json file called "presetlist.json"
         if os.path.exists(preset_path):
