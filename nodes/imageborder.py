@@ -48,5 +48,5 @@ class imageborder:
         return (o_image, )
 
 NODE_CLASS_MAPPINGS = {"imageborder": imageborder}
-NODE_DISPLAY_NAME_MAPPINGS = {"imageborder": "imageborder"}
+NODE_DISPLAY_NAME_MAPPINGS = {"imageborder": "👑 Imageborder"}
 
