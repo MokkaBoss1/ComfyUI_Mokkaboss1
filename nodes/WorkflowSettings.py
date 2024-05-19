@@ -41,7 +41,7 @@ parameters = """0,devlishphotorealism_sdxl15.safetensors,30,4.0,dpmpp_2m_sde,kar
 13,CHEYENNE_v16.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
 14,devlish loveXL 050.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
 15,loveXL Lightning.safetensors,8,1.5,dpmpp_sde,karras
-16,Cheyenne Devlish Amz.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
+16,Cheyenne Devlish Amuz.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
 """
 
 class WorkflowSettings:
