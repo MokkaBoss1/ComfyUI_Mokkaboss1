@@ -44,6 +44,9 @@ class OptimalCrop:
 
     def Optimal_Crop(self, input_image, rounding, aspect_ratio, x_offset, y_offset):
         
+        width = 0
+        height = 0
+        
         if aspect_ratio == "1:1  1024x1024 (1.00)":
             width, height = 1024, 1024
         elif aspect_ratio == "2:3  832x1216  (0.68)":
