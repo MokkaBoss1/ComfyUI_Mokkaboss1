@@ -14,7 +14,7 @@ import random
 import re
 from comfy.model_management import InterruptProcessingException
 
-class StopWorkflow:
+class KillWorkflow:
 
     def __init__(self):
         pass
@@ -40,6 +40,6 @@ class StopWorkflow:
             raise InterruptProcessingException()
 #            raise ValueError("Workflow terminated because the aspect ratio is not within the specified range. See Node AspectRatioCondition min and max values.")
 
-NODE_CLASS_MAPPINGS = {"StopWorkflow": StopWorkflow}
-NODE_DISPLAY_NAME_MAPPINGS = {"StopWorkflow": "👑 StopWorkflow"}
+NODE_CLASS_MAPPINGS = {"KillWorkflow": KillWorkflow}
+NODE_DISPLAY_NAME_MAPPINGS = {"KillWorkflow": "👑 KillWorkflow"}
 
