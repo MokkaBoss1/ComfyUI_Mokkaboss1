@@ -33,7 +33,7 @@ class OptimalCrop:
         return {"required": {
             "input_image": ("IMAGE", ),
             "rounding": ("INT", {"default": 1, "min": 1, "max": 64, "step": 1}),
-            "aspect_ratio": ("STRING", {"default": "2:3 832x1216 (0.68)", "options": oc_aspectratios}),
+            "aspect_ratio": ((oc_aspectratios),),
             "x_offset": ("INT", {"default": 0, "min": -9999, "max": 9999, "step": 1}),
             "y_offset": ("INT", {"default": 0, "min": -9999, "max": 9999, "step": 1}),
         }}
