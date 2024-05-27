@@ -35,7 +35,7 @@ parameters = """0,devlishphotorealism_sdxl15.safetensors,30,4.0,dpmpp_2m_sde,kar
 7,DEVLISH LIGHTNING.safetensors,5,1.5,dpmpp_sde,karras
 8,sdxlUnstableDiffusers_nihilmania.safetensors,30,4.0,dpmpp_2m_sde,karras
 9,realvisxlV40_v40Bakedvae.safetensors,30,4.0,dpmpp_2m,karras
-10,realvisxlV40_v40LightningBakedvae.safetensors,5,1.5,dpmpp_sde,karras
+10,realvisxlV40_v40LightningBakedvae.safetensors,12,1,ddpm,sgm_uniform
 11,juggernautXL_v8Rundiffusion.safetensors,30,4.0,dpmpp_2m,karras
 12,amuz_v30.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
 13,CHEYENNE_v16.safetensors,30,4.0,dpmpp_2m_sde_gpu,karras
