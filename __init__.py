@@ -56,6 +56,7 @@ from ComfyUI_Mokkaboss1.nodes.RandomString import RandomString
 from ComfyUI_Mokkaboss1.nodes.JsonSearch import JsonSearch
 from ComfyUI_Mokkaboss1.nodes.PromptSwitcher import PromptSwitcher
 from ComfyUI_Mokkaboss1.nodes.imageborder import imageborder
+from ComfyUI_Mokkaboss1.nodes.StopWorkflow import StopWorkflow
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -107,6 +108,7 @@ NODE_CLASS_MAPPINGS = {
     "RandomString": RandomString,
     "PromptSwitcher": PromptSwitcher,
     "imageborder": imageborder,
+    "StopWorkflow": StopWorkflow,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -158,5 +160,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "RandomString": "👑 RandomString",
     "PromptSwitcher": "👑 PromptSwitcher",
     "imageborder": "👑 imageborder",
+    "StopWorkflow": "👑 StopWorkflow",
 }
-print ("👑 Mokkaboss1 46 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 47 Custom Nodes: Loaded")
