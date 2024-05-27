@@ -8,7 +8,7 @@
 # ███████║   ██║   ╚██████╔╝██║     ╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗██║     ███████╗╚██████╔╝╚███╔███╔╝
 # ╚══════╝   ╚═╝    ╚═════╝ ╚═╝      ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝ ╚═════╝  ╚══╝╚══╝ 
                                                                                                         
-                                                                                                                                                         
+choices = ["Yes", "No"]                                                                                                                                                         
 
 import random
 import re
@@ -23,7 +23,7 @@ class KillWorkflow:
     def INPUT_TYPES(s):
         return {"required": {
             "image": ("IMAGE", ),
-            "choice": ("STRING", {"default": "Yes", "options": ("Yes", "No")})
+            "choice": ((choices),)
         }}
 
     RETURN_TYPES = ("IMAGE",)
@@ -34,7 +34,7 @@ class KillWorkflow:
     def test5(self, image, choice): 
         _, height, width, _ = image.shape
         ar = width/height
-        if choice == "Yes":
+        if choice == "No":
             return (image, )
         else:
             raise InterruptProcessingException()
