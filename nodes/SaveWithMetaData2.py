@@ -140,13 +140,11 @@ class SaveWithMetaData2:
         return {"ui": {"images": map(lambda filename: {"filename": filename, "subfolder": subfolder if subfolder != '.' else '', "type": 'output'}, filenames)}}
 
     def save_images(self, images, output_path, filename_prefix, comment, extension, quality_jpeg_or_webp, lossless_webp, prompt=None, extra_pnginfo=None) -> list[str]:
-        img_count = 1
         paths = list()
-        for image in images:
+        for img_count, image in enumerate(images, start=1):
             i = 255. * image.cpu().numpy()
             img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
-            if images.size()[0] > 1:
-                filename_prefix += "_{:02d}".format(img_count)
+            current_filename_prefix = f"{filename_prefix}_{img_count:02d}"
 
             if extension == 'png':
                 metadata = PngInfo()
@@ -158,10 +156,10 @@ class SaveWithMetaData2:
                     for x in extra_pnginfo:
                         metadata.add_text(x, json.dumps(extra_pnginfo[x]))
 
-                filename = f"{filename_prefix}.png"
+                filename = f"{current_filename_prefix}.png"
                 img.save(os.path.join(output_path, filename), pnginfo=metadata, optimize=True)
             else:
-                filename = f"{filename_prefix}.{extension}"
+                filename = f"{current_filename_prefix}.{extension}"
                 file = os.path.join(output_path, filename)
                 img.save(file, optimize=True, quality=quality_jpeg_or_webp, lossless=lossless_webp)
                 exif_bytes = piexif.dump({
@@ -172,8 +170,8 @@ class SaveWithMetaData2:
                 piexif.insert(exif_bytes, file)
 
             paths.append(filename)
-            img_count += 1
         return paths
+
 
 NODE_CLASS_MAPPINGS = {"SaveWithMetaData2": SaveWithMetaData2}
 NODE_DISPLAY_NAME_MAPPINGS = {"SaveWithMetaData2": "👑 SaveWithMetaData2"}
