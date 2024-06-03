@@ -2,42 +2,6 @@ from PIL import Image
 import numpy as np
 import torch
 
-combinations = [
-    '9 x 2 = 18',
-    '8 x 2 = 16',
-    '7 x 2 = 14',
-    '6 x 3 = 18',
-    '5 x 3 = 15',
-    '4 x 4 = 16',
-    '3 x 4 = 12',
-    '3 x 3 = 9',
-    '2 x 6 = 12',
-    '2 x 5 = 10',
-    '2 x 4 = 8',
-    '2 x 3 = 6',
-    '2 x 2 = 4',
-    '1 x 12 = 12',
-    '1 x 11 = 11',
-    '1 x 10 = 10',
-    '1 x 9 = 9',
-    '1 x 8 = 8',
-    '1 x 7 = 7',
-    '1 x 6 = 6',
-    '1 x 5 = 5',
-    '1 x 4 = 4',
-    '1 x 3 = 3',
-    '1 x 2 = 2',
-    '1 x 1 = 1',
-    '2 x 1 = 2',
-    '3 x 1 = 3',
-    '4 x 1 = 4',
-    '5 x 1 = 5',
-    '6 x 1 = 6',
-    '7 x 1 = 7',
-    '8 x 1 = 8',
-    '9 x 1 = 9',
-]
-
 def pil2tensor(image):
     tensor = torch.from_numpy(np.array(image).astype(np.float32) / 255.0).permute(2, 0, 1)
     print(f"Converted PIL to tensor: {tensor.shape}")
@@ -55,7 +19,8 @@ class SplitImages:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "split_combination": (combinations, ),
+                "rows": ("INT", {"default": 1, "min": 1, "max": 20, "step": 1}),
+                "columns": ("INT", {"default": 1, "min": 1, "max": 20, "step": 1}),
                 "image": ("IMAGE", ),
             }
         }
@@ -65,21 +30,18 @@ class SplitImages:
     FUNCTION = "SplitImages"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def SplitImages(self, split_combination, image):
+    def SplitImages(self, rows, columns, image):
         print(f"Input image shape: {image.shape}")
         image = tensor2pil(image)  # Convert tensor to PIL
-        split_combination = split_combination.split(' x ')
-        cols = int(split_combination[0])
-        rows = int(split_combination[1].split(' = ')[0])
         
         img_width, img_height = image.size
-        tile_width = img_width // cols
+        tile_width = img_width // columns
         tile_height = img_height // rows
         
         images = []
         
-        for i in range(rows):
-            for j in range(cols):
+        for i in range(row):
+            for j in range(column):
                 left = j * tile_width
                 upper = i * tile_height
                 right = left + tile_width
