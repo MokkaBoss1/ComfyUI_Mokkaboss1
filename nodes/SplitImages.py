@@ -48,7 +48,10 @@ class SplitImages:
                 right = min(left + tile_width, img_width)
                 lower = min(upper + tile_height, img_height)
                 cropped_image = image.crop((left, upper, right, lower))
-                
+
+                # Resize the cropped image to match the first tile dimensions
+                cropped_image = cropped_image.resize((tile_width, tile_height))
+
                 # Call pil2tensor separately
                 tensor_image = pil2tensor(cropped_image)
                 tensor_image = tensor_image.unsqueeze(0)  # Add batch dimension
@@ -57,7 +60,7 @@ class SplitImages:
                 images.append(tensor_image)
 
         # Concatenate all images along the batch dimension
-        image_batch = torch.cat(images[:12], dim=0)  # Limiting to 12 images
+        image_batch = torch.cat(images, dim=0)
         print(f"Output image batch shape: {image_batch.shape}")
 
         # Ensure all images are in the correct format
