@@ -1,6 +1,7 @@
 from PIL import Image
 import numpy as np
 import torch
+import math
 
 def pil2tensor(image):
     tensor = torch.from_numpy(np.array(image).astype(np.float32) / 255.0).permute(2, 0, 1)
@@ -35,8 +36,8 @@ class SplitImages:
         image = tensor2pil(image)  # Convert tensor to PIL
         
         img_width, img_height = image.size
-        tile_width = img_width // columns
-        tile_height = img_height // rows
+        tile_width = math.ceil(img_width / columns)
+        tile_height = math.ceil(img_height / rows)
         
         images = []
         
@@ -44,8 +45,8 @@ class SplitImages:
             for j in range(columns):
                 left = j * tile_width
                 upper = i * tile_height
-                right = left + tile_width
-                lower = upper + tile_height
+                right = min(left + tile_width, img_width)
+                lower = min(upper + tile_height, img_height)
                 cropped_image = image.crop((left, upper, right, lower))
                 
                 # Call pil2tensor separately
