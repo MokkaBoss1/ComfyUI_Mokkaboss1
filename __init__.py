@@ -57,6 +57,7 @@ from ComfyUI_Mokkaboss1.nodes.JsonSearch import JsonSearch
 from ComfyUI_Mokkaboss1.nodes.PromptSwitcher import PromptSwitcher
 from ComfyUI_Mokkaboss1.nodes.imageborder import imageborder
 from ComfyUI_Mokkaboss1.nodes.KillWorkflow import KillWorkflow
+from ComfyUI_Mokkaboss1.nodes.SplitImages import SplitImages
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -109,6 +110,7 @@ NODE_CLASS_MAPPINGS = {
     "PromptSwitcher": PromptSwitcher,
     "imageborder": imageborder,
     "KillWorkflow": KillWorkflow,
+    "SplitImages": SplitImages,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -161,5 +163,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "PromptSwitcher": "👑 PromptSwitcher",
     "imageborder": "👑 imageborder",
     "KillWorkflow": "👑 KillWorkflow",
+    "SplitImages": "👑 SplitImages"
 }
-print ("👑 Mokkaboss1 47 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 48 Custom Nodes: Loaded")
