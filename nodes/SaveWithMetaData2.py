@@ -95,6 +95,7 @@ class SaveWithMetaData2:
                 "height": ("INT", {"default": 512, "min": 1, "max": MAX_RESOLUTION, "step": 8}),
                 "lossless_webp": ("BOOLEAN", {"default": True}),
                 "quality_jpeg_or_webp": ("INT", {"default": 100, "min": 1, "max": 100}),
+                "flnm_postfix": ("STRING", {"default": '', "multiline": False}),
 #                "counter": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff }),
 #                "time_format": ("STRING", {"default": "%Y-%m-%d-%H%M%S", "multiline": False}),
             },
@@ -112,15 +113,15 @@ class SaveWithMetaData2:
     CATEGORY = "👑 MokkaBoss1/Other"
 
     def save_files(self, images, seed_value, steps, cfg, sampler_name_string, scheduler_string, positive, negative, modelname_string, quality_jpeg_or_webp,
-                   lossless_webp, width, height, extension, prompt=None, extra_pnginfo=None):
+                   lossless_webp, width, height, extension, flnm_postfix, prompt=None, extra_pnginfo=None):
         
         counter = 0
         time_format = ""
         format1 = "(%Y-%m-%d)(%H-%M-%S)"
         format2 = "(%Y-%m-%d)"
         
-        filename = date_string(format1)
-        path = str(date_string(format2) + "/" + date_string(format2) + "_" + extension)
+        filename = date_string(format1) + "_" + flnm_postfix
+        path = str(date_string(format2) + "/" + date_string(format2) + "_" + extension) 
         
         filename = make_filename(filename, seed_value, modelname_string, counter, time_format)
         path = make_pathname(path, seed_value, modelname_string, counter, time_format)
