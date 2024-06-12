@@ -8,41 +8,53 @@
 # ██║██║ ╚═╝ ██║██║  ██║╚██████╔╝███████╗    ██████╔╝██║██║ ╚═╝ ██║███████╗██║ ╚████║███████║██║╚██████╔╝██║ ╚████║███████║
 # ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝    ╚═════╝ ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
                                                                                                                          
+from PIL import Image
+import numpy as np
+import torch
 
-from PIL import Image, ImageDraw, ImageFont, ImageColor, ImageFilter
+def tensor2pil(image):
+    return Image.fromarray(np.clip(255. * image.cpu().numpy().squeeze(), 0, 255).astype(np.uint8))
 
-
-
+def pil2tensor(image):
+    return torch.from_numpy(np.array(image).astype(np.float32) / 255.0).unsqueeze(0)
 
 class ImageDimensions:
     
     def __init__(self):
         pass
-    
-    
-    
+
     @classmethod
-    def INPUT_TYPES(s):
+    def INPUT_TYPES(cls):
         return {
             "required": {
-                "image": ("IMAGE",),
+                "input_image": ("IMAGE",),
             }
         }
 
-    RETURN_TYPES = ("INT", "INT", "FLOAT", "FLOAT","STRING")
-    RETURN_NAMES = ("width", "height", "ratio", "megapixels","parameters")
+    RETURN_TYPES = ("IMAGE", "INT", "INT", "FLOAT", "FLOAT", "STRING")
+    RETURN_NAMES = ("output_image", "width", "height", "ratio", "megapixels", "parameters")
     FUNCTION = "im_dim"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def im_dim(self, image):
-        
-        ratio = round((image.shape[2] / image.shape[1]),3)
-        megapixels = round((( image.shape[2] * image.shape[1] ) / 1048576),3)
-        parameters = f"Width: {image.shape[2]}\nHeight: {image.shape[1]}\nAspect Ratio: {ratio}\nMegapixels: {megapixels}"
+    def im_dim(self, input_image):
+        # Convert tensor to PIL image
+        try:
+            image = tensor2pil(input_image)
+        except Exception as e:
+            raise ValueError(f"Failed to convert tensor to PIL image: {e}")
 
-        
-        
-        return (image.shape[2], image.shape[1], ratio, megapixels, parameters)
-    
+        width, height = image.size  # Get the width and height of the image
+        ratio = round((width / height), 3)
+        megapixels = round(((width * height) / 1048576), 3)
+        parameters = f"Width: {width}\nHeight: {height}\nAspect Ratio: {ratio}\nMegapixels: {megapixels}"
+
+        # Convert PIL image back to tensor
+        try:
+            output_image = pil2tensor(image)
+        except Exception as e:
+            raise ValueError(f"Failed to convert PIL image to tensor: {e}")
+
+        return (output_image, width, height, ratio, megapixels, parameters)
+
 NODE_CLASS_MAPPINGS = {"ImageDimensions": ImageDimensions}
 NODE_DISPLAY_NAME_MAPPINGS = {"ImageDimensions": "👑 ImageDimensions"}
