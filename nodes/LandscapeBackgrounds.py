@@ -190,13 +190,61 @@ landscapes = [
     "Solar farm",
     "Spaceport",
     "Prison complex"
+    "Living room with a fireplace",
+    "Kitchen with a breakfast bar",
+    "Bedroom with a cozy bed",
+    "Home office with a desk and bookshelves",
+    "Bathroom with a bathtub",
+    "Dining room with a chandelier",
+    "Library with floor-to-ceiling shelves",
+    "Art studio with easels and paints",
+    "Music room with instruments",
+    "Gym with exercise equipment",
+    "Home theater with plush seating",
+    "Wine cellar with wine racks",
+    "Game room with a pool table",
+    "Sunroom with indoor plants",
+    "Conservatory with a grand piano",
+    "Attic with vintage furniture",
+    "Basement lounge with a bar",
+    "Children's playroom with toys",
+    "Craft room with sewing machine",
+    "Laundry room with washing machine",
+    "Mudroom with storage cubbies",
+    "Walk-in closet with shelves and mirrors",
+    "Pantry with shelves stocked with food",
+    "Garage with tools and workbench",
+    "Studio apartment with minimalist decor",
+    "Loft with exposed brick walls",
+    "Apartment balcony with city views",
+    "Hotel lobby with luxurious furnishings",
+    "Restaurant with elegant decor",
+    "Café with cozy seating",
+    "Bookstore with reading nooks",
+    "Art gallery with white walls and spotlights",
+    "Museum exhibit with artifacts",
+    "Theater stage with velvet curtains",
+    "Recording studio with soundproofing",
+    "University lecture hall with rows of seats",
+    "Hospital room with medical equipment",
+    "Classroom with chalkboard and desks",
+    "Conference room with a long table",
+    "Hotel room with a king-size bed",
+    "Spa with massage tables and candles",
+    "Beauty salon with hair styling stations",
+    "Tattoo parlor with art-covered walls",
+    "Photography studio with backdrop and lights",
+    "Dance studio with mirrored walls",
+    "Yoga studio with mats and meditation area",
+    "Indoor pool with lounge chairs",
+    "Bowling alley with polished lanes"
 ]
-landscapes.remove("Random")
-landscapes.remove("None")
-landscapes = list(set(landscapes))
-landscapes.sort()
-landscapes.insert(0, "None")
-landscapes.insert(0, "Random")
+# landscapes.remove("Random")
+# landscapes.remove("None")
+# landscapes = list(set(landscapes))
+# landscapes.sort()
+# landscapes.insert(0, "None")
+# landscapes.insert(0, "Random")
 
 num_landscapes    = len(landscapes)-1
 num_adjectives    = len(adjectives)-1
