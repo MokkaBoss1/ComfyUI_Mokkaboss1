@@ -59,6 +59,7 @@ from ComfyUI_Mokkaboss1.nodes.imageborder import imageborder
 from ComfyUI_Mokkaboss1.nodes.KillWorkflow import KillWorkflow
 from ComfyUI_Mokkaboss1.nodes.SplitImages import SplitImages
 from ComfyUI_Mokkaboss1.nodes.ImageZigzag import ImageZigzag
+from ComfyUI_Mokkaboss1.nodes.CombinedCrop import CombinedCrop
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -113,6 +114,7 @@ NODE_CLASS_MAPPINGS = {
     "KillWorkflow": KillWorkflow,
     "SplitImages": SplitImages,
     "ImageZigzag": ImageZigzag,
+    "CombinedCrop": CombinedCrop,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -167,5 +169,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "KillWorkflow": "👑 KillWorkflow",
     "SplitImages": "👑 SplitImages",
     "ImageZigzag": "👑 ImageZigzag",
+    "CombinedCrop": "👑 CombinedCrop",
 }
-print ("👑 Mokkaboss1 49 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 50 Custom Nodes: Loaded")

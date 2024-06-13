@@ -1,0 +1,119 @@
+
+#  ██████╗ ██████╗ ███╗   ███╗██████╗ ██╗███╗   ██╗███████╗██████╗  ██████╗██████╗  ██████╗ ██████╗ 
+# ██╔════╝██╔═══██╗████╗ ████║██╔══██╗██║████╗  ██║██╔════╝██╔══██╗██╔════╝██╔══██╗██╔═══██╗██╔══██╗
+# ██║     ██║   ██║██╔████╔██║██████╔╝██║██╔██╗ ██║█████╗  ██║  ██║██║     ██████╔╝██║   ██║██████╔╝
+# ██║     ██║   ██║██║╚██╔╝██║██╔══██╗██║██║╚██╗██║██╔══╝  ██║  ██║██║     ██╔══██╗██║   ██║██╔═══╝ 
+# ╚██████╗╚██████╔╝██║ ╚═╝ ██║██████╔╝██║██║ ╚████║███████╗██████╔╝╚██████╗██║  ██║╚██████╔╝██║     
+#  ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝╚═════╝  ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     
+                                                                                                  
+                                                                                             
+oc_aspectratios = [
+    "9:21 640x1536 (0.42)",
+    "9:19 704x1472 (0.48)",
+    "9:16 768x1344 (0.57)",
+    "5:8 768x1216 (0.63)",
+    "2:3 832x1216 (0.68)",
+    "3:4 896x1152 (0.78)",
+    "1:1 1024x1024 (1.00)",
+    "4:3 1152x896 (1.29)",
+    "3:2 1216x832 (1.46)",
+    "8:5 1216x768 (1.58)",
+    "16:9 1344x768 (1.75)",
+    "19:9 1472x704 (2.09)",
+    "21:9 1536x640 (2.40)"
+]
+
+class CombinedCrop:
+    def __init__(self):
+        pass
+
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {"required": {
+            "input_image": ("IMAGE", ),
+            "rounding": ("INT", {"default": 1, "min": 1, "max": 64, "step": 1}),
+            "aspect_ratio": ((oc_aspectratios),),
+            "zoom": ("FLOAT", {"default": 1.0, "min": 1, "max": 10.0, "step": 0.01}),
+            "x_offset": ("INT", {"default": 0, "min": -9999, "max": 9999, "step": 1}),
+            "y_offset": ("INT", {"default": 0, "min": -9999, "max": 9999, "step": 1}),
+        }}
+
+    RETURN_TYPES = ("IMAGE", )
+    RETURN_NAMES = ("crop_image", )
+    FUNCTION = "Combined_Crop"
+    CATEGORY = "👑 MokkaBoss1/Image"
+
+    def Combined_Crop(self, input_image, rounding, aspect_ratio, zoom, x_offset, y_offset):
+        width, height = self.get_aspect_dimensions(aspect_ratio)
+        ratio = float(width / height)
+        _, input_height, input_width, _ = input_image.shape
+
+        # Apply aspect ratio crop first
+        output_width = int(min(input_width, input_height * ratio))
+        output_height = int(output_width / ratio)
+
+        output_width = output_width - (output_width % rounding)
+        output_height = output_height - (output_height % rounding)
+
+        x_offset_aspect = int((input_width - output_width) * 0.5) - x_offset
+        y_offset_aspect = y_offset + int((input_height - output_height) * 0.5)
+
+        crop_x1_aspect = max(0, min(input_width - output_width, x_offset_aspect))
+        crop_y1_aspect = max(0, min(input_height - output_height, y_offset_aspect))
+        crop_x2_aspect = min(input_width, crop_x1_aspect + output_width)
+        crop_y2_aspect = min(input_height, crop_y1_aspect + output_height)
+
+        cropped_image_aspect = input_image[:, crop_y1_aspect:crop_y2_aspect, crop_x1_aspect:crop_x2_aspect, :]
+
+        # Apply zoom crop next
+        _, cropped_height, cropped_width, _ = cropped_image_aspect.shape
+        output_width_zoom = int(cropped_width / zoom)
+        output_height_zoom = int(cropped_height / zoom)
+
+        x = int((cropped_width - output_width_zoom) / 2)
+        y = int((cropped_height - output_height_zoom) / 2)
+
+        x_new = x - x_offset
+        y_new = y + y_offset
+
+        crop_x1_zoom = max(0, min(cropped_width - output_width_zoom, x_new))
+        crop_y1_zoom = max(0, min(cropped_height - output_height_zoom, y_new))
+        crop_x2_zoom = min(cropped_width, crop_x1_zoom + output_width_zoom)
+        crop_y2_zoom = min(cropped_height, crop_y1_zoom + output_height_zoom)
+
+        crop_image = cropped_image_aspect[:, crop_y1_zoom:crop_y2_zoom, crop_x1_zoom:crop_x2_zoom, :]
+
+        return (crop_image,)
+
+    def get_aspect_dimensions(self, aspect_ratio):
+        if aspect_ratio == "1:1 1024x1024 (1.00)":
+            return 1024, 1024
+        elif aspect_ratio == "2:3 832x1216 (0.68)":
+            return 832, 1216
+        elif aspect_ratio == "3:4 896x1152 (0.78)":
+            return 896, 1152
+        elif aspect_ratio == "5:8 768x1216 (0.63)":
+            return 768, 1216
+        elif aspect_ratio == "9:16 768x1344 (0.57)":
+            return 768, 1344
+        elif aspect_ratio == "9:19 704x1472 (0.48)":
+            return 704, 1472
+        elif aspect_ratio == "9:21 640x1536 (0.42)":
+            return 640, 1536
+        elif aspect_ratio == "3:2 1216x832 (1.46)":
+            return 1216, 832
+        elif aspect_ratio == "4:3 1152x896 (1.29)":
+            return 1152, 896
+        elif aspect_ratio == "8:5 1216x768 (1.58)":
+            return 1216, 768
+        elif aspect_ratio == "16:9 1344x768 (1.75)":
+            return 1344, 768
+        elif aspect_ratio == "19:9 1472x704 (2.09)":
+            return 1472, 704
+        elif aspect_ratio == "21:9 1536x640 (2.40)":
+            return 1536, 640
+        else:
+            return 1024, 1024
+
+NODE_CLASS_MAPPINGS = {"CombinedCrop": CombinedCrop}
+NODE_DISPLAY_NAME_MAPPINGS = {"CombinedCrop": "👑 CombinedCrop"}
