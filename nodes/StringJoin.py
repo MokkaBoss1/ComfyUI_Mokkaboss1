@@ -12,16 +12,16 @@
 import re
 
 def remove_consecutive_separators(input_string, separator):
-    # Escape the separator for use in the regular expression
+    if not separator:
+        return input_string
     escaped_separator = re.escape(separator)
-    # Create the regular expression pattern for consecutive separators
+    if escaped_separator == '':
+        return input_string
     pattern = escaped_separator + r'+'
-    # Use re.sub() to replace consecutive separators with a single separator
     result = re.sub(pattern, separator, input_string)
     return result
 
 def remove_trailing_spaces_and_punctuation(input_string):
-    # Use re.sub() to remove all trailing spaces and punctuation marks
     result = re.sub(r'[\s\.,;!?]+$', '', input_string)
     return result
 
@@ -53,16 +53,17 @@ class StringJoin:
 
     def stringjoin(self, separator, required_string1, required_string2, optional_string3=None, optional_string4=None, optional_string5=None, optional_string6=None, optional_string7=None, optional_string8=None):
         strings = [required_string1, required_string2, optional_string3, optional_string4, optional_string5, optional_string6, optional_string7, optional_string8]
-        # Filter out None values
         strings = [s for s in strings if s is not None]
-        # Join the strings with the separator
-        output = separator.join(strings)
-       
-        output = remove_consecutive_separators(output, separator)
-        # Remove trailing spaces and punctuation marks
+        if separator:
+            output = separator.join(strings)
+            output = remove_consecutive_separators(output, separator)
+        else:
+            output = ''.join(strings)
         output = remove_trailing_spaces_and_punctuation(output)
         return (output,)
 
 NODE_CLASS_MAPPINGS = {"StringJoin": StringJoin}
 NODE_DISPLAY_NAME_MAPPINGS = {"StringJoin": "👑 StringJoin"}
+
+
 
