@@ -166,7 +166,7 @@ landscapes = [
     "Bowling alley with polished lanes", "Abandoned warehouse", "Old library with antique books",
     "Underwater in a swimming pool"
 ]
-]
+
 # landscapes.remove("Random")
 # landscapes.remove("None")
 # landscapes = list(set(landscapes))
