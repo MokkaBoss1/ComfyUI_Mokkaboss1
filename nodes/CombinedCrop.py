@@ -22,7 +22,7 @@ oc_aspectratios = [
     "unchanged"
 ]
 
-class CombinedCropResized:
+class CombinedCrop:
     def __init__(self):
         pass
 
@@ -144,5 +144,5 @@ class CombinedCropResized:
         else:
             return 1024, 1024
 
-NODE_CLASS_MAPPINGS = {"CombinedCropResized": CombinedCropResized}
-NODE_DISPLAY_NAME_MAPPINGS = {"CombinedCropResized": "👑 CombinedCropResized"}
+NODE_CLASS_MAPPINGS = {"CombinedCrop": CombinedCrop}
+NODE_DISPLAY_NAME_MAPPINGS = {"CombinedCrop": "👑 CombinedCrop"}
