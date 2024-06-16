@@ -17,15 +17,9 @@ class ImageOverlayResized:
             "required": {
                 "background_image": ("IMAGE",),
                 "subject_image": ("IMAGE",),
-                "overlay_resize": (["None", "Fit", "Resize by rescale_factor", "Resize to width & height"],),
-                "resize_method": (["nearest-exact", "bilinear", "area"],),
-                "rescale_factor": ("FLOAT", {"default": 1, "min": 0.01, "max": 16.0, "step": 0.1}),
-                "width": ("INT", {"default": 512, "min": 0, "max": 48000, "step": 64}),
-                "height": ("INT", {"default": 512, "min": 0, "max": 48000, "step": 64}),
-                "x_offset": ("INT", {"default": 0, "min": -48000, "max": 48000, "step": 1}),
+                "x_offset": ("INT", {"default": 0, "min": -100, "max": 100, "step": 1}),
                 "y_offset": ("INT", {"default": 0, "min": -48000, "max": 48000, "step": 1}),
-                "rotation": ("INT", {"default": 0, "min": -180, "max": 180, "step": 5}),
-                "opacity": ("FLOAT", {"default": 0, "min": 0, "max": 100, "step": 5}),
+                "invert_mask": ("BOOLEAN", {"default": False}),
             },
             "optional": {"subject_mask": ("MASK",),}
         }
@@ -66,8 +60,7 @@ class ImageOverlayResized:
 
         return subject_image_return, parameters
 
-    def apply_overlay_resized(self, background_image, subject_image, overlay_resize, resize_method, rescale_factor,
-                              width, height, x_offset, y_offset, rotation, opacity, subject_mask=None):
+    def apply_overlay_resized(self, background_image, subject_image, x_offset, y_offset, invert_mask=True, subject_mask=None):
 
         # Resize the subject image to fit the background image
         subject_image, _ = self.resize_subject_image(subject_image, background_image)
@@ -81,15 +74,9 @@ class ImageOverlayResized:
         if subject_mask is not None:
             mask = tensor2pil(subject_mask)
             mask = mask.resize(subject_image.size)
-            subject_image.putalpha(ImageOps.invert(mask))
-
-        # Rotate the subject image
-        subject_image = subject_image.rotate(rotation, expand=True)
-
-        # Apply opacity on subject image
-        r, g, b, a = subject_image.split()
-        a = a.point(lambda x: max(0, int(x * (1 - opacity / 100))))
-        subject_image.putalpha(a)
+            if invert_mask:
+                mask = ImageOps.invert(mask)
+            subject_image.putalpha(mask)
 
         # Split the background image tensor along the first dimension to get a list of tensors
         background_image_list = torch.unbind(background_image, dim=0)
@@ -99,12 +86,15 @@ class ImageOverlayResized:
         for tensor in background_image_list:
             image = tensor2pil(tensor)
 
+            # Calculate the scaled x_offset to properly center the image when x_offset is 0
+            x_offset_scaled = int((x_offset / 100) * (image.width - subject_image.width) / 2)
+
             # Calculate the center point for the overlay
             background_center_x = image.width // 2
             background_center_y = image.height // 2
             overlay_center_x = subject_image.width // 2
             overlay_center_y = subject_image.height // 2
-            new_location = (background_center_x - overlay_center_x + x_offset, background_center_y - overlay_center_y + y_offset)
+            new_location = (background_center_x - overlay_center_x + x_offset_scaled, background_center_y - overlay_center_y + y_offset)
 
             # Paste the subject image onto the background image
             if subject_mask is None:
