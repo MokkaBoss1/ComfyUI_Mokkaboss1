@@ -128,9 +128,8 @@ adjectives.sort()
 adjectives.insert(0, "None")
 adjectives.insert(0, "Random")
 landscapes = [
-landscapes = [
     # Outdoor Locations
-    "Mountains", "Valleys", "Plateaus", "Plains", "Deserts", "Canyons", "Glaciers", "Tundras",
+    "Random", "None","Mountains", "Valleys", "Plateaus", "Plains", "Deserts", "Canyons", "Glaciers", "Tundras",
     "Forests", "Rainforests", "Swamps", "Marshes", "Grasslands", "Savannas", "Taigas", "Tropical islands",
     "Archipelagos", "Cliffs", "Caves", "Volcanoes", "Lakes", "Rivers", "Waterfalls", "Oceans",
     "Seas", "Bays", "Fjords", "Coral reefs", "Icebergs", "Sand dunes", "City skyline", "Urban park",
