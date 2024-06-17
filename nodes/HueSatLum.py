@@ -58,6 +58,8 @@ class HueSatLum:
                     "19:9 1472x704  (2.09)",
                     "21:9 1536x640  (2.40)"
                 ],),
+                "width": ("INT", {"default": 0, "min": 0, "max": 10000, "step": 1}),
+                "height": ("INT", {"default": 0, "min": 0, "max": 10000, "step": 1}),
                 "hue_preset": ((colors_list), ),
                 "custom_hue": ("INT", {"default": 0, "min": 0, "max": 360}),
                 "saturation": ("INT", {"default": 50, "min": 0, "max": 100}),
@@ -71,7 +73,7 @@ class HueSatLum:
     FUNCTION = "consolidated_func"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def consolidated_func(self, aspectRatio, hue_preset, custom_hue, saturation, luminosity, megapixels):
+    def consolidated_func(self, aspectRatio, width, height, hue_preset, custom_hue, saturation, luminosity, megapixels):
         # Aspect Ratio Handling
         aspect_ratios = {
             "1:1  1024x1024 (1.00)": (1024, 1024),
@@ -89,8 +91,11 @@ class HueSatLum:
             "21:9 1536x640  (2.40)": (1536, 640)
         }
 
-        width, height = aspect_ratios[aspectRatio]
-        ratio = round(float(width / height), 3)
+        if width != 0 and height != 0:
+            ratio = round(float(width / height), 3)
+        else:
+            width, height = aspect_ratios[aspectRatio]
+            ratio = round(float(width / height), 3)
 
         # Color Handling
         colors_dict = {
@@ -141,8 +146,13 @@ class HueSatLum:
             original_megapixels = (original_width * original_height) / 1048576
 
             scale_factor = (megapixels / original_megapixels) ** 0.5
+
+            # Ensure the new dimensions are within reasonable bounds
             new_width = int(original_width * scale_factor)
             new_height = int(original_height * scale_factor)
+
+            new_width = max(1, min(new_width, 10000))
+            new_height = max(1, min(new_height, 10000))
 
             image = image.resize((new_width, new_height), Image.ANTIALIAS)
         
