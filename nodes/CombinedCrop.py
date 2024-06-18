@@ -32,7 +32,7 @@ class CombinedCrop:
             "input_image": ("IMAGE", ),
             "rounding": ("INT", {"default": 1, "min": 1, "max": 64, "step": 1}),
             "aspect_ratio": ((oc_aspectratios),),
-            "exact_aspect_ratio": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 10.0, "step": 0.01}),
+            "exact_aspect_ratio": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 10.0, "step": 0.001}),
             "zoom": ("FLOAT", {"default": 1.0, "min": 1, "max": 10.0, "step": 0.01}),
             "x_offset": ("INT", {"default": 0, "min": -100, "max": 100, "step": 1}),
             "y_offset": ("INT", {"default": 0, "min": -100, "max": 100, "step": 1}),
