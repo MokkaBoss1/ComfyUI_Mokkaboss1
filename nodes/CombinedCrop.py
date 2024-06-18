@@ -32,6 +32,7 @@ class CombinedCrop:
             "input_image": ("IMAGE", ),
             "rounding": ("INT", {"default": 1, "min": 1, "max": 64, "step": 1}),
             "aspect_ratio": ((oc_aspectratios),),
+            "exact_aspect_ratio": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 10.0, "step": 0.01}),
             "zoom": ("FLOAT", {"default": 1.0, "min": 1, "max": 10.0, "step": 0.01}),
             "x_offset": ("INT", {"default": 0, "min": -100, "max": 100, "step": 1}),
             "y_offset": ("INT", {"default": 0, "min": -100, "max": 100, "step": 1}),
@@ -43,35 +44,38 @@ class CombinedCrop:
     FUNCTION = "process_image"
     CATEGORY = "👑 MokkaBoss1/Image"
 
-    def process_image(self, input_image, rounding, aspect_ratio, zoom, x_offset, y_offset, megapixels):
-        if aspect_ratio != "unchanged":
+    def process_image(self, input_image, rounding, aspect_ratio, exact_aspect_ratio, zoom, x_offset, y_offset, megapixels):
+        if exact_aspect_ratio != 0.0:
+            width, height = self.calculate_exact_dimensions(exact_aspect_ratio)
+        elif aspect_ratio != "unchanged":
             width, height = self.get_aspect_dimensions(aspect_ratio)
-            ratio = float(width / height)
-            _, input_height, input_width, _ = input_image.shape
-
-            # Apply aspect ratio crop first
-            output_width = int(min(input_width, input_height * ratio))
-            output_height = int(output_width / ratio)
-
-            output_width = output_width - (output_width % rounding)
-            output_height = output_height - (output_height % rounding)
-
-            # Normalize x_offset and y_offset
-            x_offset_normalized = x_offset / 100.0
-            y_offset_normalized = y_offset / 100.0
-
-            # Apply the normalized offsets for the aspect ratio crop
-            x_offset_aspect = int((input_width - output_width) * 0.5) + int((input_width - output_width) * x_offset_normalized * 0.5)
-            y_offset_aspect = int((input_height - output_height) * 0.5) + int((input_height - output_height) * y_offset_normalized * 0.5)
-
-            crop_x1_aspect = max(0, min(input_width - output_width, x_offset_aspect))
-            crop_y1_aspect = max(0, min(input_height - output_height, y_offset_aspect))
-            crop_x2_aspect = min(input_width, crop_x1_aspect + output_width)
-            crop_y2_aspect = min(input_height, crop_y1_aspect + output_height)
-
-            cropped_image_aspect = input_image[:, crop_y1_aspect:crop_y2_aspect, crop_x1_aspect:crop_x2_aspect, :]
         else:
-            cropped_image_aspect = input_image
+            width, height = input_image.shape[2], input_image.shape[1]
+            
+        ratio = float(width / height)
+        _, input_height, input_width, _ = input_image.shape
+
+        # Apply aspect ratio crop first
+        output_width = int(min(input_width, input_height * ratio))
+        output_height = int(output_width / ratio)
+
+        output_width = output_width - (output_width % rounding)
+        output_height = output_height - (output_height % rounding)
+
+        # Normalize x_offset and y_offset
+        x_offset_normalized = x_offset / 100.0
+        y_offset_normalized = y_offset / 100.0
+
+        # Apply the normalized offsets for the aspect ratio crop
+        x_offset_aspect = int((input_width - output_width) * 0.5) + int((input_width - output_width) * x_offset_normalized * 0.5)
+        y_offset_aspect = int((input_height - output_height) * 0.5) + int((input_height - output_height) * y_offset_normalized * 0.5)
+
+        crop_x1_aspect = max(0, min(input_width - output_width, x_offset_aspect))
+        crop_y1_aspect = max(0, min(input_height - output_height, y_offset_aspect))
+        crop_x2_aspect = min(input_width, crop_x1_aspect + output_width)
+        crop_y2_aspect = min(input_height, crop_y1_aspect + output_height)
+
+        cropped_image_aspect = input_image[:, crop_y1_aspect:crop_y2_aspect, crop_x1_aspect:crop_x2_aspect, :]
 
         # Apply zoom crop next
         _, cropped_height, cropped_width, _ = cropped_image_aspect.shape
@@ -143,6 +147,15 @@ class CombinedCrop:
             return 1536, 640
         else:
             return 1024, 1024
+
+    def calculate_exact_dimensions(self, exact_aspect_ratio):
+        if exact_aspect_ratio >= 1:
+            width = 1024
+            height = int(width / exact_aspect_ratio)
+        else:
+            height = 1024
+            width = int(height * exact_aspect_ratio)
+        return width, height
 
 NODE_CLASS_MAPPINGS = {"CombinedCrop": CombinedCrop}
 NODE_DISPLAY_NAME_MAPPINGS = {"CombinedCrop": "👑 CombinedCrop"}
