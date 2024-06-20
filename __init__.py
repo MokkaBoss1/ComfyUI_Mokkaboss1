@@ -61,6 +61,7 @@ from ComfyUI_Mokkaboss1.nodes.SplitImages import SplitImages
 from ComfyUI_Mokkaboss1.nodes.ImageZigzag import ImageZigzag
 from ComfyUI_Mokkaboss1.nodes.CombinedCrop import CombinedCrop
 from ComfyUI_Mokkaboss1.nodes.ImageOverlayResized import ImageOverlayResized
+from ComfyUI_Mokkaboss1.nodes.TintnShift import TintnShift
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -117,6 +118,7 @@ NODE_CLASS_MAPPINGS = {
     "ImageZigzag": ImageZigzag,
     "CombinedCrop": CombinedCrop,
     "ImageOverlayResized": ImageOverlayResized,
+    "TintnShift": TintnShift,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -173,5 +175,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ImageZigzag": "👑 ImageZigzag",
     "CombinedCrop": "👑 CombinedCrop",
     "ImageOverlayResized": "👑 ImageOverlayResized",
+    "TintnShift": "👑 TintnShift",
 }
-print ("👑 Mokkaboss1 50 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 51 Custom Nodes: Loaded")
