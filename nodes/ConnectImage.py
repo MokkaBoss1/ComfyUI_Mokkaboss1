@@ -1,5 +1,3 @@
-# https://github.com/MokkaBoss1/ComfyUI-Mokkaboss1/wiki/Documentation-for-the-ComfyUI-Nodes-in-this-Node-Pack
-
 from PIL import Image, ImageDraw
 import numpy as np
 import torch
@@ -27,10 +25,23 @@ class ConnectImage:
     CATEGORY = "👑 MokkaBoss1/Other"
 
     def con_image(self, i_image, megapixels, documentation):         
-        # Convert tensor back to PIL image if it is not already in that format
-        if isinstance(i_image, torch.Tensor):
-            i_image = Image.fromarray((i_image.squeeze().numpy() * 255).astype(np.uint8))
+        # Check if i_image is a batch of images
+        if isinstance(i_image, torch.Tensor) and i_image.ndim == 4:
+            batch_size = i_image.size(0)
+            processed_images = []
+            for i in range(batch_size):
+                single_image = i_image[i]
+                pil_image = Image.fromarray((single_image.squeeze().numpy() * 255).astype(np.uint8))
+                processed_pil_image = self.process_single_image(pil_image, megapixels)
+                processed_images.append(pil2tensor(processed_pil_image).squeeze(0))
+            o_image = torch.stack(processed_images)
+        else:
+            if isinstance(i_image, torch.Tensor):
+                i_image = Image.fromarray((i_image.squeeze().numpy() * 255).astype(np.uint8))
+            o_image = pil2tensor(self.process_single_image(i_image, megapixels))
+        return (o_image, )
 
+    def process_single_image(self, i_image, megapixels):
         # Calculate new dimensions if megapixels is greater than 0
         if megapixels > 0.0:
             original_width, original_height = i_image.size
@@ -43,10 +54,7 @@ class ConnectImage:
             
             # Resize the image
             i_image = i_image.resize((new_width, new_height), Image.ANTIALIAS)
-
-        # Convert the resized image back to a tensor
-        o_image = pil2tensor(i_image)
-        return (o_image, )
+        return i_image
 
 NODE_CLASS_MAPPINGS = {"ConnectImage": ConnectImage}
 NODE_DISPLAY_NAME_MAPPINGS = {"ConnectImage": "👑 ConnectImage"}
