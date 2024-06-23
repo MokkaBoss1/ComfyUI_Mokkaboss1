@@ -1,7 +1,6 @@
 from PIL import Image, ImageDraw
 import numpy as np
 import torch
-import colorsys
 
 def pil2tensor(image):
     return torch.from_numpy(np.array(image).astype(np.float32) / 255.0).unsqueeze(0)
@@ -53,7 +52,7 @@ class ConnectImage:
             new_height = int(original_height * scale_factor)
             
             # Resize the image
-            i_image = i_image.resize((new_width, new_height), Image.ANTIALIAS)
+            i_image = i_image.resize((new_width, new_height), Image.LANCZOS)
         return i_image
 
 NODE_CLASS_MAPPINGS = {"ConnectImage": ConnectImage}
