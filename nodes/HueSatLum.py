@@ -154,7 +154,7 @@ class HueSatLum:
             new_width = max(1, min(new_width, 10000))
             new_height = max(1, min(new_height, 10000))
 
-            image = image.resize((new_width, new_height), Image.ANTIALIAS)
+            image = image.resize((new_width, new_height), Image.LANCZOS)
         
         final_image = pil2tensor(image)
         return (final_image, hex_color, width, height, ratio)
