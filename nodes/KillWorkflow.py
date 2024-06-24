@@ -37,6 +37,7 @@ class KillWorkflow:
         if choice == "No":
             return (image, )
         else:
+            print("*** User terminated workflow ***")
             raise InterruptProcessingException()
 #            raise ValueError("Workflow terminated because the aspect ratio is not within the specified range. See Node AspectRatioCondition min and max values.")
 
