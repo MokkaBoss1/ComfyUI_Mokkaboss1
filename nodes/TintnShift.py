@@ -58,7 +58,7 @@ class TintnShift:
     RETURN_TYPES = ("IMAGE", )
     RETURN_NAMES = ("IMAGE", )    
     FUNCTION = "color_tint_and_shift"
-    CATEGORY = "Mokkaboss1/Image"
+    CATEGORY = "👑 MokkaBoss1/Image"
 
     def color_tint_and_shift(self, image: torch.Tensor, strength, mode: str="sepia", tint_color_hex='#000000', x_offset=0, y_offset=0):
     
