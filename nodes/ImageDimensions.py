@@ -31,7 +31,7 @@ class ImageDimensions:
             }
         }
 
-    RETURN_TYPES = ("IMAGE", "INT", "INT", "FLOAT", "FLOAT", "STRING")
+    RETURN_TYPES = ("IMAGE", "INT", "INT", "FLOAT", "FLOAT", "FLOAT", "STRING")
     RETURN_NAMES = ("output_image", "width", "height", "ratio", "megapixels", "kilopixels", "parameters")
     FUNCTION = "im_dim"
     CATEGORY = "👑 MokkaBoss1/Image"
