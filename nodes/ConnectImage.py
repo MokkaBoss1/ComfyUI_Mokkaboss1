@@ -13,7 +13,7 @@ class ConnectImage:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
-            "megapixels": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 50.0}),
+            "Kilopixels": ("FLOAT", {"default": 1000, "min": 0.0, "max": 25000.0}),
             "documentation": ("STRING", {"default": "Documentation", "multiline": True}),
             "i_image": ("IMAGE", )
         }}
@@ -23,8 +23,13 @@ class ConnectImage:
     FUNCTION = "con_image"
     CATEGORY = "👑 MokkaBoss1/Other"
 
-    def con_image(self, i_image, megapixels, documentation):         
+    def con_image(self, i_image, kilopixels, documentation):         
+        
+        megapixels = kilopixels / 1000
+        
         # Check if i_image is a batch of images
+        
+        
         if isinstance(i_image, torch.Tensor) and i_image.ndim == 4:
             batch_size = i_image.size(0)
             processed_images = []
@@ -53,6 +58,8 @@ class ConnectImage:
             
             # Resize the image
             i_image = i_image.resize((new_width, new_height), Image.LANCZOS)
+            print(f"new width: {new_width}, new height: {new_height}")
+        
         return i_image
 
 NODE_CLASS_MAPPINGS = {"ConnectImage": ConnectImage}
