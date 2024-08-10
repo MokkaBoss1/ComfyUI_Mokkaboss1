@@ -32,7 +32,7 @@ class ImageDimensions:
         }
 
     RETURN_TYPES = ("IMAGE", "INT", "INT", "FLOAT", "FLOAT", "STRING")
-    RETURN_NAMES = ("output_image", "width", "height", "ratio", "megapixels", "parameters")
+    RETURN_NAMES = ("output_image", "width", "height", "ratio", "megapixels", "kilopixels", "parameters")
     FUNCTION = "im_dim"
     CATEGORY = "👑 MokkaBoss1/Image"
 
@@ -46,6 +46,7 @@ class ImageDimensions:
         width, height = image.size  # Get the width and height of the image
         ratio = round((width / height), 3)
         megapixels = round(((width * height) / 1048576), 6)
+        kilopixels = megapixels * 1000
         parameters = f"Width: {width}\nHeight: {height}\nAspect Ratio: {ratio}\nMegapixels: {megapixels}"
 
         # Convert PIL image back to tensor
@@ -56,7 +57,7 @@ class ImageDimensions:
 
         print ( parameters )      
 
-        return (output_image, width, height, ratio, megapixels, parameters)
+        return (output_image, width, height, ratio, megapixels, kilopixels, parameters)
 
 NODE_CLASS_MAPPINGS = {"ImageDimensions": ImageDimensions}
 NODE_DISPLAY_NAME_MAPPINGS = {"ImageDimensions": "👑 ImageDimensions"}
