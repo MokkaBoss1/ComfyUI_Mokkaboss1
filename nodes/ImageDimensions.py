@@ -45,7 +45,7 @@ class ImageDimensions:
 
         width, height = image.size  # Get the width and height of the image
         ratio = round((width / height), 3)
-        megapixels = round(((width * height) / 1048576), 3)
+        megapixels = round(((width * height) / 1048576), 6)
         parameters = f"Width: {width}\nHeight: {height}\nAspect Ratio: {ratio}\nMegapixels: {megapixels}"
 
         # Convert PIL image back to tensor
