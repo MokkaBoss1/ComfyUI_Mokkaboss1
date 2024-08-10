@@ -13,7 +13,7 @@ class ConnectImage:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
-            "Kilopixels": ("FLOAT", {"default": 1000, "min": 0.0, "max": 25000.0}),
+            "kilopixels": ("FLOAT", {"default": 1000, "min": 0.0, "max": 25000.0}),
             "documentation": ("STRING", {"default": "Documentation", "multiline": True}),
             "i_image": ("IMAGE", )
         }}
