@@ -65,7 +65,7 @@ class Overlay:
             "required": {
                 "base_image": ("IMAGE",),
                 "overlay_image": ("IMAGE",),
-                "overlay_resize": (["None", "Fit", "Resize by rescale_factor", "Resize to width & heigth"],),
+                "overlay_resize": (["None", "Fit", "Resize by rescale_factor", "Resize to width & heigth", "Overlay center x"],),
                 "resize_method": (["nearest-exact", "bilinear", "area"],),
                 "rescale_factor": ("FLOAT", {"default": 1, "min": 0.01, "max": 16.0, "step": 0.1}),
                 "width": ("INT", {"default": 512, "min": 0, "max": MAX_RESOLUTION, "step": 64}),
@@ -92,7 +92,7 @@ class Overlay:
 
         # Check for different sizing options
         if overlay_resize != "None":
-            #Extract overlay_image size and store in Tuple "overlay_image_size" (WxH)
+            # Extract overlay_image size and store in Tuple "overlay_image_size" (WxH)
             overlay_image_size = overlay_image.size()
             overlay_image_size = (overlay_image_size[2], overlay_image_size[1])
             if overlay_resize == "Fit":
@@ -104,6 +104,12 @@ class Overlay:
                 overlay_image_size = tuple(int(dimension * rescale_factor) for dimension in overlay_image_size)
             elif overlay_resize == "Resize to width & heigth":
                 overlay_image_size = (size[0], size[1])
+            elif overlay_resize == "Overlay center x":
+                # Calculate x_offset relative to the center of the base image
+                base_image_width = base_image.size()[2]
+                overlay_image_size = overlay_image.size()
+                overlay_image_size = (overlay_image_size[2], overlay_image_size[1])
+                x_offset = (base_image_width - overlay_image_size[0]) // 2 + x_offset
 
             samples = overlay_image.movedim(-1, 1)
             overlay_image = comfy.utils.common_upscale(samples, overlay_image_size[0], overlay_image_size[1], resize_method, False)
@@ -142,9 +148,9 @@ class Overlay:
 
             # Paste the overlay image onto the base image
             if mask is None:
-                image.paste(overlay_image, location)
+                image.paste(overlay_image, (x_offset, y_offset))
             else:
-                image.paste(overlay_image, location, overlay_image)
+                image.paste(overlay_image, (x_offset, y_offset), overlay_image)
 
             # Convert PIL Image back to tensor
             processed_tensor = pil2tensor(image)
