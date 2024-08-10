@@ -54,6 +54,8 @@ class ImageDimensions:
         except Exception as e:
             raise ValueError(f"Failed to convert PIL image to tensor: {e}")
 
+        print ( parameters )      
+
         return (output_image, width, height, ratio, megapixels, parameters)
 
 NODE_CLASS_MAPPINGS = {"ImageDimensions": ImageDimensions}
