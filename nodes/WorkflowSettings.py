@@ -154,7 +154,7 @@ class WorkflowSettings:
         
         
         settings = f"{model_found}: model: {ckpt_name}, steps: {chosen_steps}, cfg: {chosen_cfg}, sampler: {chosen_sampler}, scheduler: {chosen_scheduler}" 
-
+        print (settings)
         if hide_sampler == 0:
             out = (chosen_steps, chosen_cfg, chosen_sampler, sampler_string, chosen_scheduler, scheduler_string, modelname_string, *out[:3], settings)
         
