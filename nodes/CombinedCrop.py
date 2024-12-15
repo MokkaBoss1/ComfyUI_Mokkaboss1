@@ -39,8 +39,8 @@ class CombinedCrop:
             "megapixels": ("FLOAT", {"default": 1.0, "min": 0.0, "max": 50.0}),
         }}
 
-    RETURN_TYPES = ("IMAGE", )
-    RETURN_NAMES = ("output_image", )
+    RETURN_TYPES = ("IMAGE", "FLOAT" )
+    RETURN_NAMES = ("output_image", "exact_aspect_ratio",)
     FUNCTION = "process_image"
     CATEGORY = "👑 MokkaBoss1/Image"
 
@@ -116,8 +116,10 @@ class CombinedCrop:
                 crop_image = crop_image.resize((new_width, new_height), Image.LANCZOS)
 
             # Convert the resized image back to a tensor
+            exact_aspect_ratio = width / height
+            
             output_image = pil2tensor(crop_image)
-            return (output_image, )
+            return (output_image, exact_aspect_ratio, )
 
         except Exception as e:
             print(f"Exception during processing: {e}")
@@ -152,3 +154,4 @@ class CombinedCrop:
 
 NODE_CLASS_MAPPINGS = {"CombinedCrop": CombinedCrop}
 NODE_DISPLAY_NAME_MAPPINGS = {"CombinedCrop": "👑 CombinedCrop"}
+
