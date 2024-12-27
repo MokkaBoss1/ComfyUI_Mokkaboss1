@@ -65,6 +65,7 @@ from ComfyUI_Mokkaboss1.nodes.TintnShift import TintnShift
 from ComfyUI_Mokkaboss1.nodes.ImageDimensionsBatch import ImageDimensionsBatch
 from ComfyUI_Mokkaboss1.nodes.ChooseImage import ChooseImage
 from ComfyUI_Mokkaboss1.nodes.ConnectInteger2 import ConnectInteger2
+from ComfyUI_Mokkaboss1.nodes.CycleInteger import CycleInteger
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -125,6 +126,7 @@ NODE_CLASS_MAPPINGS = {
     "ImageDimensionsBatch": ImageDimensionsBatch,
     "ChooseImage": ChooseImage,
     "ConnectInteger2": ConnectInteger2,
+    "CycleInteger": CycleInteger,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -185,5 +187,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ImageDimensionsBatch": "👑 ImageDimensionsBatch",
     "ChooseImage": "👑 ChooseImage",
     "ConnectInteger2": "👑 ConnectInteger2",
+    "CycleInteger": "👑 CycleInteger",
 }
-print ("👑 Mokkaboss1 53 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 54 Custom Nodes: Loaded")
