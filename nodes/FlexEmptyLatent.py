@@ -14,7 +14,7 @@ class FlexEmptyLatent:
         return {
                 "required": {
                     "batch_size": ("INT", {"default": 1, "min": 1, "max": 64}),
-                    "megapixels": ("FLOAT", {"default": 1, "min": 0.5, "max": 3.0),
+                    "megapixels": ("FLOAT", {"default": 1, "min": 0.5, "max": 3.0}),
                     "aspectRatio": ([
                     "9:21 (0.42)",
                     "9:19 (0.48)",
