@@ -68,7 +68,7 @@ class FlexEmptyLatent:
         
         if megapixels > 0.0:
             original_width = width
-            oringinal height = height
+            original_height = height
             
             original_megapixels = (original_width * original_height) / 1048576
             
