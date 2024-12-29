@@ -5,7 +5,7 @@
 
 import torch
 
-class SDXLEmptyLatent:
+class FlexEmptyLatent:
     def __init__(self):
         pass
 
