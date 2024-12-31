@@ -73,8 +73,8 @@ class IntEvaluate:
             output = 0
             
         output_int = int(output)
-        output_string = str(output)
         output_float = float(output)
+        output_string = str(output_float)
         
         return (output_int, output_string, output_float, )
 
