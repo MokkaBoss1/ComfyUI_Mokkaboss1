@@ -67,6 +67,7 @@ from ComfyUI_Mokkaboss1.nodes.ChooseImage import ChooseImage
 from ComfyUI_Mokkaboss1.nodes.ConnectInteger2 import ConnectInteger2
 from ComfyUI_Mokkaboss1.nodes.CycleInteger import CycleInteger
 from ComfyUI_Mokkaboss1.nodes.FlexEmptyLatent import FlexEmptyLatent
+from ComfyUI_Mokkaboss1.nodes.FloatEvaluate import FloatEvaluate
 
 
 NODE_CLASS_MAPPINGS = {
@@ -130,6 +131,7 @@ NODE_CLASS_MAPPINGS = {
     "ConnectInteger2": ConnectInteger2,
     "CycleInteger": CycleInteger,
     "FlexEmptyLatent": FlexEmptyLatent,
+    "FloatEvaluate": FloatEvaluate,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -192,5 +194,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ConnectInteger2": "👑 ConnectInteger2",
     "CycleInteger": "👑 CycleInteger",
     "FlexEmptyLatent": "👑 FlexEmptyLatent",
+    "FloatEvaluate": "👑 FloatEvaluate",
 }
-print ("👑 Mokkaboss1 55 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 56 Custom Nodes: Loaded")
