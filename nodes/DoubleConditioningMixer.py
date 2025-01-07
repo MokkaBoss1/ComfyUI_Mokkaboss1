@@ -25,7 +25,7 @@ class DoubleConditioningMixer:
 
     @classmethod
     def INPUT_TYPES(cls):
-        mix_methods = ["Combine", "Average", "Concatenate"]
+        mix_methods = ["Average", "Concatenate", "Combine"]
         return {"required":
                     {"conditioning_1a": ("CONDITIONING", ),
                      "conditioning_1b": ("CONDITIONING", ),
