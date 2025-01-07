@@ -69,8 +69,8 @@ from ComfyUI_Mokkaboss1.nodes.CycleInteger import CycleInteger
 from ComfyUI_Mokkaboss1.nodes.FlexEmptyLatent import FlexEmptyLatent
 from ComfyUI_Mokkaboss1.nodes.FloatEvaluate import FloatEvaluate
 from ComfyUI_Mokkaboss1.nodes.LinEqEval import LinEqEval
-from ComfyUI_Mokkaboss1.nodes.LinEqEval import QuadClipTextEncode
-from ComfyUI_Mokkaboss1.nodes.LinEqEval import DoubleConditioningMixer
+from ComfyUI_Mokkaboss1.nodes.QuadClipTextEncode import QuadClipTextEncode
+from ComfyUI_Mokkaboss1.nodes.DoubleConditioningMixer import DoubleConditioningMixer
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
