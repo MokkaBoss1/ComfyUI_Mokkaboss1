@@ -69,6 +69,8 @@ from ComfyUI_Mokkaboss1.nodes.CycleInteger import CycleInteger
 from ComfyUI_Mokkaboss1.nodes.FlexEmptyLatent import FlexEmptyLatent
 from ComfyUI_Mokkaboss1.nodes.FloatEvaluate import FloatEvaluate
 from ComfyUI_Mokkaboss1.nodes.LinEqEval import LinEqEval
+from ComfyUI_Mokkaboss1.nodes.LinEqEval import QuadClipTextEncode
+from ComfyUI_Mokkaboss1.nodes.LinEqEval import DoubleConditioningMixer
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -133,6 +135,9 @@ NODE_CLASS_MAPPINGS = {
     "FlexEmptyLatent": FlexEmptyLatent,
     "FloatEvaluate": FloatEvaluate,
     "LinEqEval": LinEqEval,
+    "QuadClipTextEncode": QuadClipTextEncode,
+    "DoubleConditioningMixer": DoubleConditioningMixer,
+    
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -197,5 +202,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "FlexEmptyLatent": "👑 FlexEmptyLatent",
     "FloatEvaluate": "👑 FloatEvaluate",
     "LinEqEval": "👑 LinEqEval",
+    "QuadClipTextEncode": "👑 QuadClipTextEncode",
+    "DoubleConditioningMixer": "👑 DoubleConditioningMixer",
 }
-print ("👑 Mokkaboss1 57 Custom Nodes: Loaded")
+print ("👑 Mokkaboss1 59 Custom Nodes: Loaded")
