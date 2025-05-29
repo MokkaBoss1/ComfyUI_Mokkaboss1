@@ -2,14 +2,7 @@ from PIL import Image
 import numpy as np
 import torch
 
-def pil2tensor(image: Image.Image) -> torch.Tensor:
-    """
-    Convert a PIL Image to a normalized float32 torch Tensor of shape [1, H, W, C].
-    """
-    arr = np.array(image).astype(np.float32) / 255.0
-    tensor = torch.from_numpy(arr)
-    return tensor.unsqueeze(0)
-
+# List of aspect-ratio choices for dropdown
 oc_aspectratios = [
     "9:21 640x1536 (0.42)",
     "9:19 704x1472 (0.48)",
@@ -27,18 +20,30 @@ oc_aspectratios = [
     "unchanged"
 ]
 
+# Choices for preserve input dimensions dropdown
+preserve_dim = ["yes", "no"]
+
+
+def pil2tensor(image: Image.Image) -> torch.Tensor:
+    """
+    Convert a PIL Image to a normalized float32 torch Tensor of shape [1, H, W, C].
+    """
+    arr = np.array(image).astype(np.float32) / 255.0
+    return torch.from_numpy(arr).unsqueeze(0)
+
 class CombinedCrop:
     @classmethod
     def INPUT_TYPES(cls):
         return {"required": {
             "input_image": ("IMAGE",),
             "rounding": ("INT", {"default": 1, "min": 1, "max": 64, "step": 1}),
-            "aspect_ratio": ("STRING", {"default": "unchanged", "choices": oc_aspectratios}),
+            "aspect_ratio": ((oc_aspectratios),),
             "exact_aspect_ratio": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 10.0, "step": 0.001}),
             "zoom": ("FLOAT", {"default": 1.0, "min": 1.0, "max": 10.0, "step": 0.01}),
             "x_offset": ("INT", {"default": 0, "min": -100, "max": 100, "step": 1}),
             "y_offset": ("INT", {"default": 0, "min": -100, "max": 100, "step": 1}),
             "megapixels": ("FLOAT", {"default": 0.0, "min": 0.0, "max": 50.0, "step": 0.1}),
+            "preserve_input_dimensions": ((preserve_dim),),
         }}
 
     RETURN_TYPES = ("IMAGE", "FLOAT")
@@ -55,20 +60,24 @@ class CombinedCrop:
             zoom: float,
             x_offset: int,
             y_offset: int,
-            megapixels: float
+            megapixels: float,
+            preserve_input_dimensions: str
     ):
         try:
-            # Early exit: no-op (unchanged AR, default zoom, no megapixel resize)
+            # Store original dimensions
+            _, h0, w0, _ = input_image.shape
+
+            # Early exit: no changes requested
             if (
                 exact_aspect_ratio == 0.0 and
                 aspect_ratio == "unchanged" and
                 zoom == 1.0 and
-                megapixels == 0.0
+                megapixels == 0.0 and
+                preserve_input_dimensions == "no"
             ):
-                _, h, w, _ = input_image.shape
-                return input_image, float(w) / float(h)
+                return input_image, float(w0) / float(h0)
 
-            # Determine target dimensions for aspect-ratio
+            # Determine target dimensions
             if exact_aspect_ratio != 0.0:
                 target_w, target_h = self.calculate_exact_dimensions(exact_aspect_ratio)
             elif aspect_ratio != "unchanged":
@@ -76,62 +85,59 @@ class CombinedCrop:
             else:
                 target_w, target_h = None, None
 
-            _, in_h, in_w, _ = input_image.shape
+            _, h, w, _ = input_image.shape
             nx = x_offset / 100.0
             ny = y_offset / 100.0
 
-            # ===== Aspect-ratio crop =====
+            # Aspect-ratio crop
             if target_w is None:
-                out_w, out_h = in_w, in_h
+                out_w, out_h = w, h
             else:
                 ratio = float(target_w) / float(target_h)
-                out_w = int(round(min(in_w, in_h * ratio)))
+                out_w = int(round(min(w, h * ratio)))
                 out_h = int(round(out_w / ratio))
                 out_w -= (out_w % rounding)
                 out_h -= (out_h % rounding)
 
-            # Compute crop origin
-            x1 = int(round((in_w - out_w) * 0.5 + (in_w - out_w) * nx * 0.5))
-            y1 = int(round((in_h - out_h) * 0.5 + (in_h - out_h) * ny * 0.5))
-            x1 = max(0, min(in_w - out_w, x1))
-            y1 = max(0, min(in_h - out_h, y1))
-
+            x1 = int(round((w - out_w) * (0.5 + 0.5 * nx)))
+            y1 = int(round((h - out_h) * (0.5 + 0.5 * ny)))
+            x1 = max(0, min(w - out_w, x1))
+            y1 = max(0, min(h - out_h, y1))
             cropped = input_image[:, y1:y1+out_h, x1:x1+out_w, :]
 
-            # ===== Zoom crop =====
-            _, cz_h, cz_w, _ = cropped.shape
-            z_w = int(round(cz_w / zoom))
-            z_h = int(round(cz_h / zoom))
-            zx1 = int(round((cz_w - z_w) * 0.5 + (cz_w - z_w) * nx * 0.5))
-            zy1 = int(round((cz_h - z_h) * 0.5 + (cz_h - z_h) * ny * 0.5))
-            zx1 = max(0, min(cz_w - z_w, zx1))
-            zy1 = max(0, min(cz_h - z_h, zy1))
+            # Zoom crop
+            _, ch, cw, _ = cropped.shape
+            z_w = int(round(cw / zoom))
+            z_h = int(round(ch / zoom))
+            zx1 = int(round((cw - z_w) * (0.5 + 0.5 * nx)))
+            zy1 = int(round((ch - z_h) * (0.5 + 0.5 * ny)))
+            zx1 = max(0, min(cw - z_w, zx1))
+            zy1 = max(0, min(ch - z_h, zy1))
             zoomed = cropped[:, zy1:zy1+z_h, zx1:zx1+z_w, :]
 
-                        # ===== Handle megapixel resize =====
+            # Megapixel resize
             if megapixels > 0.0:
-                # Convert to PIL for resizing
                 img = Image.fromarray((zoomed.squeeze().numpy() * 255).astype(np.uint8))
-                w0, h0 = img.size
-                curr_mp = (w0 * h0) / 1048576.0
+                curr_mp = (img.width * img.height) / 1048576.0
                 sf = (megapixels / curr_mp) ** 0.5
-                new_w = int(round(w0 * sf))
-                new_h = int(round(h0 * sf))
+                new_w = int(round(img.width * sf))
+                new_h = int(round(img.height * sf))
                 img = img.resize((new_w, new_h), Image.LANCZOS)
-                output_tensor = pil2tensor(img)
-                exact_ratio = float(img.width) / float(img.height)
+                output = pil2tensor(img)
+                exact_ratio = float(new_w) / float(new_h)
             else:
-                # No megapixel resizing: return the zoomed tensor directly
-                output_tensor = zoomed
-                _, zh, zw, _ = output_tensor.shape
-                exact_ratio = float(zw) / float(zh)
+                output = zoomed
+                _, oh, ow, _ = output.shape
+                exact_ratio = float(ow) / float(oh)
 
-            # Return
-            return output_tensor, exact_ratio
-            output_tensor = pil2tensor(img)
-            exact_ratio = float(img.width) / float(img.height)
-            return output_tensor, exact_ratio
+            # Preserve input dimensions
+            if preserve_input_dimensions == "yes":
+                img = Image.fromarray((output.squeeze().numpy() * 255).astype(np.uint8))
+                img = img.resize((w0, h0), Image.LANCZOS)
+                output = pil2tensor(img)
+                exact_ratio = float(w0) / float(h0)
 
+            return output, exact_ratio
         except Exception as e:
             print(f"Exception during processing: {e}")
             _, ih, iw, _ = input_image.shape
@@ -163,7 +169,6 @@ class CombinedCrop:
             h = 1024
             w = int(round(h * exact_aspect_ratio))
         return w, h
-
 
 NODE_CLASS_MAPPINGS = {"CombinedCrop": CombinedCrop}
 NODE_DISPLAY_NAME_MAPPINGS = {"CombinedCrop": "👑 CombinedCrop"}
