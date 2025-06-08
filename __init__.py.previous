@@ -6,71 +6,71 @@
 # ██║╚██╔╝██║██║   ██║██╔═██╗ ██╔═██╗ ██╔══██║██╔══██╗██║   ██║╚════██║╚════██║ ██║    ██║██║╚██╗██║██║   ██║   
 # ██║ ╚═╝ ██║╚██████╔╝██║  ██╗██║  ██╗██║  ██║██████╔╝╚██████╔╝███████║███████║ ██║    ██║██║ ╚████║██║   ██║   
 # ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚══════╝╚══════╝ ╚═╝    ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   
-                                                                                                               
-from .nodes.DoubleClipTextEncode import DoubleClipTextEncode
-from .nodes.HashText import HashText
-from .nodes.IndoorBackgrounds import IndoorBackgrounds
-from .nodes.LandscapeBackgrounds import LandscapeBackgrounds
-from .nodes.OptimalCrop import OptimalCrop
-from .nodes.X_In_a_Dress import X_In_a_Dress
-from .nodes.X_In_a_Suit import X_In_a_Suit
-from .nodes.WrapText import WrapText
-from .nodes.AspectRatioCondition import AspectRatioCondition
-from .nodes.SDXLEmptyLatent import SDXLEmptyLatent
-from .nodes.ZoomCrop import ZoomCrop
-from .nodes.IntFloatDict import IntFloatDict
-from .nodes.WorkflowSettings import WorkflowSettings
-from .nodes.IntStringDict import IntStringDict
-from .nodes.ConnectImage import ConnectImage
-from .nodes.ConnectString import ConnectString
-from .nodes.ConnectInteger import ConnectInteger
-from .nodes.ConnectFloat import ConnectFloat
-from .nodes.ConnectLatent import ConnectLatent
-from .nodes.TimeStamp import TimeStamp
-from .nodes.SaveWithMetaData import SaveWithMetaData
-from .nodes.SaveWithMetaData2 import SaveWithMetaData2
-from .nodes.TricolorComposition import TricolorComposition
-from .nodes.Colors import Colors
-from .nodes.HueSatLum import HueSatLum
-from .nodes.EmbeddingLoader import EmbeddingLoader
-from .nodes.ImageDimensions import ImageDimensions
-from .nodes.SimplePrompts import SimplePrompts
-from .nodes.IntEvaluate import IntEvaluate
-from .nodes.ImageResizeLong import ImageResizeLong
-from .nodes.PhotomontageA import PhotomontageA
-from .nodes.PhotomontageB import PhotomontageB
-from .nodes.PhotomontageC import PhotomontageC
-from .nodes.PostSamplerCrop import PostSamplerCrop
-from .nodes.Mbsampler import Mbsampler
-from .nodes.Overlay import Overlay
-from .nodes.HueShift import HueShift
-from .nodes.FuseImages import FuseImages
-from .nodes.FuseImages2 import FuseImages2
-from .nodes.StringJoin import StringJoin
-from .nodes.SearchReplace import SearchReplace
-from .nodes.SavePrompt import SavePrompt
-from .nodes.PresetSave import PresetSave
-from .nodes.PresetLoad import PresetLoad
-from .nodes.PresetRemove import PresetRemove
-from .nodes.RandomString import RandomString
-from .nodes.JsonSearch import JsonSearch
-from .nodes.PromptSwitcher import PromptSwitcher
-from .nodes.imageborder import imageborder
-from .nodes.KillWorkflow import KillWorkflow
-from .nodes.SplitImages import SplitImages
-from .nodes.ImageZigzag import ImageZigzag
-from .nodes.CombinedCrop import CombinedCrop
-from .nodes.ImageOverlayResized import ImageOverlayResized
-from .nodes.TintnShift import TintnShift
-from .nodes.ImageDimensionsBatch import ImageDimensionsBatch
-from .nodes.ChooseImage import ChooseImage
-from .nodes.ConnectInteger2 import ConnectInteger2
-from .nodes.CycleInteger import CycleInteger
-from .nodes.FlexEmptyLatent import FlexEmptyLatent
-from .nodes.FloatEvaluate import FloatEvaluate
-from .nodes.LinEqEval import LinEqEval
-from .nodes.QuadClipTextEncode import QuadClipTextEncode
-from .nodes.DoubleConditioningMixer import DoubleConditioningMixer
+                                                                                                              
+from ComfyUI_Mokkaboss1.nodes.DoubleClipTextEncode import DoubleClipTextEncode
+from ComfyUI_Mokkaboss1.nodes.HashText import HashText
+from ComfyUI_Mokkaboss1.nodes.IndoorBackgrounds import IndoorBackgrounds
+from ComfyUI_Mokkaboss1.nodes.LandscapeBackgrounds import LandscapeBackgrounds
+from ComfyUI_Mokkaboss1.nodes.OptimalCrop import OptimalCrop
+from ComfyUI_Mokkaboss1.nodes.X_In_a_Dress import X_In_a_Dress
+from ComfyUI_Mokkaboss1.nodes.X_In_a_Suit import X_In_a_Suit
+from ComfyUI_Mokkaboss1.nodes.WrapText import WrapText
+from ComfyUI_Mokkaboss1.nodes.AspectRatioCondition import AspectRatioCondition
+from ComfyUI_Mokkaboss1.nodes.SDXLEmptyLatent import SDXLEmptyLatent
+from ComfyUI_Mokkaboss1.nodes.ZoomCrop import ZoomCrop
+from ComfyUI_Mokkaboss1.nodes.IntFloatDict import IntFloatDict
+from ComfyUI_Mokkaboss1.nodes.WorkflowSettings import WorkflowSettings
+from ComfyUI_Mokkaboss1.nodes.IntStringDict import IntStringDict
+from ComfyUI_Mokkaboss1.nodes.ConnectImage import ConnectImage
+from ComfyUI_Mokkaboss1.nodes.ConnectString import ConnectString
+from ComfyUI_Mokkaboss1.nodes.ConnectInteger import ConnectInteger
+from ComfyUI_Mokkaboss1.nodes.ConnectFloat import ConnectFloat
+from ComfyUI_Mokkaboss1.nodes.ConnectLatent import ConnectLatent
+from ComfyUI_Mokkaboss1.nodes.TimeStamp import TimeStamp
+from ComfyUI_Mokkaboss1.nodes.SaveWithMetaData import SaveWithMetaData
+from ComfyUI_Mokkaboss1.nodes.SaveWithMetaData2 import SaveWithMetaData2
+from ComfyUI_Mokkaboss1.nodes.TricolorComposition import TricolorComposition
+from ComfyUI_Mokkaboss1.nodes.Colors import Colors
+from ComfyUI_Mokkaboss1.nodes.HueSatLum import HueSatLum
+from ComfyUI_Mokkaboss1.nodes.EmbeddingLoader import EmbeddingLoader
+from ComfyUI_Mokkaboss1.nodes.ImageDimensions import ImageDimensions
+from ComfyUI_Mokkaboss1.nodes.SimplePrompts import SimplePrompts
+from ComfyUI_Mokkaboss1.nodes.IntEvaluate import IntEvaluate
+from ComfyUI_Mokkaboss1.nodes.ImageResizeLong import ImageResizeLong
+from ComfyUI_Mokkaboss1.nodes.PhotomontageA import PhotomontageA
+from ComfyUI_Mokkaboss1.nodes.PhotomontageB import PhotomontageB
+from ComfyUI_Mokkaboss1.nodes.PhotomontageC import PhotomontageC
+from ComfyUI_Mokkaboss1.nodes.PostSamplerCrop import PostSamplerCrop
+from ComfyUI_Mokkaboss1.nodes.Mbsampler import Mbsampler
+from ComfyUI_Mokkaboss1.nodes.Overlay import Overlay
+from ComfyUI_Mokkaboss1.nodes.HueShift import HueShift
+from ComfyUI_Mokkaboss1.nodes.FuseImages import FuseImages
+from ComfyUI_Mokkaboss1.nodes.FuseImages2 import FuseImages2
+from ComfyUI_Mokkaboss1.nodes.StringJoin import StringJoin
+from ComfyUI_Mokkaboss1.nodes.SearchReplace import SearchReplace
+from ComfyUI_Mokkaboss1.nodes.SavePrompt import SavePrompt
+from ComfyUI_Mokkaboss1.nodes.PresetSave import PresetSave
+from ComfyUI_Mokkaboss1.nodes.PresetLoad import PresetLoad
+from ComfyUI_Mokkaboss1.nodes.PresetRemove import PresetRemove
+from ComfyUI_Mokkaboss1.nodes.RandomString import RandomString
+from ComfyUI_Mokkaboss1.nodes.JsonSearch import JsonSearch
+from ComfyUI_Mokkaboss1.nodes.PromptSwitcher import PromptSwitcher
+from ComfyUI_Mokkaboss1.nodes.imageborder import imageborder
+from ComfyUI_Mokkaboss1.nodes.KillWorkflow import KillWorkflow
+from ComfyUI_Mokkaboss1.nodes.SplitImages import SplitImages
+from ComfyUI_Mokkaboss1.nodes.ImageZigzag import ImageZigzag
+from ComfyUI_Mokkaboss1.nodes.CombinedCrop import CombinedCrop
+from ComfyUI_Mokkaboss1.nodes.ImageOverlayResized import ImageOverlayResized
+from ComfyUI_Mokkaboss1.nodes.TintnShift import TintnShift
+from ComfyUI_Mokkaboss1.nodes.ImageDimensionsBatch import ImageDimensionsBatch
+from ComfyUI_Mokkaboss1.nodes.ChooseImage import ChooseImage
+from ComfyUI_Mokkaboss1.nodes.ConnectInteger2 import ConnectInteger2
+from ComfyUI_Mokkaboss1.nodes.CycleInteger import CycleInteger
+from ComfyUI_Mokkaboss1.nodes.FlexEmptyLatent import FlexEmptyLatent
+from ComfyUI_Mokkaboss1.nodes.FloatEvaluate import FloatEvaluate
+from ComfyUI_Mokkaboss1.nodes.LinEqEval import LinEqEval
+from ComfyUI_Mokkaboss1.nodes.QuadClipTextEncode import QuadClipTextEncode
+from ComfyUI_Mokkaboss1.nodes.DoubleConditioningMixer import DoubleConditioningMixer
 
 NODE_CLASS_MAPPINGS = {
     "DoubleClipTextEncode": DoubleClipTextEncode,
@@ -137,6 +137,7 @@ NODE_CLASS_MAPPINGS = {
     "LinEqEval": LinEqEval,
     "QuadClipTextEncode": QuadClipTextEncode,
     "DoubleConditioningMixer": DoubleConditioningMixer,
+    
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleClipTextEncode": "👑 DoubleClipTextEncode",
@@ -205,4 +206,3 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "DoubleConditioningMixer": "👑 DoubleConditioningMixer",
 }
 print ("👑 Mokkaboss1 59 Custom Nodes: Loaded")
-
