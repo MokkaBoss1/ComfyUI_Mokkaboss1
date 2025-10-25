@@ -45,7 +45,7 @@ class ImageDimensions:
 
         width, height = image.size  # Get the width and height of the image
         ratio = round((width / height), 3)
-        megapixels = round(((width * height) / 1048576), 6)
+        megapixels = round(((width * height) / 1000000), 6)
         kilopixels = megapixels * 1000
         parameters = f"Width: {width}\nHeight: {height}\nAspect Ratio: {ratio}\nMegapixels: {megapixels}"
 
